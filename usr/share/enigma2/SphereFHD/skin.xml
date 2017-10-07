@@ -5812,4 +5812,49 @@ MultiContentEntryPixmapAlphaTest(pos = (10, 17), size = (100, 40), png = 2),
   <widget name="nds" position="1545,600" size="80,40" font="Regular;28" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
   <widget name="ecmInfo" position="1630,600" size="80,40" font="Regular;28" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
 </screen>
+  <screen name="EventViewContextMenu" position="0,0" size="1920,1080" title="Event view" flags="wfNoBorder" backgroundColor="transparent">
+  <ePixmap position="0,-2" zPosition="-10" size="1920,1080" pixmap="SphereFHD/png/bg3.png" />
+  <ePixmap position="69,800" zPosition="1" size="260,260" pixmap="SphereFHD/menu/info.png" alphatest="blend" transparent="1" />
+  <panel name="color_buttons" />
+  <widget source="key_red" render="Label" position="382,970" size="370,70" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+  <widget source="key_green" render="Label" position="732,970" size="370,70" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+  <widget source="key_yellow" render="Label" position="1082,970" size="370,70" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+  <widget source="key_blue" render="Label" position="1432,970" size="370,70" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+  <panel name="Time" />
+  <widget source="Title" render="Label" position="1100,780" size="400,50" font="Bold;40" halign="center" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+  <widget enableWrapAround="1" position="890,22" name="menu" itemHeight="35" font="Regular;28" scrollbarMode="showOnDemand" size="800,650" selectionPixmap="SkalliHD-NFR-FullHD/selpic/1240x75.png" transparent="1">
+  <convert type="TemplatedMultiContent">{"template": [	MultiContentEntryText(pos = (20,0), size = (465,38), flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 0	) ],
+				"fonts": [gFont("Regular",28)],
+				"itemHeight": 38
+				}</convert>
+  </widget>
+  <panel name="color_buttons" />
+  <widget name="key_red" position="382,970" size="370,70" valign="center" halign="left" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+  <widget name="key_green" position="732,970" size="370,70" valign="center" halign="left" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+  <widget name="key_yellow" position="1082,970" size="370,70" valign="center" halign="left" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+  <widget name="key_blue" position="1432,970" size="370,70" valign="center" halign="left" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+  <panel name="function_buttons" />
+</screen>
+  <screen name="EventViewSimple" position="0,0" size="1920,1080" title="EventViewSimple" flags="wfNoBorder" backgroundColor="transparent">
+  <ePixmap position="0,-2" zPosition="-10" size="1920,1080" pixmap="SphereFHD/png/bg3.png" />
+  <ePixmap position="69,800" zPosition="1" size="260,260" pixmap="SphereFHD/menu/info.png" alphatest="blend" transparent="1" />
+  <panel name="color_buttons" />
+  <widget source="key_red" render="Label" position="382,970" size="370,70" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+  <widget source="key_green" render="Label" position="732,970" size="370,70" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+  <widget source="key_yellow" render="Label" position="1082,970" size="370,70" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+  <widget source="key_blue" render="Label" position="1432,970" size="370,70" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+  <panel name="Time" />
+  <widget source="Title" render="Label" position="1100,780" size="400,50" font="Bold;40" halign="center" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+  <widget enableWrapAround="1" position="890,22" name="FullDescription" itemHeight="35" font="Regular;30" scrollbarMode="showOnDemand" size="800,650" transparent="1" />
+  <widget backgroundColor="background" font="Regular; 30" halign="left" name="duration" position="938,695" size="300,35" transparent="1" zPosition="1" valign="top" />
+  <widget backgroundColor="background" font="Regular; 30" halign="left" source="Service" render="Label" position="1358,695" size="300,35" transparent="1" zPosition="1" valign="top">
+    <convert type="MovieInfo">FileSize</convert>
+  </widget>
+  <panel name="color_buttons" />
+  <widget name="key_red" position="382,970" size="370,70" valign="center" halign="left" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+  <widget name="key_green" position="732,970" size="370,70" valign="center" halign="left" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+  <widget name="key_yellow" position="1082,970" size="370,70" valign="center" halign="left" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+  <widget name="key_blue" position="1432,970" size="370,70" valign="center" halign="left" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+  <panel name="function_buttons" />
+</screen>	
 </skin>
