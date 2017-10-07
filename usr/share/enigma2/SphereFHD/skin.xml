@@ -5937,5 +5937,18 @@ MultiContentEntryPixmapAlphaTest(pos = (10, 17), size = (100, 40), png = 2),
   <widget source="key_yellow" render="Label" position="1125,970" size="300,70" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
   <widget source="key_blue" render="Label" position="1487,970" size="300,70" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
   <panel name="function_buttons" />
-</screen>	
+</screen>
+<screen name="QuickMenu" position="4,center" size="1920,1080" backgroundColor="background" flags="wfNoBorder">
+  <ePixmap position="center,-2" zPosition="-10" size="1920,1080" pixmap="SphereFHD/png/bg2.png" transparent="1" />
+  <eLabel text="Schnellstart Menü" position="388,51" size="383,50" font="Regular; 42" backgroundColor="background" transparent="1" valign="top" zPosition="1" halign="left" foregroundColor="white" />
+  <widget name="list" position="320,108" size="490,630" backgroundColor="background" itemHeight="70" selectionPixmap="SkalliHD-NFR-FullHD/selpic/1240x75.png" transparent="1" scrollbarMode="showOnDemand" />
+  <widget name="description" position="22,759" size="1000,212" zPosition="1" font="Regular; 28" halign="center" backgroundColor="transpGrey3" foregroundColor="blue" transparent="1" />
+  <widget name="sublist" position="1274,108" size="490,630" backgroundColor="background" itemHeight="70" selectionPixmap="SkalliHD-NFR-FullHD/selpic/1240x75.png" transparent="1" scrollbarMode="showOnDemand" />
+  <widget source="key_red" render="Label" position="392,970" size="300,70" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+  <widget source="key_green" render="Label" position="757,970" size="300,70" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+  <widget source="key_yellow" render="Label" position="1125,970" size="300,70" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+  <widget source="key_blue" render="Label" position="1487,970" size="300,70" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+  <panel name="function_buttons" />
+  <panel name="color_buttons" />
+</screen>
 </skin>
