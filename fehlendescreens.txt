@@ -68,9 +68,6 @@ MediaPlayer
 menu_12
 MenuDNA
 MenuSummary
-MessageBoxExt
-MessageBoxGenuine
-MessageBoxSimple
 MovieEpgSetup
 MovieInfoPreview
 MovieInfoSetup
