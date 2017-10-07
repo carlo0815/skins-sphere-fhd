@@ -5793,5 +5793,149 @@ MultiContentEntryPixmapAlphaTest(pos = (10, 17), size = (100, 40), png = 2),
   <widget name="key_yellow" position="1082,970" size="370,70" valign="center" halign="left" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
   <widget name="key_blue" position="1432,970" size="370,70" valign="center" halign="left" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
   <panel name="function_buttons" />
+</screen>
+  <screen name="MoveVideos_int" position="center,center" size="1920,1080" title="Move Bootvideos back to Flash" flags="wfNoBorder">
+  <ePixmap position="0,0" zPosition="-10" size="1920,1080" pixmap="SphereFHD/png/bg3.png" />
+  <panel name="Time" />
+  <ePixmap position="68,805" size="220,220" zPosition="1" pixmap="SphereFHD/menu/setup.png" alphatest="blend" transparent="1" />
+  <widget source="Title" render="Label" position="1000,780" size="600,50" font="Bold;40" halign="center" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+  <ePixmap position="833,10" size="931,600" zPosition="5" pixmap="SphereFHD/png/listboxen/listbox_40.png" alphatest="blend" />
+  <widget name="introduction" position="945,645" size="700,100" font="Bold;40" halign="center" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+  <widget name="config" position="833,10" size="931,600" font="Regular;30" textOffset="5,2" secondfont="Regular;30" itemHeight="40" scrollbarMode="showOnDemand" scrollbarWidth="0" scrollbarSliderBorderColor="grey" backgroundColor="transpGrey" transparent="1" />
+  <ePixmap name="red" pixmap="SphereFHD/buttons/red.png" position="335,980" size="50,50" alphatest="blend" />
+  <ePixmap name="green" pixmap="SphereFHD/buttons/green.png" position="700,980" size="50,50" alphatest="blend" />
+  <ePixmap pixmap="SphereFHD/buttons/yellow.png" position="1065,980" size="50,50" alphatest="blend" />
+  <ePixmap pixmap="SphereFHD/buttons/blue.png" position="1430,980" size="50,50" alphatest="blend" />
+  <widget source="key_red" render="Label" position="392,970" size="300,70" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+  <widget source="key_green" render="Label" position="757,970" size="300,70" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+  <widget source="key_yellow" render="Label" position="1125,970" size="300,70" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+  <widget source="key_blue" render="Label" position="1487,970" size="300,70" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+  <panel name="function_buttons" />
+</screen>
+  <screen name="MoveVideos_ext" position="center,center" size="1920,1080" title="Move Bootvideos to HDD/USB" flags="wfNoBorder">
+  <ePixmap position="0,0" zPosition="-10" size="1920,1080" pixmap="SphereFHD/png/bg3.png" />
+  <panel name="Time" />
+  <ePixmap position="68,805" size="220,220" zPosition="1" pixmap="SphereFHD/menu/setup.png" alphatest="blend" transparent="1" />
+  <widget source="Title" render="Label" position="1000,780" size="600,50" font="Bold;40" halign="center" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+  <ePixmap position="833,10" size="931,600" zPosition="5" pixmap="SphereFHD/png/listboxen/listbox_40.png" alphatest="blend" />
+  <widget name="introduction" position="945,645" size="700,100" font="Bold;40" halign="center" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+  <widget name="config" position="833,10" size="931,600" font="Regular;30" textOffset="5,2" secondfont="Regular;30" itemHeight="40" scrollbarMode="showOnDemand" scrollbarWidth="0" scrollbarSliderBorderColor="grey" backgroundColor="transpGrey" transparent="1" />
+  <ePixmap name="red" pixmap="SphereFHD/buttons/red.png" position="335,980" size="50,50" alphatest="blend" />
+  <ePixmap name="green" pixmap="SphereFHD/buttons/green.png" position="700,980" size="50,50" alphatest="blend" />
+  <ePixmap pixmap="SphereFHD/buttons/yellow.png" position="1065,980" size="50,50" alphatest="blend" />
+  <ePixmap pixmap="SphereFHD/buttons/blue.png" position="1430,980" size="50,50" alphatest="blend" />
+  <widget source="key_red" render="Label" position="392,970" size="300,70" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+  <widget source="key_green" render="Label" position="757,970" size="300,70" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+  <widget source="key_yellow" render="Label" position="1125,970" size="300,70" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+  <widget source="key_blue" render="Label" position="1487,970" size="300,70" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+  <panel name="function_buttons" />
+</screen>
+  <screen name="MoveBootlogos_ext" position="center,center" size="1920,1080" title="Move Bootlogos to HDD/USB" flags="wfNoBorder">
+  <ePixmap position="0,0" zPosition="-10" size="1920,1080" pixmap="SphereFHD/png/bg3.png" />
+  <panel name="Time" />
+  <ePixmap position="68,805" size="220,220" zPosition="1" pixmap="SphereFHD/menu/setup.png" alphatest="blend" transparent="1" />
+  <widget source="Title" render="Label" position="1000,780" size="600,50" font="Bold;40" halign="center" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+  <ePixmap position="833,10" size="931,600" zPosition="5" pixmap="SphereFHD/png/listboxen/listbox_40.png" alphatest="blend" />
+  <widget name="introduction" position="945,645" size="700,100" font="Bold;40" halign="center" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+  <widget name="config" position="833,10" size="931,600" font="Regular;30" textOffset="5,2" secondfont="Regular;30" itemHeight="40" scrollbarMode="showOnDemand" scrollbarWidth="0" scrollbarSliderBorderColor="grey" backgroundColor="transpGrey" transparent="1" />
+  <ePixmap name="red" pixmap="SphereFHD/buttons/red.png" position="335,980" size="50,50" alphatest="blend" />
+  <ePixmap name="green" pixmap="SphereFHD/buttons/green.png" position="700,980" size="50,50" alphatest="blend" />
+  <ePixmap pixmap="SphereFHD/buttons/yellow.png" position="1065,980" size="50,50" alphatest="blend" />
+  <ePixmap pixmap="SphereFHD/buttons/blue.png" position="1430,980" size="50,50" alphatest="blend" />
+  <widget source="key_red" render="Label" position="392,970" size="300,70" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+  <widget source="key_green" render="Label" position="757,970" size="300,70" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+  <widget source="key_yellow" render="Label" position="1125,970" size="300,70" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+  <widget source="key_blue" render="Label" position="1487,970" size="300,70" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+  <panel name="function_buttons" />
+</screen>
+  <screen name="MoveBootlogos_int" position="center,center" size="1920,1080" title="Move Bootlogos back to Flash" flags="wfNoBorder">
+  <ePixmap position="0,0" zPosition="-10" size="1920,1080" pixmap="SphereFHD/png/bg3.png" />
+  <panel name="Time" />
+  <ePixmap position="68,805" size="220,220" zPosition="1" pixmap="SphereFHD/menu/setup.png" alphatest="blend" transparent="1" />
+  <widget source="Title" render="Label" position="1000,780" size="600,50" font="Bold;40" halign="center" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+  <ePixmap position="833,10" size="931,600" zPosition="5" pixmap="SphereFHD/png/listboxen/listbox_40.png" alphatest="blend" />
+  <widget name="introduction" position="945,645" size="700,100" font="Bold;40" halign="center" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+  <widget name="config" position="833,10" size="931,600" font="Regular;30" textOffset="5,2" secondfont="Regular;30" itemHeight="40" scrollbarMode="showOnDemand" scrollbarWidth="0" scrollbarSliderBorderColor="grey" backgroundColor="transpGrey" transparent="1" />
+  <ePixmap name="red" pixmap="SphereFHD/buttons/red.png" position="335,980" size="50,50" alphatest="blend" />
+  <ePixmap name="green" pixmap="SphereFHD/buttons/green.png" position="700,980" size="50,50" alphatest="blend" />
+  <ePixmap pixmap="SphereFHD/buttons/yellow.png" position="1065,980" size="50,50" alphatest="blend" />
+  <ePixmap pixmap="SphereFHD/buttons/blue.png" position="1430,980" size="50,50" alphatest="blend" />
+  <widget source="key_red" render="Label" position="392,970" size="300,70" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+  <widget source="key_green" render="Label" position="757,970" size="300,70" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+  <widget source="key_yellow" render="Label" position="1125,970" size="300,70" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+  <widget source="key_blue" render="Label" position="1487,970" size="300,70" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+  <panel name="function_buttons" />
+</screen>
+  <screen name="MoveRadiologos_ext" position="center,center" size="1920,1080" title="Move Radiologos to HDD/USB" flags="wfNoBorder">
+  <ePixmap position="0,0" zPosition="-10" size="1920,1080" pixmap="SphereFHD/png/bg3.png" />
+  <panel name="Time" />
+  <ePixmap position="68,805" size="220,220" zPosition="1" pixmap="SphereFHD/menu/setup.png" alphatest="blend" transparent="1" />
+  <widget source="Title" render="Label" position="1000,780" size="600,50" font="Bold;40" halign="center" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+  <ePixmap position="833,10" size="931,600" zPosition="5" pixmap="SphereFHD/png/listboxen/listbox_40.png" alphatest="blend" />
+  <widget name="introduction" position="945,645" size="700,100" font="Bold;40" halign="center" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+  <widget name="config" position="833,10" size="931,600" font="Regular;30" textOffset="5,2" secondfont="Regular;30" itemHeight="40" scrollbarMode="showOnDemand" scrollbarWidth="0" scrollbarSliderBorderColor="grey" backgroundColor="transpGrey" transparent="1" />
+  <ePixmap name="red" pixmap="SphereFHD/buttons/red.png" position="335,980" size="50,50" alphatest="blend" />
+  <ePixmap name="green" pixmap="SphereFHD/buttons/green.png" position="700,980" size="50,50" alphatest="blend" />
+  <ePixmap pixmap="SphereFHD/buttons/yellow.png" position="1065,980" size="50,50" alphatest="blend" />
+  <ePixmap pixmap="SphereFHD/buttons/blue.png" position="1430,980" size="50,50" alphatest="blend" />
+  <widget source="key_red" render="Label" position="392,970" size="300,70" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+  <widget source="key_green" render="Label" position="757,970" size="300,70" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+  <widget source="key_yellow" render="Label" position="1125,970" size="300,70" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+  <widget source="key_blue" render="Label" position="1487,970" size="300,70" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+  <panel name="function_buttons" />
+</screen>
+  <screen name="MoveRadiologos_int" position="center,center" size="1920,1080" title="Move Radiologos back to Flash" flags="wfNoBorder">
+  <ePixmap position="0,0" zPosition="-10" size="1920,1080" pixmap="SphereFHD/png/bg3.png" />
+  <panel name="Time" />
+  <ePixmap position="68,805" size="220,220" zPosition="1" pixmap="SphereFHD/menu/setup.png" alphatest="blend" transparent="1" />
+  <widget source="Title" render="Label" position="1000,780" size="600,50" font="Bold;40" halign="center" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+  <ePixmap position="833,10" size="931,600" zPosition="5" pixmap="SphereFHD/png/listboxen/listbox_40.png" alphatest="blend" />
+  <widget name="introduction" position="945,645" size="700,100" font="Bold;40" halign="center" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+  <widget name="config" position="833,10" size="931,600" font="Regular;30" textOffset="5,2" secondfont="Regular;30" itemHeight="40" scrollbarMode="showOnDemand" scrollbarWidth="0" scrollbarSliderBorderColor="grey" backgroundColor="transpGrey" transparent="1" />
+  <ePixmap name="red" pixmap="SphereFHD/buttons/red.png" position="335,980" size="50,50" alphatest="blend" />
+  <ePixmap name="green" pixmap="SphereFHD/buttons/green.png" position="700,980" size="50,50" alphatest="blend" />
+  <ePixmap pixmap="SphereFHD/buttons/yellow.png" position="1065,980" size="50,50" alphatest="blend" />
+  <ePixmap pixmap="SphereFHD/buttons/blue.png" position="1430,980" size="50,50" alphatest="blend" />
+  <widget source="key_red" render="Label" position="392,970" size="300,70" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+  <widget source="key_green" render="Label" position="757,970" size="300,70" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+  <widget source="key_yellow" render="Label" position="1125,970" size="300,70" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+  <widget source="key_blue" render="Label" position="1487,970" size="300,70" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+  <panel name="function_buttons" />
+</screen>
+  <screen name="MoveSpinner_ext" position="center,center" size="1920,1080" title="Move Spinner to HDD/USB" flags="wfNoBorder">
+  <ePixmap position="0,0" zPosition="-10" size="1920,1080" pixmap="SphereFHD/png/bg3.png" />
+  <panel name="Time" />
+  <ePixmap position="68,805" size="220,220" zPosition="1" pixmap="SphereFHD/menu/setup.png" alphatest="blend" transparent="1" />
+  <widget source="Title" render="Label" position="1000,780" size="600,50" font="Bold;40" halign="center" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+  <ePixmap position="833,10" size="931,600" zPosition="5" pixmap="SphereFHD/png/listboxen/listbox_40.png" alphatest="blend" />
+  <widget name="introduction" position="945,645" size="700,100" font="Bold;40" halign="center" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+  <widget name="config" position="833,10" size="931,600" font="Regular;30" textOffset="5,2" secondfont="Regular;30" itemHeight="40" scrollbarMode="showOnDemand" scrollbarWidth="0" scrollbarSliderBorderColor="grey" backgroundColor="transpGrey" transparent="1" />
+  <ePixmap name="red" pixmap="SphereFHD/buttons/red.png" position="335,980" size="50,50" alphatest="blend" />
+  <ePixmap name="green" pixmap="SphereFHD/buttons/green.png" position="700,980" size="50,50" alphatest="blend" />
+  <ePixmap pixmap="SphereFHD/buttons/yellow.png" position="1065,980" size="50,50" alphatest="blend" />
+  <ePixmap pixmap="SphereFHD/buttons/blue.png" position="1430,980" size="50,50" alphatest="blend" />
+  <widget source="key_red" render="Label" position="392,970" size="300,70" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+  <widget source="key_green" render="Label" position="757,970" size="300,70" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+  <widget source="key_yellow" render="Label" position="1125,970" size="300,70" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+  <widget source="key_blue" render="Label" position="1487,970" size="300,70" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+  <panel name="function_buttons" />
+</screen>
+  <screen name="MoveSpinner_int" position="center,center" size="1920,1080" title="Move Spinner back to Flash" flags="wfNoBorder">
+  <ePixmap position="0,0" zPosition="-10" size="1920,1080" pixmap="SphereFHD/png/bg3.png" />
+  <panel name="Time" />
+  <ePixmap position="68,805" size="220,220" zPosition="1" pixmap="SphereFHD/menu/setup.png" alphatest="blend" transparent="1" />
+  <widget source="Title" render="Label" position="1000,780" size="600,50" font="Bold;40" halign="center" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+  <ePixmap position="833,10" size="931,600" zPosition="5" pixmap="SphereFHD/png/listboxen/listbox_40.png" alphatest="blend" />
+  <widget name="introduction" position="945,645" size="700,100" font="Bold;40" halign="center" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+  <widget name="config" position="833,10" size="931,600" font="Regular;30" textOffset="5,2" secondfont="Regular;30" itemHeight="40" scrollbarMode="showOnDemand" scrollbarWidth="0" scrollbarSliderBorderColor="grey" backgroundColor="transpGrey" transparent="1" />
+  <ePixmap name="red" pixmap="SphereFHD/buttons/red.png" position="335,980" size="50,50" alphatest="blend" />
+  <ePixmap name="green" pixmap="SphereFHD/buttons/green.png" position="700,980" size="50,50" alphatest="blend" />
+  <ePixmap pixmap="SphereFHD/buttons/yellow.png" position="1065,980" size="50,50" alphatest="blend" />
+  <ePixmap pixmap="SphereFHD/buttons/blue.png" position="1430,980" size="50,50" alphatest="blend" />
+  <widget source="key_red" render="Label" position="392,970" size="300,70" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+  <widget source="key_green" render="Label" position="757,970" size="300,70" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+  <widget source="key_yellow" render="Label" position="1125,970" size="300,70" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+  <widget source="key_blue" render="Label" position="1487,970" size="300,70" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+  <panel name="function_buttons" />
 </screen>	
 </skin>
