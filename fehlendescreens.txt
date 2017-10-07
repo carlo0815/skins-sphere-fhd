@@ -71,16 +71,6 @@ MenuSummary
 MessageBoxExt
 MessageBoxGenuine
 MessageBoxSimple
-MoveBootlogos_ext
-MoveBootlogos_int
-MovePlugins_ext
-MovePlugins_int
-MoveRadiologos_ext
-MoveRadiologos_int
-MoveSpinner_ext
-MoveSpinner_int
-MoveVideos_ext
-MoveVideos_int
 MovieEpgSetup
 MovieInfoPreview
 MovieInfoSetup
