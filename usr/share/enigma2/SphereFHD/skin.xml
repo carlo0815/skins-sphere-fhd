@@ -3924,80 +3924,17 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
     <widget name="key_blue" position="1480,980" size="370,50" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
     <panel name="function_buttons" />
   </screen>
-  <!-- VTI Info by NaseDC -->
-  <screen name="InfoPanel" position="center,center" size="1920,1080" title="VTI Info Panel" flags="wfNoBorder">
-    <ePixmap position="0,0" zPosition="-10" size="1920,1080" pixmap="SphereFHD/png/bg4.png" />
-    <panel name="Time" />
-    <ePixmap position="68,805" size="220,220" zPosition="1" pixmap="SphereFHD/menu/info.png" alphatest="blend" transparent="1" />
-    <widget name="Mlist" position="100,20" size="560,800" transparent="1" scrollbarMode="showOnDemand" selectionPixmap="SkalliHD-NFR-FullHD/selpic/1240x75.png" />
-    <!--widget name="vtiversion" position="100,20" size="400,26" font="Regular;26" transparent="1" foregroundColor="white" backgroundColor="black" />
-    <widget name="kernel" position="100,50" size="560,26" font="Regular;26" transparent="1" foregroundColor="white" backgroundColor="black" />
-    <widget name="uptime" position="100,80" size="400,26" font="Regular;26" transparent="1" foregroundColor="white" backgroundColor="black" />
-    <widget name="load" position="100,110" size="400,26" font="Regular;26" transparent="1" foregroundColor="white" backgroundColor="black" />
-    <widget name="temp" position="100,140" size="400,26" font="Regular;26" transparent="1" foregroundColor="white" backgroundColor="black" />
-    <widget name="fan" position="100,170" size="400,26" font="Regular;26" transparent="1" foregroundColor="white" backgroundColor="black" />
-    <widget source="netdev" render="Listbox" position="1370,20" size="450,120" scrollbarMode="showNever" scrollbarWidth="6" scrollbarSliderBorderWidth="1" scrollbarSliderForegroundColor="label" scrollbarSliderBorderColor="grey" foregroundColor="white" backgroundColor="black" transparent="1">
-      <convert type="TemplatedMultiContent" transparent="0">
-			{"template": [
-					MultiContentEntryText(pos = (5, 2), size = (120, 20), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 0),
-					MultiContentEntryText(pos = (130, 2), size = (150, 20), font=0, flags = RT_HALIGN_RIGHT|RT_VALIGN_CENTER, text = 1),
-					MultiContentEntryText(pos = (290, 2), size = (150, 20), font=0, flags = RT_HALIGN_RIGHT|RT_VALIGN_CENTER, text = 2),
-			],
-		"fonts": [gFont("Regular", 24),gFont("Regular", 20)],
-		"itemHeight": 30,
-		"selectionEnabled": False
-		}
-		</convert>
-    </widget>
-    <widget source="memory" render="Listbox" position="785,20" size="450,176" scrollbarMode="showNever" scrollbarWidth="6" scrollbarSliderBorderWidth="1" scrollbarSliderForegroundColor="label" scrollbarSliderBorderColor="grey" foregroundColor="white" backgroundColor="black" transparent="1">
-      <convert type="TemplatedMultiContent" transparent="0">
-			{"template": [
-				MultiContentEntryText(pos = (5, 2), size = (120, 20), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 0),
-				MultiContentEntryText(pos = (130, 2), size = (150, 20), font=0, flags = RT_HALIGN_RIGHT|RT_VALIGN_CENTER, text = 1),
-				MultiContentEntryText(pos = (290, 2), size = (150, 20), font=0, flags = RT_HALIGN_RIGHT|RT_VALIGN_CENTER, text = 2),
-			],
-		"fonts": [gFont("Regular", 24),gFont("Regular", 20)],
-		"itemHeight": 30,
-		"selectionEnabled": False
-		}
-		</convert>
-    </widget>
-    <widget source="proclist" render="Listbox" position="615,530" size="700,210" scrollbarMode="showNever" scrollbarWidth="6" scrollbarSliderBorderWidth="1" scrollbarSliderForegroundColor="label" scrollbarSliderBorderColor="grey" foregroundColor="white" backgroundColor="black" transparent="1">
-      <convert type="TemplatedMultiContent" transparent="0">
-			{"template": [
-				MultiContentEntryText(pos = (5, 2), size = (200, 25), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 0),
-				MultiContentEntryText(pos = (230, 2), size = (120, 25), font=0, flags = RT_HALIGN_RIGHT|RT_VALIGN_CENTER, text = 1),
-				MultiContentEntryText(pos = (380, 2), size = (100, 25), font=0, flags = RT_HALIGN_RIGHT|RT_VALIGN_CENTER, text = 2),
-				MultiContentEntryText(pos = (510, 2), size = (100, 25), font=0, flags = RT_HALIGN_RIGHT|RT_VALIGN_CENTER, text = 3),
-			],
-		"fonts": [gFont("Regular", 24),gFont("Regular", 20)],
-		"itemHeight": 30,
-		"selectionEnabled": False
-		}
-		</convert>
-    </widget>
-    <widget source="storagelist" render="Listbox" position="440,240" size="1000,240" scrollbarMode="showOnDemand" scrollbarWidth="6" scrollbarSliderBorderWidth="1" scrollbarSliderForegroundColor="label" scrollbarSliderBorderColor="grey" foregroundColor="white" backgroundColor="black" transparent="1" enableWrapAround="1">
-      <convert type="TemplatedMultiContent" transparent="0">
-			{"template": [
-				MultiContentEntryText(pos = (5, 2), size = (330, 24), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 0),
-				MultiContentEntryText(pos = (365, 2), size = (205, 24), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 1),
-				MultiContentEntryText(pos = (610, 2), size = (65, 24), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 2),
-				MultiContentEntryText(pos = (705, 2), size = (115, 24), font=0, flags = RT_HALIGN_RIGHT|RT_VALIGN_CENTER, text = 3),
-				MultiContentEntryText(pos = (860, 2), size = (120, 24), font=0, flags = RT_HALIGN_RIGHT|RT_VALIGN_CENTER, text = 4),
-			],
-		"fonts": [gFont("Regular", 24),gFont("Regular", 20)],
-		"itemHeight": 30,
-		"selectionEnabled": False
-		}
-		</convert>
-    </widget>
-    <eLabel text="VTi Info" position="750,790" size="430,45" font="Bold;40" halign="center" foregroundColor="white" backgroundColor="transpGrey" transparent="1" /-->
-    <panel name="color_buttons" />
-    <widget source="key_red" render="Label" position="382,970" size="370,70" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
-    <widget source="key_green" render="Label" position="732,970" size="370,70" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
-    <ePixmap pixmap="SphereFHD/buttons/ok.png" position="1805,1010" size="50,50" alphatest="blend" />
-    <ePixmap pixmap="SphereFHD/buttons/exit.png" position="1865,1020" size="50,50" alphatest="blend" />
-    <panel name="function_buttons" />
+  <screen name="Infopanel" position="center,center" size="1920,1080" title="InfoPanel" flags="wfNoBorder">
+   <ePixmap position="-3,-3" zPosition="-10" size="1920,1080" pixmap="SphereFHD/png/bg3.png" />
+   <panel name="Time" />
+   <ePixmap position="68,805" size="220,220" zPosition="1" pixmap="SphereFHD/menu/info.png" alphatest="blend" transparent="1" />
+   <widget name="Mlist" position="904,12" size="794,694" transparent="1" scrollbarMode="showOnDemand" selectionPixmap="SphereFHD/selpic/1240x75.png" zPosition="0" />
+   <widget name="label1" position="659,920" size="500,40" font="Regular;28" transparent="0" foregroundColor="yellow" halign="center" backgroundColor="dark" text="Test" zPosition="1" />
+   <eLabel name="spaceused" text="% Flash Used..." position="64,1009" size="200,30" font="Regular;25" halign="left" foregroundColor="Text1" backgroundColor="background" transparent="1" zPosition="5" />
+   <widget name="spaceused" position="62,1047" size="1600,30" foregroundColor="blue" backgroundColor="grey" zPosition="3" />
+   <ePixmap pixmap="SphereFHD/buttons/ok.png" position="1805,1010" size="50,50" alphatest="blend" zPosition="0" />
+   <ePixmap pixmap="SphereFHD/buttons/exit.png" position="1865,1020" size="50,50" alphatest="blend" zPosition="0" />
+   <panel name="function_buttons" />
   </screen>
   <!-- Bitrate Viewer by NaseDC -->
   <screen name="BitrateViewer" position="0,0" size="1920,1080" title="VTI Bitrate Viewer" flags="wfNoBorder" backgroundColor="transparent">
