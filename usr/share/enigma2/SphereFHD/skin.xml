@@ -6077,4 +6077,37 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 
 	</applet>
   </screen>
+<screen name="MediaPlayer" position="center,center" size="1920,1080" title="MediaPlayer" flags="wfNoBorder">
+  <ePixmap position="0,0" zPosition="-10" size="1920,1080" pixmap="SphereFHD/png/bg2.png" />
+  <panel name="Time" />
+  <widget render="Label" source="Title" text="Filelist" position="315,70" size="490,50" font="Bold;33" halign="center" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+  <widget name="filelist" position="224,195" size="560,480" itemHeight="40" CoolFont="Regular;28" CoolSelectFont="Regular;28" CoolDateFont="Regular;28" CoolMoviePos="35" CoolMovieSize="565" CoolFolderSize="565" CoolTitleColor="0" CoolDatePos="1000" CoolDateWidth="122" CoolDateColor="0" CoolHighlightColor="0" CoolProgressPos="1000" CoolBarPos="610" CoolBarHPos="15" CoolBarSize="80,12" CoolBarSizeSa="80,12" DefaultColor="#FFFFFF" UnwatchedColor="#FFFFFF" WatchingColor="#3486F4" FinishedColor="#46D93A" RecordingColor="#9F1313" BackColorSel="#00ffffff" foregroundColorSelected="#ffffff" backgroundColor="dark" scrollbarMode="showNever" transparent="1" />
+  <ePixmap position="56,791" zPosition="15" size="240,240" pixmap="SphereFHD/png/extra/cover.png" alphatest="blend" />
+  <widget name="coverArt" position="112,816" size="133,200" zPosition="2" alphatest="blend" />
+  <widget source="session.CurrentService" render="Label" position="813,785" size="160,40" font="Regular;30" halign="left" foregroundColor="white" backgroundColor="transpGrey" transparent="1">
+    <convert type="ServicePosition">Position,ShowHours</convert>
+  </widget>
+  <widget source="session.CurrentService" render="Label" position="1033,785" size="160,40" font="Regular;30" foregroundColor="white" backgroundColor="transpGrey" transparent="1">
+    <convert type="ServicePosition">Length,ShowHours</convert>
+  </widget>
+  <widget source="Title" render="Label" text="Playlist" position="1198,78" size="490,50" font="Regular;30" halign="center" valign="top" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+  <widget name="playlist" position="1215,195" size="560,480" font="Regular;28" halign="center" backgroundColor="transpGrey" transparent="1" valign="top" />
+  <!-- this for audio metadata -->
+  <widget name="artisttext" position="813,130" size="380,55" valign="center" halign="center" font="Regular;22" backgroundColor="transpGrey" foregroundColor="unbab329" transparent="1" />
+  <widget name="artist" position="813,185" size="380,55" valign="center" halign="center" font="Regular;22" backgroundColor="transpGrey" foregroundColor="unbab329" transparent="1" />
+  <widget name="titletext" position="813,240" size="380,55" valign="center" halign="center" font="Regular;22" backgroundColor="transpGrey" foregroundColor="unbab329" transparent="1" />
+  <widget name="title" position="813,295" size="380,55" valign="center" halign="center" font="Regular;22" backgroundColor="transpGrey" foregroundColor="unbab329" transparent="1" />
+  <widget name="albumtext" position="813,350" size="380,55" valign="center" halign="center" font="Regular;22" backgroundColor="transpGrey" foregroundColor="unbab329" transparent="1" />
+  <widget name="album" position="813,405" size="380,55" valign="center" halign="center" font="Regular;22" backgroundColor="transpGrey" foregroundColor="unbab329" transparent="1" />
+  <widget name="genretext" position="813,460" size="380,55" valign="center" halign="center" font="Regular;22" backgroundColor="transpGrey" foregroundColor="unbab329" transparent="1" />
+  <widget name="genre" position="813,515" size="380,55" valign="center" halign="center" font="Regular;22" backgroundColor="transpGrey" foregroundColor="unbab329" transparent="1" />
+  <widget name="yeartext" position="813,570" size="380,55" valign="center" halign="center" font="Regular;22" backgroundColor="transpGrey" foregroundColor="unbab329" transparent="1" />
+  <widget name="year" position="813,625" size="380,55" valign="center" halign="center" font="Regular;22" backgroundColor="transpGrey" foregroundColor="unbab329" transparent="1" />
+<widget source="session.CurrentService" render="PositionGauge" position="220,735" size="1555,16" zPosition="3" transparent="1">
+  <convert type="ServicePosition">Gauge</convert>
+</widget>
+  <!-- end of new audio metadata -->
+  <panel name="function_buttons_3" />
+  <widget source="Title" render="Label" position="718,960" size="450,55" font="Bold;34" halign="center" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+</screen>	
 </skin>
