@@ -58,8 +58,6 @@ LCDdisplayConfig
 LogManager
 LogManagerFb
 LogManagerViewLog
-MenuDNA
-MenuSummary
 MovieEpgSetup
 MovieInfoPreview
 MovieInfoSetup
