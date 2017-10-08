@@ -3,7 +3,6 @@ Downloadimage
 DownloadMovieInfo
 DownloadOnLineImage
 DreamExplorerII
-DreamPackageWizard
 DVDPlayer
 DVDSummary
 FastScanScreen
@@ -35,7 +34,6 @@ HistoryZapSelector
 HotkeySetup
 HotkeySetupSelect
 ImageBackup
-ImageWizard
 Info
 InfoBarMoviePlayerSummary
 InfoBarSummary
@@ -53,7 +51,6 @@ IPKGSource
 IPTV
 JobView
 KodiSetupScreen
-LanguageWizard
 LCDdisplayConfig
 LogManager
 LogManagerFb
@@ -126,7 +123,6 @@ SoftwareManagerSetup
 SoftwarePanel
 SortableMenu
 SpinnerSelectionBox
-StartWizard
 SubservicesQuickzap
 SwapOverviewScreen
 SystemMemoryInfo
@@ -144,7 +140,6 @@ UserMainMenuConfig
 uShareSelection
 vEditor
 VideoFinetune
-VideoWizard
 VlcMediaListScreen
 VlcServerConfigScreen
 VlcServerListScreen
