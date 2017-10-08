@@ -7,7 +7,6 @@ DreamPackageWizard
 DVDPlayer
 DVDSummary
 FastScanScreen
-Fav_edit_12
 FileBrowser
 Filebrowser
 FilebrowserConfigScreen
@@ -22,10 +21,8 @@ FritzCallSetup
 FritzDisplayCalls
 FritzDisplayPhonebook
 FritzMenu
-genre_anzeige_12
 GraphicalEPGPIG
 GraphicalInfoBarEPG
-groups_12
 HarddiskSetup
 HddFastRemove
 HddInfo
@@ -61,7 +58,6 @@ LCDdisplayConfig
 LogManager
 LogManagerFb
 LogManagerViewLog
-menu_12
 MenuDNA
 MenuSummary
 MovieEpgSetup
@@ -116,7 +112,6 @@ QuitMainloopScreen
 RadioInfoBar
 RadiologoSetupScreen
 RdsInfoDisplay
-rec_menu_12
 RestartDevice
 Satfinder
 Satloader
@@ -126,7 +121,6 @@ screenshot
 ScriptExecuterkey
 ScriptExecuteruninstall
 ScriptRunner
-setDisplay
 SetupSummary
 SHOUTcastSetup
 SHOUTcastStreamripperRecordingPath
@@ -164,10 +158,6 @@ VPS_check_PDC_Screen
 VPS_Screen_Info
 VPS_Setup
 VuplusAuthenticity
-wbrFS_r_site
-WebradioFS_FB_Setup_12
-WebradioFSScreen_12
-WebradioFSSetup_12
 WlanConfig
 WlanScanAp
 WlanSelection
