@@ -129,6 +129,17 @@
     <ePixmap pixmap="SphereFHD/buttons/ok.png" position="1805,1010" size="50,50" alphatest="blend" />
     <ePixmap pixmap="SphereFHD/buttons/exit.png" position="1865,1020" size="50,50" alphatest="blend" />
   </screen>
+  <screen name="function_buttons_2">
+    <ePixmap pixmap="SphereFHD/buttons/epg.png" position="1685,990" size="50,50" alphatest="blend" />
+    <ePixmap pixmap="SphereFHD/buttons/menu.png" position="1745,1000" size="50,50" alphatest="blend" />
+    <ePixmap pixmap="SphereFHD/buttons/ok.png" position="1805,1010" size="50,50" alphatest="blend" />
+    <ePixmap pixmap="SphereFHD/buttons/exit.png" position="1865,1020" size="50,50" alphatest="blend" />
+  </screen>
+  <screen name="function_buttons_3">
+    <ePixmap pixmap="SphereFHD/buttons/menu.png" position="1745,1000" size="50,50" alphatest="blend" />
+    <ePixmap pixmap="SphereFHD/buttons/steuerkreuz l_r.png" position="1805,1010" size="50,50" alphatest="blend" />
+    <ePixmap pixmap="SphereFHD/buttons/steuerkreuz u_d.png" position="1865,1020" size="50,50" alphatest="blend" />
+  </screen>	
   <!-- Skin Parameter -->
   <parameters>
     <parameter name="PiconManagerList" value="10,2,1205,40" />
