@@ -6285,5 +6285,11 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
   <widget name="key_yellow" position="1042,970" size="330,70" halign="left" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
   <widget name="key_blue" position="1380,970" size="330,70" halign="left" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
   <panel name="function_buttons_4" />
+</screen>
+<screen name="MenuSummary" position="0,0" size="200,20">
+  <widget font="Regular;20" position="0,0" render="Label" size="200,20" source="parent.title" />
+  <widget font="Regular;20" position="0,0" render="Label" size="200,20" source="parent.menu">
+    <convert type="StringListSelection" />
+  </widget>
 </screen>	
 </skin>
