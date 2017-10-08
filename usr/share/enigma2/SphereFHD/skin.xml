@@ -6326,5 +6326,21 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
   <panel name="color_buttons" />
   <widget source="key_red" render="Label" position="382,970" size="370,70" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
   <widget source="key_green" render="Label" position="732,970" size="370,70" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+</screen>
+<screen name="MPHelp" position="center,center" size="1920,1080" title="MPHelp" flags="wfNoBorder">
+  <ePixmap position="0,0" zPosition="-10" size="1920,1080" pixmap="SphereFHD/png/bg3.png" />
+  <panel name="Time" />
+  <ePixmap position="833,10" size="931,600" zPosition="5" pixmap="SphereFHD/png/listboxen/listbox_40.png" alphatest="blend" />
+  <ePixmap position="68,805" size="220,220" zPosition="1" pixmap="SphereFHD/menu/info.png" alphatest="blend" transparent="1" />
+  <eLabel text="Help Menu" position="1100,780" size="400,50" font="Bold;40" halign="center" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+  <widget name="list" position="833,10" size="931,600" scrollbarMode="showNever" scrollbarWidth="0" scrollbarSliderBorderColor="grey" backgroundColor="transpGrey" transparent="1" />
+  <widget name="rc" position="500,100" size="154,500" pixmaps="SphereFHD/icons/rc_vu_1.png,SphereFHD/icons/rc_vu_2.png,SphereFHD/icons/rc_vu_3.png" zPosition="10" alphatest="blend" />
+  <widget name="long_key" position="533,340" size="340,95" font="Regular;24" halign="center" valign="center" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+  <widget name="arrowdown" position="-100,-100" size="37,70" pixmap="skin_default/arrowdown.png" zPosition="11" alphatest="on" />
+  <widget name="arrowdown2" position="-100,-100" size="37,70" pixmap="skin_default/arrowdown.png" zPosition="11" alphatest="on" />
+  <widget name="arrowup" position="-100,-100" size="37,70" pixmap="skin_default/arrowup.png" zPosition="11" alphatest="on" />
+  <widget name="arrowup2" position="-100,-100" size="37,70" pixmap="skin_default/arrowup.png" zPosition="11" alphatest="on" />
+  <panel name="color_buttons" />
+  <panel name="function_buttons" />
 </screen>	
 </skin>
