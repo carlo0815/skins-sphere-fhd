@@ -6458,5 +6458,24 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
   <ePixmap pixmap="SphereFHD/buttons/red.png" position="325,980" size="50,50" alphatest="blend" />
   <widget name="languagetext" position="382,970" size="370,70" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
   <panel name="function_buttons" />
+</screen>
+<screen name="LCDdisplayConfig" position="0,0" size="1920,1080" title="LCD4linux Settings" zPosition="1" backgroundColor="transparent" flags="wfNoBorder">
+  <ePixmap position="0,-3" zPosition="-5" size="1920,1080" pixmap="SphereFHD/png/bg2.png" />
+  <panel name="Time" />
+  <widget source="Title" render="Label" position="385,80" size="360,40" font="Bold;32" halign="center" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+  <widget backgroundColor="transpGrey" source="introduction" render="Label" position="217,142" size="700,40" font="Regular;30" halign="left" valign="center" transparent="1" /> 
+  <widget name="config" position="217,213" size="700,480" zPosition="3" scrollbarMode="showOnDemand" scrollbarWidth="5" scrollbarSliderBorderWidth="1" scrollbarSliderBorderColor="grey" foregroundColorServiceNotAvail="#818181" colorServiceDescriptionSelected="white" colorServiceDescription="grey" colorEventProgressbar="white" serviceItemHeight="26" serviceNumberFont="Regular;24" serviceNameFont="Regular;28" serviceInfoFont="Regular;28" backgroundColor="transpGrey" transparent="1" />
+  <widget backgroundColor="transpGrey" foregroundColor="lightblue" source="Version" render="Label" position="217,710" size="180,30" zPosition="1" font="Regular;26" halign="left" valign="center" transparent="1" />  
+  <widget backgroundColor="transpGrey" foregroundColor="lightblue" source="LibUSB" render="Label" position="477,710" size="180,30" zPosition="1" font="Regular;26" halign="center" valign="center" transparent="1" />
+  <widget backgroundColor="transpGrey" foregroundColor="lightyellow" source="About" render="Label" position="737,710" size="180,30" zPosition="1" font="Regular;26" halign="right" valign="center" transparent="1" />
+  <widget name="LCD1" position="1091,213" zPosition="1" size="700,480" transparent="1" alphatest="on" />  
+  <widget backgroundColor="transpGrey" source="LCD1text" render="Label" position="1291,170" size="300,20" zPosition="1" font="Regular;16" halign="center" valign="center" transparent="1" />  
+  <widget backgroundColor="transpGrey" source="LCD2text" render="Label" position="1291,716" size="300,20" zPosition="1" font="Regular;16" halign="center" valign="center" transparent="1" />  
+  <panel name="color_buttons" />
+  <widget name="key_red" position="382,970" size="370,70" valign="center" halign="left" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+  <widget name="key_green" position="732,970" size="370,70" valign="center" halign="left" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+  <widget name="key_yellow" position="1082,970" size="370,70" valign="center" halign="left" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+  <widget name="key_blue" position="1432,970" size="370,70" valign="center" halign="left" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+  <ePixmap pixmap="SphereFHD/buttons/menu.png" position="1815,1010" size="50,50" alphatest="blend" />
 </screen>	
 </skin>
