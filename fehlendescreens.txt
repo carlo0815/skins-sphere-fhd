@@ -61,7 +61,6 @@ LCDdisplayConfig
 LogManager
 LogManagerFb
 LogManagerViewLog
-MediaPlayer
 menu_12
 MenuDNA
 MenuSummary
