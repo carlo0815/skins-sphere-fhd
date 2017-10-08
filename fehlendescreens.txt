@@ -58,9 +58,6 @@ LCDdisplayConfig
 LogManager
 LogManagerFb
 LogManagerViewLog
-MovieEpgSetup
-MovieInfoPreview
-MovieInfoSetup
 MPHelp
 NameserverSetup
 Net_test
