@@ -51,7 +51,6 @@ IPKGSource
 IPTV
 JobView
 KodiSetupScreen
-LCDdisplayConfig
 LogManager
 LogManagerFb
 LogManagerViewLog
