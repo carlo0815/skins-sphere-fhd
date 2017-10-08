@@ -6291,5 +6291,40 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
   <widget font="Regular;20" position="0,0" render="Label" size="200,20" source="parent.menu">
     <convert type="StringListSelection" />
   </widget>
+</screen>
+  <screen name="MovieEpgSetup" position="center,center" size="1920,1080" title="MovieEpg Setup" flags="wfNoBorder">
+    <ePixmap position="0,0" zPosition="-10" size="1920,1080" pixmap="SphereFHD/png/bg3.png" />
+    <panel name="Time" />
+    <ePixmap position="68,805" size="220,220" zPosition="1" pixmap="SphereFHD/menu/setup.png" alphatest="blend" transparent="1" />
+    <widget source="Title" render="Label" position="1100,780" size="400,50" font="Bold;34" halign="center" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+    <ePixmap position="833,10" size="931,600" zPosition="5" pixmap="SphereFHD/png/listboxen/listbox_40.png" alphatest="blend" />
+    <widget name="config" position="833,10" size="931,600" font="Regular;30" textOffset="5,2" secondfont="Regular;30" itemHeight="40" scrollbarMode="showNever" scrollbarWidth="0" scrollbarSliderBorderColor="grey" backgroundColor="transpGrey" transparent="1" />
+    <widget source="help" render="Label" position="930,640" size="760,40" font="Regular;30" halign="center" valign="center" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+    <panel name="color_buttons" />
+    <widget source="key_red" render="Label" position="382,970" size="370,70" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+    <widget source="key_green" render="Label" position="732,970" size="370,70" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+    <panel name="function_buttons" />
+  </screen>
+  <screen name="MovieInfoPreview" position="center,center" size="1920,1080" title="MovieInfoPreview" flags="wfNoBorder">
+  <ePixmap position="0,0" zPosition="-10" size="1920,1080" pixmap="SphereFHD/png/bg3.png" />
+  <panel name="Time" />
+  <ePixmap position="68,805" size="220,220" zPosition="1" pixmap="SphereFHD/menu/media.png" alphatest="blend" transparent="1" />
+  <widget backgroundColor="background" font="Regular; 42" position="1100,780" render="Label" shadowColor="black" size="400,50" source="Title" transparent="1" />
+  <ePixmap position="833,10" size="931,600" zPosition="5" pixmap="SphereFHD/png/listboxen/listbox_40.png" alphatest="blend" />
+  <widget backgroundColor="transpGrey" font="Regular;30" name="movie_name" position="900,615" size="800,150" transparent="1" valign="center" />
+  <widget backgroundColor="transpGrey" font="Regular;30" name="previewtext" position="833,10" size="931,600" transparent="1" />
+  <panel name="color_buttons" />
+  <panel name="function_buttons" />
+</screen>
+  <screen name="MovieInfoSetup" position="center,center" size="1920,1080" title="MovieInfoSetup" flags="wfNoBorder">
+  <ePixmap position="0,0" zPosition="-10" size="1920,1080" pixmap="SphereFHD/png/bg3.png" />
+  <panel name="Time" />
+  <ePixmap position="68,805" size="220,220" zPosition="1" pixmap="SphereFHD/menu/media.png" alphatest="blend" transparent="1" />
+  <widget backgroundColor="background" font="Regular; 42" position="1100,780" render="Label" shadowColor="black" size="400,50" source="Title" transparent="1" />
+  <ePixmap position="833,10" size="931,600" zPosition="5" pixmap="SphereFHD/png/listboxen/listbox_40.png" alphatest="blend" />
+  <widget backgroundColor="transpGrey" font="Regular;30" name="config" position="833,10" size="931,600" transparent="1" />
+  <panel name="color_buttons" />
+  <widget source="key_red" render="Label" position="382,970" size="370,70" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+  <widget source="key_green" render="Label" position="732,970" size="370,70" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
 </screen>	
 </skin>
