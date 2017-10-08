@@ -58,7 +58,6 @@ LCDdisplayConfig
 LogManager
 LogManagerFb
 LogManagerViewLog
-MPHelp
 NameserverSetup
 Net_test
 NetworkAfp
