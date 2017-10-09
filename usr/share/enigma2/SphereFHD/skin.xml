@@ -6554,5 +6554,98 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
   <widget name="key_yellow" position="1072,970" size="300,70" halign="left" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
   <widget name="key_blue" position="1425,970" size="300,70" halign="left" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
   <panel name="function_buttons" />
+</screen>
+  <screen name="GraphicalEPGPIG" position="center,center" size="1920,1080" title="Electronic Programm Guide" flags="wfNoBorder">
+  <ePixmap position="0,0" zPosition="-10" size="1920,1080" pixmap="SphereFHD/png/bg4.png" />
+  <widget source="global.CurrentTime" render="Label" position="1660,795" size="210,48" font="Regular;38" halign="center" foregroundColor="white" backgroundColor="transpGrey" transparent="1">
+    <convert type="ClockToText">Default</convert>
+  </widget>
+  <widget source="global.CurrentTime" render="Label" position="1660,852" size="210,45" font="Regular;35" halign="center" foregroundColor="white" backgroundColor="transpGrey" transparent="1">
+    <convert type="ClockToText">Format:%A</convert>
+  </widget>
+  <widget source="global.CurrentTime" render="Label" position="1660,905" size="210,41" font="Regular;31" halign="center" foregroundColor="white" backgroundColor="transpGrey" transparent="1">
+    <convert type="ClockToText">Format:%e. %b</convert>
+  </widget>
+  <widget source="Title" render="Label" position="555,447" size="850,43" font="Regular;35" foregroundColor="white" backgroundColor="black" transparent="1" />
+  <widget source="Event" render="Label" position="555,500" size="740,30" font="Regular; 25" foregroundColor="white" backgroundColor="transpGrey" transparent="1">
+    <convert type="EventName">Name</convert>
+  </widget>
+  <widget source="Event" render="Progress" foregroundColor="foreground" backgroundColor="black" position="555,565" size="850,5" zPosition="-5" transparent="1">
+    <convert type="EventTime">Progress</convert>
+  </widget>
+  <widget source="Event" render="Label" position="555,530" size="560,30" font="Regular;22" foregroundColor="white" backgroundColor="black" transparent="1">
+    <convert type="EventName">FullDescription</convert>
+  </widget>
+  <widget source="Event" render="Label" position="1120,530" size="60,30" font="Regular;22" foregroundColor="white" backgroundColor="black" transparent="1">
+    <convert type="EventTime">StartTime</convert>
+    <convert type="ClockToText">%H:%M</convert>
+  </widget>
+  <widget source="Event" render="Label" position="1180,530" size="80,30" font="Regular;22" foregroundColor="white" backgroundColor="black" transparent="1">
+    <convert type="EventTime">EndTime</convert>
+    <convert type="ClockToText">Format:- %H:%M</convert>
+  </widget>
+  <widget source="Event" render="Label" position="1255,500" size="150,30" font="Regular;22" foregroundColor="white" backgroundColor="black" transparent="1" halign="right">
+    <convert type="EventTime">StartTime</convert>
+    <convert type="ClockToText">Format:%A</convert>
+  </widget>
+  <widget source="Event" render="Label" position="1255,530" size="150,30" font="Regular;22" foregroundColor="white" backgroundColor="black" transparent="1" halign="right">
+    <convert type="EventTime">StartTime</convert>
+    <convert type="ClockToText">Format:%d.%m.%Y</convert>
+  </widget>
+  <widget source="Event" render="VRunningText" options="movetype=running,always=0,startpoint=0,direction=top,steptime=90,repeat=2,startdelay=4000,wrap" position="555,580" size="850,155" font="Regular;20" backgroundColor="black" transparent="1">
+    <convert type="EventName">ExtendedDescription</convert>
+  </widget>
+  <widget name="JumpInterval" position="1665,13" size="200,22" zPosition="5" halign="right" font="Regular;18" backgroundColor="background" foregroundColor="label" transparent="1" />
+  <widget name="timeline_text" position="0,13" size="1870,22" selectionDisabled="1" transparent="1" zPosition="5" backgroundColor="background" foregroundColor="white" />
+  <widget name="list" position="65,40" size="1805,360" valign="top" FontSize1="18" FontSize2="20" itemHeight="60" piconWidth="101" ServiceNameForegroundColor="white" ServiceNameBackgroundColor="black" EntryBorderColor="white" EntryBackgroundColor="black" EntryBackgroundColorSelected="label" EntryNowForegroundColorSelected="white" EntryNowBackgroundColor="green" EntryNowBackgroundColorSelected="blue" EntryRecColor="red" EntryPreColor="orange" scrollbarMode="showOnDemand" scrollbarWidth="6" scrollbarSliderBorderWidth="1" scrollbarSliderForegroundColor="blue" scrollbarSliderBorderColor="black" />
+  <widget name="timeline_now" position="0,35" zPosition="2" size="15,370" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/GraphMultiEPG/pic/timeline-now.png" alphatest="on" />
+  <widget name="timeline0" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/GraphMultiEPG/pic/timeline.png" position="0,305" size="1,5" zPosition="0" />
+  <widget name="timeline1" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/GraphMultiEPG/pic/timeline.png" position="0,305" size="1,5" zPosition="0" />
+  <widget name="timeline2" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/GraphMultiEPG/pic/timeline.png" position="0,305" size="1,5" zPosition="0" />
+  <widget name="timeline3" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/GraphMultiEPG/pic/timeline.png" position="0,305" size="1,5" zPosition="0" />
+  <widget name="timeline4" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/GraphMultiEPG/pic/timeline.png" position="0,305" size="1,5" zPosition="0" />
+  <widget name="timeline5" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/GraphMultiEPG/pic/timeline.png" position="0,305" size="1,5" zPosition="0" />
+  <ePixmap position="68,805" size="220,220" zPosition="1" pixmap="SphereFHD/menu/plugin.png" alphatest="blend" transparent="1" />
+  <ePixmap pixmap="SphereFHD/buttons/red.png" position="325,980" size="50,50" alphatest="blend" />
+  <ePixmap pixmap="SphereFHD/buttons/green.png" position="675,980" size="50,50" alphatest="blend" />
+  <ePixmap pixmap="SphereFHD/buttons/yellow.png" position="1025,980" size="50,50" alphatest="blend" />
+  <ePixmap pixmap="SphereFHD/buttons/blue.png" position="1375,980" size="50,50" alphatest="blend" />
+  <widget name="key_red" position="382,970" size="370,70" valign="center" halign="left" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+  <widget name="key_green" position="732,970" size="370,70" valign="center" halign="left" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+  <widget name="key_yellow" position="1082,970" size="370,70" valign="center" halign="left" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+  <widget name="key_blue" position="1432,970" size="370,70" valign="center" halign="left" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+  <panel name="function_buttons" />
+</screen>
+  <screen name="GraphicalInfoBarEPG" position="0,0" size="1920,1080" title="GraphicalInfoBar" backgroundColor="transparent" flags="wfNoBorder">
+  <ePixmap position="0,0" zPosition="-5" size="1920,1080" pixmap="SphereFHD/png/bg_EPGsel.png" />
+  <panel name="Time" />
+  <widget source="Service" render="Picon" position="65,850" size="220,132" transparent="1" alphatest="blend">
+    <convert type="ServiceName">Reference</convert>
+  </widget>
+  <ePixmap position="1115,807" size="170,16" zPosition="1" pixmap="SphereFHD/png/extra/progress_back.png" />
+  <widget source="Event" render="Progress" position="1115,807" size="170,16" pixmap="SphereFHD/png/extra/progress.png" borderWidth="2" borderColor="dark" zPosition="2" transparent="1">
+    <convert type="EventTime">Progress</convert>
+  </widget>
+  <eLabel text="Rest:" position="1115,775" size="120,40" font="Regular; 25" foregroundColor="white" backgroundColor="transpGrey" transparent="1" valign="top" />
+  <widget source="Event" render="Label" font="Regular; 25" position="1175,775" size="110,40" backgroundColor="transpGrey" foregroundColor="white" halign="right" transparent="1" valign="top">
+    <convert type="EventTime">Remaining</convert>
+    <convert type="RemainingToText">InMinutes</convert>
+  </widget>
+  <widget source="Service" render="Label" font="Regular; 33" position="625,775" size="460,40" valign="top" foregroundColor="white" backgroundColor="transpGrey" zPosition="1" halign="left" transparent="1">
+    <convert type="ServiceName">Name</convert>
+  </widget>
+  <widget name="list" itemHeight="40" position="385,835" size="700,163" backgroundColor="transpGrey" foregroundColor="white" zPosition="5" />
+  <ePixmap position="385,835" size="700,161" zPosition="5" pixmap="SphereFHD/png/listboxen/schmal/listbox_40.png" alphatest="blend" />
+  <widget source="Event" render="VRunningText" options="movetype=running,always=0,startpoint=0,direction=top,steptime=90,repeat=2,startdelay=4000,wrap" font="Regular;26" halign="left" position="1115,840" size="470,150" backgroundColor="transpGrey" zPosition="5">
+    <convert type="EventName">ExtendedDescription</convert>
+  </widget>
+  <widget name="key_red" position="382,1010" size="370,50" valign="center" halign="left" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+  <widget name="key_green" position="732,1010" size="370,50" valign="center" halign="left" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+  <widget name="key_yellow" position="1082,1010" size="370,50" valign="center" halign="left" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+  <widget name="key_blue" position="1432,1010" size="370,50" valign="center" halign="left" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+  <ePixmap pixmap="SphereFHD/buttons/red.png" position="325,1010" size="50,50" alphatest="blend" />
+  <ePixmap pixmap="SphereFHD/buttons/green.png" position="675,1010" size="50,50" alphatest="blend" />
+  <ePixmap pixmap="SphereFHD/buttons/yellow.png" position="1025,1010" size="50,50" alphatest="blend" />
+  <ePixmap pixmap="SphereFHD/buttons/blue.png" position="1375,1010" size="50,50" alphatest="blend" />
 </screen>	
 </skin>
