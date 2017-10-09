@@ -49,8 +49,6 @@ IpkgInstaller
 IPKGMenu
 IPKGSource
 IPTV
-JobView
-KodiSetupScreen
 NameserverSetup
 Net_test
 NetworkAfp
