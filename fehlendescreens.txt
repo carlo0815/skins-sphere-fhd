@@ -20,8 +20,6 @@ FritzCallSetup
 FritzDisplayCalls
 FritzDisplayPhonebook
 FritzMenu
-GraphicalEPGPIG
-GraphicalInfoBarEPG
 HarddiskSetup
 HddFastRemove
 HddInfo
