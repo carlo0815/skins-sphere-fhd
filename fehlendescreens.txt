@@ -76,8 +76,6 @@ NfrHD_Config
 NfrHDScreens
 NFRPasswdScreen
 NumberZapExt
-OscamInfoConfigScreen
-OscamInfoMenu
 oscECMInfo
 oscEntitlements
 oscReaderStats
