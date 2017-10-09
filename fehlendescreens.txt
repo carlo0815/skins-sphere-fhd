@@ -51,9 +51,6 @@ IPKGSource
 IPTV
 JobView
 KodiSetupScreen
-LogManager
-LogManagerFb
-LogManagerViewLog
 NameserverSetup
 Net_test
 NetworkAfp
