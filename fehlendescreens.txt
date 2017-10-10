@@ -72,9 +72,6 @@ NfrHD_Config
 NfrHDScreens
 NFRPasswdScreen
 NumberZapExt
-oscECMInfo
-oscEntitlements
-oscReaderStats
 PacketManager
 PluginDeinstall
 PluginDetails
