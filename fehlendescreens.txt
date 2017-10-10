@@ -1,5 +1,3 @@
-doFlashImage
-Downloadimage
 DownloadMovieInfo
 DownloadOnLineImage
 DreamExplorerII
@@ -12,7 +10,6 @@ FilebrowserConfigScreen
 FindMovieList
 FindMovieListCoverSetup
 FindMovieListScanPath
-FlashOnline
 FPGAUpgrade
 FPUpgrade
 FritzAbout
