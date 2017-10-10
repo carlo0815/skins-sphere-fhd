@@ -129,17 +129,15 @@
     <ePixmap pixmap="SphereFHD/buttons/ok.png" position="1805,1010" size="50,50" alphatest="blend" />
     <ePixmap pixmap="SphereFHD/buttons/exit.png" position="1865,1020" size="50,50" alphatest="blend" />
   </screen>
-  <screen name="function_buttons_2">
-    <ePixmap pixmap="SphereFHD/buttons/epg.png" position="1685,990" size="50,50" alphatest="blend" />
-    <ePixmap pixmap="SphereFHD/buttons/menu.png" position="1745,1000" size="50,50" alphatest="blend" />
-    <ePixmap pixmap="SphereFHD/buttons/ok.png" position="1805,1010" size="50,50" alphatest="blend" />
-    <ePixmap pixmap="SphereFHD/buttons/exit.png" position="1865,1020" size="50,50" alphatest="blend" />
-  </screen>
   <screen name="function_buttons_3">
     <ePixmap pixmap="SphereFHD/buttons/menu.png" position="1745,1000" size="50,50" alphatest="blend" />
     <ePixmap pixmap="SphereFHD/buttons/steuerkreuz l_r.png" position="1805,1010" size="50,50" alphatest="blend" />
     <ePixmap pixmap="SphereFHD/buttons/steuerkreuz u_d.png" position="1865,1020" size="50,50" alphatest="blend" />
-  </screen>	
+  </screen>
+  <screen name="function_buttons_4">
+    <ePixmap pixmap="SphereFHD/buttons/steuerkreuz l_r.png" position="1805,1010" size="50,50" alphatest="blend" />
+    <ePixmap pixmap="SphereFHD/buttons/steuerkreuz u_d.png" position="1865,1020" size="50,50" alphatest="blend" />
+  </screen>
   <!-- Skin Parameter -->
   <parameters>
     <parameter name="PiconManagerList" value="10,2,1205,40" />
@@ -5705,6 +5703,27 @@ MultiContentEntryPixmapAlphaTest(pos = (10, 17), size = (100, 40), png = 2),
   <eLabel name="spaceused3" text=" More then 2 HD" position="602,520" size="220,30" font="Regular; 26" halign="left" backgroundColor="black" transparent="1" zPosition="5" />
   <widget name="spaceused" position="100,875" size="1720,40" foregroundColor="blue" backgroundColor="Text1" zPosition="3" />
 </screen>
+  <screen name="doFlashImage" position="0,0" size="1920,1080" title="doFlashImage" flags="wfNoBorder" backgroundColor="transparent">
+    <ePixmap position="0,0" zPosition="-10" size="1920,1080" pixmap="SphereFHD/png/bg3.png" />
+    <panel name="Time" />
+    <eLabel backgroundColor="background" font="Regular; 42" position="892,762" size="850,50" text="Flash On the fly (select a image)" transparent="1" foregroundColor="TextInfo" halign="center" />
+    <widget backgroundColor="Background" selectionPixmap="SphereFHD/selpic/1240x75.png" enableWrapAround="1" itemHeight="30" name="imageList" position="954,120" scrollbarMode="showOnDemand" size="700,600" font="Regular; 26" halign="left" valign="top" transparent="1" />
+    <panel name="color_buttons" />
+    <widget source="key_red" render="Label" position="392,970" size="300,70" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+    <widget source="key_green" render="Label" position="757,970" size="300,70" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+    <widget source="key_yellow" render="Label" position="1125,970" size="300,70" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+    <widget source="key_blue" render="Label" position="1487,970" size="300,70" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+    <panel name="function_buttons_4" />
+    <panel name="function_buttons" />
+  </screen>
+  <screen name="Downloadimage" position="center,center" size="1920,1080" title="Downloadimage" flags="wfNoBorder" backgroundColor="transparent">
+    <ePixmap position="0,0" zPosition="-10" size="1920,1080" pixmap="SphereFHD/png/bg3.png" />
+    <panel name="Time" />
+    <widget font="Regular; 42" position="892,762" render="Label" size="850,50" source="Title" transparent="1" valign="top" zPosition="1" halign="center" backgroundColor="background" foregroundColor="TextInfo" />
+    <widget name="list" enableWrapAround="1" position="797,7" itemHeight="35" font="Regular;28" scrollbarMode="showOnDemand" size="1000,500" selectionPixmap="SphereFHD/selpic/1280x140.png" transparent="1" />
+    <widget name="info" enableWrapAround="1" position="797,511" itemHeight="35" font="Regular;28" scrollbarMode="showOnDemand" size="1000,180" selectionPixmap="SphereFHD/selpic/1280x140.png" transparent="1" />
+    <panel name="function_buttons_4" />
+  </screen
   <screen name="E2log" position="center,center" size="1920,1080" title="E2log erstellen" backgroundColor="transparent" flags="wfNoBorder">
     <ePixmap position="0,0" zPosition="-10" size="1920,1080" pixmap="SphereFHD/png/bg3.png" />
     <panel name="Time" />
@@ -5804,6 +5823,19 @@ MultiContentEntryPixmapAlphaTest(pos = (10, 17), size = (100, 40), png = 2),
   <widget name="key_yellow" position="1082,970" size="370,70" valign="center" halign="left" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
   <widget name="key_blue" position="1432,970" size="370,70" valign="center" halign="left" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
   <panel name="function_buttons" />
+</screen>
+  <screen name="FlashOnline" position="0,0" size="1920,1080" title="Flash On the fly" flags="wfNoBorder" backgroundColor="transparent">
+  <ePixmap position="center,-4" zPosition="-10" size="1920,1080" pixmap="SphereFHD/png/bg3.png" />
+  <ePixmap position="69,800" zPosition="1" size="260,260" pixmap="SphereFHD/menu/info.png" alphatest="blend" transparent="1" />
+  <eLabel backgroundColor="background" font="Regular; 42" position="892,803" size="850,50" text="Flash On The Fly" transparent="1" foregroundColor="TextInfo" halign="center" />
+  <widget backgroundColor="Background" selectionPixmap="SphereFHD/selpic/1240x75.png" enableWrapAround="1" itemHeight="30" name="info-online" position="933,5" scrollbarMode="showOnDemand" size="700,400" font="Regular;26" halign="left" valign="top" transparent="1" />
+  <widget backgroundColor="Background" selectionPixmap="SphereFHD/selpic/1240x75.png" enableWrapAround="1" itemHeight="30" name="info-local" position="933,407" size="700,400" font="Regular;26" halign="left" valign="top" transparent="1" />
+  <panel name="Time" />
+  <panel name="color_buttons" />
+  <widget name="key_red" position="382,970" size="370,70" valign="center" halign="left" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+  <widget name="key_green" position="732,970" size="370,70" valign="center" halign="left" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+  <widget name="key_yellow" position="1082,970" size="370,70" valign="center" halign="left" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+  <widget name="key_blue" position="1432,970" size="370,70" valign="center" halign="left" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
 </screen>
   <screen name="MoveVideos_int" position="center,center" size="1920,1080" title="Move Bootvideos back to Flash" flags="wfNoBorder">
   <ePixmap position="0,0" zPosition="-10" size="1920,1080" pixmap="SphereFHD/png/bg3.png" />
