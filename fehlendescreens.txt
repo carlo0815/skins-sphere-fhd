@@ -16,13 +16,6 @@ FritzCallSetup
 FritzDisplayCalls
 FritzDisplayPhonebook
 FritzMenu
-HarddiskSetup
-HddFastRemove
-HddInfo
-HddMount
-HddPartitions
-HddSetup
-HddSetup
 HdmiCECSetupScreen
 HistoryZapSelector
 HotkeySetup
