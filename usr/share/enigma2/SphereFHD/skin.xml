@@ -7053,4 +7053,61 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
    <widget name="key_yellow" position="1072,970" size="300,70" halign="left" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
    <widget name="key_blue" position="1425,970" size="300,70" halign="left" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
 </screen>
+  <screen name="HdmiCECSetupScreen" position="center,center" size="1920,1080" title="HDMI CEC setup" backgroundColor="transparent" flags="wfNoBorder">
+    <ePixmap position="0,0" zPosition="-10" size="1920,1080" pixmap="SphereFHD/png/bg3.png" />
+    <panel name="Time" />
+    <ePixmap position="68,805" size="220,220" zPosition="1" pixmap="SphereFHD/menu/setup.png" alphatest="blend" transparent="1" />
+    <widget source="Title" render="Label" position="1100,780" size="400,50" font="Bold;40" halign="center" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+    <ePixmap position="833,40" size="931,520" zPosition="5" pixmap="SphereFHD/png/listboxen/listbox_40.png" alphatest="blend" />
+    <widget name="config" position="833,40" size="931,520" itemHeight="35" scrollbarMode="showOnDemand" transparent="1" />
+    <widget source="current_address" render="Label" position="900,595" size="800,35" zPosition="10" font="Regular;26" halign="left" valign="center" transparent="1" foregroundColor="white" />
+    <widget source="fixed_address" render="Label" position="900,660" size="800,35" zPosition="10" font="Regular;26" halign="left" valign="center" transparent="1" foregroundColor="white" />
+    <panel name="color_buttons" />
+    <widget name="key_red2" position="372,970" size="300,70" halign="left" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+    <widget name="key_green2" position="722,970" size="300,70" halign="left" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+    <widget name="key_yellow" position="1072,970" size="300,70" halign="left" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+    <widget name="key_blue" position="1425,970" size="300,70" halign="left" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+    <panel name="function_buttons" />
+  </screen>
+  <screen name="HistoryZapSelector" position="center,center" size="1920,1080" title="History Zap" backgroundColor="transparent" flags="wfNoBorder">
+    <ePixmap position="0,0" zPosition="-10" size="1920,1080" pixmap="SphereFHD/png/bg3.png" />
+    <panel name="Time" />
+    <ePixmap position="68,805" size="220,220" zPosition="1" pixmap="SphereFHD/menu/setup.png" alphatest="blend" transparent="1" />
+    <widget source="Title" render="Label" position="1100,780" size="400,50" font="Bold;40" halign="center" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+    <ePixmap position="833,80" size="931,520" zPosition="5" pixmap="SphereFHD/png/listboxen/listbox_40.png" alphatest="blend" />
+    <widget source="menu" render="Listbox" position="833,80" size="931,520" itemHeight="40" scrollbarMode="showNever" transparent="1">
+      <convert type="TemplatedMultiContent">{"template": [
+						MultiContentEntryText(pos = (120, 5), size = (300, 30), font = 1, flags = RT_HALIGN_LEFT | RT_VALIGN_TOP, text = 2, color = 0x00ffffff, color_sel = 0x00ffffff),
+                                                MultiContentEntryText(pos = (120, 38), size = (300, 28), font = 3, flags = RT_HALIGN_LEFT, text = 5, color = 0x00bbbbbb, color_sel = 0x00ffffff),
+                                                MultiContentEntryText(pos = (105, 17), size = (10, 20), font = 2, flags = RT_HALIGN_CENTER | RT_VALIGN_CENTER, text = 1),
+						MultiContentEntryText(pos = (430, 1), size = (800, 30), font = 2, flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 3, color = 0x00ffffff, color_sel = 0x00ffffff),
+						MultiContentEntryText(pos = (430, 29), size = (800, 46), font = 3, flags = RT_HALIGN_LEFT, text = 4, color = 0x00bbbbbb, color_sel = 0x00ffffff),
+						MultiContentEntryPixmapAlphaBlend(pos=(2, 7), size=(100, 60), png=6, flags = BT_SCALE)
+					],
+				 "fonts": [gFont("Regular", 30), gFont("Regular", 26), gFont("Regular", 23), gFont("Regular", 20)],
+				 "itemHeight": 75
+				}</convert>
+    </widget>
+    <panel name="function_buttons" />
+  </screen>
+  <screen name="HotkeySetup" position="center,center" size="1920,1080" title="Multi-Key-Panel" backgroundColor="transparent" flags="wfNoBorder">
+    <ePixmap position="0,0" zPosition="-10" size="1920,1080" pixmap="SphereFHD/png/bg3.png" />
+    <panel name="Time" />
+    <ePixmap position="68,805" size="220,220" zPosition="1" pixmap="SphereFHD/menu/setup.png" alphatest="blend" transparent="1" />
+    <widget source="Title" render="Label" position="1100,780" size="400,50" font="Bold;40" halign="center" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+    <ePixmap position="833,40" size="931,520" zPosition="5" pixmap="SphereFHD/png/listboxen/listbox_40.png" alphatest="blend" />
+    <widget name="list" position="833,40" size="931,520" itemHeight="40" scrollbarMode="showNever" transparent="1" />
+    <widget name="choosen" position="846,588" zPosition="1" size="900,60" itemHeight="60" font="Regular;28" halign="center" scrollbarMode="showOnDemand" transparent="1" foregroundColor="white" backgroundColor="transpGrey" />
+    <panel name="function_buttons" />
+  </screen>
+  <screen name="HotkeySetupSelect" position="center,center" size="1920,1080" title="Multi-Key-Panel" backgroundColor="transparent" flags="wfNoBorder">
+  <ePixmap position="0,0" zPosition="-10" size="1920,1080" pixmap="SphereFHD/png/bg3.png" />
+  <panel name="Time" />
+  <ePixmap position="68,805" size="220,220" zPosition="1" pixmap="SphereFHD/menu/setup.png" alphatest="blend" transparent="1" />
+  <widget source="Title" render="Label" position="1100,780" size="400,50" font="Bold;40" halign="center" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+  <ePixmap position="833,40" size="931,520" zPosition="5" pixmap="SphereFHD/png/listboxen/listbox_40.png" alphatest="blend" />
+  <widget name="list" position="833,40" size="931,520" itemHeight="40" scrollbarMode="showNever" transparent="1" />
+  <widget name="choosen" position="846,588" zPosition="1" size="900,60" itemHeight="60" font="Regular;28" halign="center" scrollbarMode="showOnDemand" transparent="1" foregroundColor="white" backgroundColor="transpGrey" />
+  <panel name="function_buttons" />
+</screen>	
 </skin>
