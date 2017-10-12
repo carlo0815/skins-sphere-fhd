@@ -7032,9 +7032,11 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
    <panel name="Time" />
    <widget font="Regular; 42" position="892,762" render="Label" size="850,50" source="Title" transparent="1" valign="top" zPosition="1" halign="center" backgroundColor="background" foregroundColor="TextInfo" />
    <widget enableWrapAround="1" position="862,7" name="menulist" itemHeight="35" font="Regular;28" scrollbarMode="showOnDemand" size="900,764" selectionPixmap="SphereFHD/selpic/1240x75.png" transparent="1" />
-   <widget source="introduction" render="Label" font="Regular;26" halign="center" valign="center" position="544,978" size="800,60" transparent="1" alphatest="blend" zPosition="2" />
-   <panel name="color_buttons" />
-   <widget name="key_red" position="372,970" size="300,70" halign="left" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+   <widget source="introduction" render="Label" font="Regular;26" halign="center" valign="center" position="901,635" size="800,60" transparent="1" alphatest="blend" zPosition="2" />
+   <ePixmap pixmap="SphereFHD/buttons/ok.png" position="1739,999" size="50,50" alphatest="blend" />
+   <ePixmap pixmap="SphereFHD/buttons/exit.png" position="1663,1000" size="50,50" alphatest="blend" />
+   <ePixmap pixmap="SphereFHD/buttons/steuerkreuz l_r.png" position="1805,1010" size="50,50" alphatest="blend" />
+   <ePixmap pixmap="SphereFHD/buttons/steuerkreuz u_d.png" position="1866,1021" size="50,50" alphatest="blend" />
 </screen>
 <screen name="NetworkNfs" position="center,center" size="1920,1080" title="NetworkNfs" flags="wfNoBorder">
    <ePixmap position="0,0" zPosition="-10" size="1920,1080" pixmap="SphereFHD/png/bg3.png" />
