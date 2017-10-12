@@ -38,14 +38,6 @@ IPKGSource
 IPTV
 NameserverSetup
 Net_test
-NetworkAfp
-NetworkFtp
-NetworkInadyn
-NetworkInadynLog
-NetworkInadynSetup
-NetworkMiniDLNA
-NetworkMountsMenu
-NetworkNfs
 NetworkOpenvpn
 NetworkSABnzbd
 NetworkSamba
