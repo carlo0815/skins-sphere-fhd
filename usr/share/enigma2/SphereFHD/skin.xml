@@ -5749,6 +5749,21 @@ MultiContentEntryPixmapAlphaTest(pos = (10, 17), size = (100, 40), png = 2),
     <widget source="key_green" render="Label" position="757,970" size="300,70" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
     <panel name="function_buttons_4" />
   </screen>
+  <screen name="DownloadMovieInfo" position="center,center" size="1920,1080" title="DownloadMovieInfo" flags="wfNoBorder">
+    <ePixmap position="3,-2" zPosition="-10" size="1920,1080" pixmap="SphereFHD/png/bg3.png" />
+    <panel name="Time" />
+    <widget font="Regular; 42" position="892,762" render="Label" size="850,50" source="Title" transparent="1" valign="top" zPosition="1" halign="center" backgroundColor="background" foregroundColor="TextInfo" />
+    <widget backgroundColor="background" foregroundColor="blue" font="Regular;36" name="movie_name" position="816,20" size="950,45" transparent="1" />
+    <widget backgroundColor="background" enableWrapAround="1" name="movielist" position="868,68" itemHeight="40" font="Regular;26" selectionPixmap="SkalliHD-NFR-FullHD/selpic/1240x75.png" scrollbarMode="showOnDemand" size="860,500" transparent="1" />
+    <widget backgroundColor="background" font="Regular;28" foregroundColor="yellow" halign="center" name="resulttext" position="870,565" size="860,150" transparent="1" />
+    <widget backgroundColor="background" font="Regular;25" halign="left" name="save" position="383,1022" size="350,36" transparent="1" />
+    <widget backgroundColor="background" font="Regular;25" halign="left" name="setup" position="836,1022" size="350,36" transparent="1" />
+    <widget backgroundColor="background" font="Regular;25" halign="left" name="movieinfo" position="1300,1022" size="330,36" transparent="1" />
+    <ePixmap pixmap="SphereFHD/buttons/epg.png" position="1222,1016" size="50,50" alphatest="blend" />
+    <ePixmap pixmap="SphereFHD/buttons/menu.png" position="756,1016" size="50,50" alphatest="blend" />
+    <ePixmap pixmap="SphereFHD/buttons/ok.png" position="306,1016" size="50,50" alphatest="blend" />
+    <ePixmap pixmap="SphereFHD/buttons/exit.png" position="1685,1022" size="50,50" alphatest="blend" />
+</screen>
   <screen name="E2log" position="center,center" size="1920,1080" title="E2log erstellen" backgroundColor="transparent" flags="wfNoBorder">
     <ePixmap position="0,0" zPosition="-10" size="1920,1080" pixmap="SphereFHD/png/bg3.png" />
     <panel name="Time" />
