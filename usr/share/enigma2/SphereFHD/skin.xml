@@ -138,6 +138,21 @@
     <ePixmap pixmap="SphereFHD/buttons/steuerkreuz l_r.png" position="1805,1010" size="50,50" alphatest="blend" />
     <ePixmap pixmap="SphereFHD/buttons/steuerkreuz u_d.png" position="1865,1020" size="50,50" alphatest="blend" />
   </screen>
+  <screen name="buttons_rgyb">
+    <widget name="key_red" position="372,970" size="300,70" halign="left" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+    <widget name="key_green" position="722,970" size="300,70" halign="left" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+    <widget name="key_yellow" position="1072,970" size="300,70" halign="left" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+    <widget name="key_blue" position="1425,970" size="300,70" halign="left" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+  </screen>
+  <screen name="buttons_rgy">
+    <widget name="key_red" position="372,970" size="300,70" halign="left" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+    <widget name="key_green" position="722,970" size="300,70" halign="left" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+    <widget name="key_yellow" position="1072,970" size="300,70" halign="left" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+  </screen>
+  <screen name="buttons_rg">
+    <widget name="key_red" position="372,970" size="300,70" halign="left" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+    <widget name="key_green" position="722,970" size="300,70" halign="left" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+  </screen>
   <!-- Skin Parameter -->
   <parameters>
     <parameter name="PiconManagerList" value="10,2,1205,40" />
@@ -7052,6 +7067,117 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
    <widget name="key_green" position="722,970" size="300,70" halign="left" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
    <widget name="key_yellow" position="1072,970" size="300,70" halign="left" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
    <widget name="key_blue" position="1425,970" size="300,70" halign="left" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+</screen>
+<screen name="NetworkOpenvpn" position="center,center" size="1920,1080" title="NetworkOpenvpn" flags="wfNoBorder">
+   <ePixmap position="center,-2" zPosition="-10" size="1920,1080" pixmap="SphereFHD/png/bg3.png" />
+   <panel name="Time" />
+   <widget font="Regular; 42" position="892,762" render="Label" size="850,50" source="Title" transparent="1" valign="top" zPosition="1" halign="center" backgroundColor="background" foregroundColor="TextInfo" />
+   <widget position="1002,505" name="lab1" itemHeight="40" font="Regular;32" backgroundColor="background" foregroundColor="TextInfo" size="300,100" valign="center" halign="center" transparent="1" />
+   <widget name="lab2" position="1000,666" size="300,50" zPosition="10" font="Regular; 32" backgroundColor="background" foregroundColor="TextInfo" halign="center" valign="center" transparent="1" />
+   <widget name="labrun" position="1400,666" size="300,40" zPosition="1" font="Regular;28" foregroundColor="TextInfo" valign="center" halign="center" backgroundColor="green" />
+   <widget name="labstop" position="1400,666" size="300,40" zPosition="1" font="Regular;28" foregroundColor="TextInfo" valign="center" halign="center" backgroundColor="red" />
+   <widget name="labactive" position="1400,504" size="300,100" font="Regular;32" backgroundColor="background" foregroundColor="TextInfo" valign="center" transparent="1" />
+   <panel name="color_buttons" />
+   <panel name="buttons_rgyb" />
+</screen>
+<screen name="NetworkSABnzbd" position="center,center" size="1920,1080" title="NetworkSABnzbd" flags="wfNoBorder">
+   <ePixmap position="center,-2" zPosition="-10" size="1920,1080" pixmap="SphereFHD/png/bg3.png" />
+   <panel name="Time" />
+   <widget font="Regular; 42" position="892,762" render="Label" size="850,50" source="Title" transparent="1" valign="top" zPosition="1" halign="center" backgroundColor="background" foregroundColor="TextInfo" />
+   <widget name="lab1" position="1002,505" itemHeight="40" font="Regular;32" backgroundColor="background" foregroundColor="TextInfo" size="300,100" valign="center" halign="center" transparent="1" />
+   <widget name="lab2" position="1000,666" size="300,50" zPosition="10" font="Regular; 32" backgroundColor="background" foregroundColor="TextInfo" halign="center" valign="center" transparent="1" />
+   <widget name="labrun" position="1400,666" size="300,40" zPosition="1" font="Regular;28" foregroundColor="TextInfo" valign="center" halign="center" backgroundColor="green" />
+   <widget name="labstop" position="1400,666" size="300,40" zPosition="1" font="Regular;28" foregroundColor="TextInfo" valign="center" halign="center" backgroundColor="red" />
+   <widget name="labactive" position="1400,504" size="300,100" font="Regular;32" backgroundColor="background" foregroundColor="TextInfo" valign="center" transparent="1" />
+   <panel name="color_buttons" />
+   <panel name="buttons_rgy" />
+</screen>
+<screen name="NetworkSamba" position="center,center" size="1920,1080" title="NetworkSamba" flags="wfNoBorder">
+   <ePixmap position="center,-2" zPosition="-10" size="1920,1080" pixmap="SphereFHD/png/bg3.png" />
+   <panel name="Time" />
+   <widget font="Regular; 42" position="892,762" render="Label" size="850,50" source="Title" transparent="1" valign="top" zPosition="1" halign="center" backgroundColor="background" foregroundColor="TextInfo" />
+   <widget name="lab1" position="1002,505" itemHeight="40" font="Regular;32" backgroundColor="background" foregroundColor="TextInfo" size="300,100" valign="center" halign="center" transparent="1" />
+   <widget name="lab2" position="1000,666" size="300,50" zPosition="10" font="Regular; 32" backgroundColor="background" foregroundColor="TextInfo" halign="center" valign="center" transparent="1" />
+   <widget name="labrun" position="1400,666" size="300,40" zPosition="1" font="Regular;28" foregroundColor="TextInfo" valign="center" halign="center" backgroundColor="green" />
+   <widget name="labstop" position="1400,666" size="300,40" zPosition="1" font="Regular;28" foregroundColor="TextInfo" valign="center" halign="center" backgroundColor="red" />
+   <widget name="labactive" position="1400,500" size="300,100" font="Regular;32" backgroundColor="background" foregroundColor="TextInfo" valign="center" transparent="1" />
+   <panel name="color_buttons" />
+   <panel name="buttons_rgyb" />
+ </screen>
+ <screen name="NetworkServiceSetup" position="center,center" size="1920,1080" title="NetworkServiceSetup" flags="wfNoBorder">
+   <ePixmap position="center,-2" zPosition="-10" size="1920,1080" pixmap="SphereFHD/png/bg3.png" />
+   <panel name="Time" />
+   <widget font="Regular; 42" position="892,762" render="Label" size="850,50" source="Title" transparent="1" valign="top" zPosition="1" halign="center" backgroundColor="background" foregroundColor="TextInfo" />
+   <widget name="lab1" position="1002,505" itemHeight="40" font="Regular;32" backgroundColor="background" foregroundColor="TextInfo" size="300,100" valign="center" halign="center" transparent="1" />
+   <widget name="lab2" position="1000,666" size="300,50" zPosition="10" font="Regular; 32" backgroundColor="background" foregroundColor="TextInfo" halign="center" valign="center" transparent="1" />
+   <widget name="labrun" position="1400,666" size="300,40" zPosition="1" font="Regular;28" foregroundColor="TextInfo" valign="center" halign="center" backgroundColor="green" />
+   <widget name="labstop" position="1400,666" size="300,40" zPosition="1" font="Regular;28" foregroundColor="TextInfo" valign="center" halign="center" backgroundColor="red" />
+   <widget name="labactive" position="1400,500" size="300,100" font="Regular;32" backgroundColor="background" foregroundColor="TextInfo" valign="center" transparent="1" />
+   <panel name="color_buttons" />
+   <panel name="buttons_rgyb" />
+</screen>
+<screen name="NetworkTelnet" position="center,center" size="1920,1080" title="NetworkTelnet" flags="wfNoBorder">
+   <ePixmap position="center,-2" zPosition="-10" size="1920,1080" pixmap="SphereFHD/png/bg3.png" />
+   <panel name="Time" />
+   <widget font="Regular; 42" position="892,762" render="Label" size="850,50" source="Title" transparent="1" valign="top" zPosition="1" halign="center" backgroundColor="background" foregroundColor="TextInfo" />
+   <widget name="lab1" position="1002,505" itemHeight="40" font="Regular;32" backgroundColor="background" foregroundColor="TextInfo" size="300,100" valign="center" halign="center" transparent="1" />
+   <widget name="lab2" position="1000,666" size="300,50" zPosition="10" font="Regular; 32" backgroundColor="background" foregroundColor="TextInfo" halign="center" valign="center" transparent="1" />
+   <widget name="labrun" position="1400,666" size="300,40" zPosition="1" font="Regular;28" foregroundColor="TextInfo" valign="center" halign="center" backgroundColor="green" />
+   <widget name="labstop" position="1400,666" size="300,40" zPosition="1" font="Regular;28" foregroundColor="TextInfo" valign="center" halign="center" backgroundColor="red" />
+   <widget name="labactive" position="1400,500" size="300,100" font="Regular;32" backgroundColor="background" foregroundColor="TextInfo" valign="center" transparent="1" />
+   <panel name="color_buttons" />
+   <panel name="buttons_rgy" />
+</screen>
+<screen name="NetworkuShare" position="center,center" size="1920,1080" title="NetworkuShare" flags="wfNoBorder">
+   <ePixmap position="2,-13" zPosition="-10" size="1920,1080" pixmap="SphereFHD/png/bg3.png" />
+   <panel name="Time" />
+   <widget font="Regular; 42" position="884,797" render="Label" size="850,50" source="Title" transparent="1" valign="top" zPosition="1" halign="center" backgroundColor="background" foregroundColor="TextInfo" />
+   <widget name="labrun" position="1400,705" size="200,40" zPosition="10" font="Regular;28" backgroundColor="green" foregroundColor="TextInfo" halign="center" valign="center" />
+   <widget name="labstop" position="1400,705" size="200,40" zPosition="10" font="Regular;28" backgroundColor="red" foregroundColor="TextInfo" halign="center" valign="center" />
+   <widget name="labactive" position="1400,745" size="200,40" zPosition="1" font="Regular;28" foregroundColor="TextInfo" valign="center" halign="center" backgroundColor="green" />
+   <widget name="labdisabled" position="1400,745" size="200,40" zPosition="1" font="Regular;28" foregroundColor="TextInfo" valign="center" halign="center" backgroundColor="red" />
+   <widget position="1105,745" name="autostart" font="Regular;28" backgroundColor="background" foregroundColor="TextInfo" size="200,40" valign="center" transparent="1" />
+   <widget position="1105,705" name="status" font="Regular;28" backgroundColor="background" foregroundColor="TextInfo" size="200,40" valign="center" transparent="1" />
+   <widget name="username" position="1020,120" size="200,40" font="Regular;28" backgroundColor="background" foregroundColor="TextInfo" valign="center" transparent="1" />
+   <panel name="color_buttons" />
+   <panel name="buttons_rgyb" />
+   <ePixmap pixmap="SphereFHD/buttons/menu.png" position="1745,1000" size="50,50" alphatest="blend" />
+   <widget name="labuser" position="1298,120" size="300,40" font="Regular;28" valign="center" foregroundColor="TextInfo" backgroundColor="lightblue" />
+   <widget name="iface" position="825,200" size="200,40" font="Regular;28" backgroundColor="background" foregroundColor="TextInfo" valign="center" transparent="1" />
+   <widget name="port" position="825,250" size="200,40" font="Regular;28" backgroundColor="background" foregroundColor="TextInfo" valign="center" transparent="1" />
+   <widget name="telnetport" position="825,300" size="200,40" font="Regular;28" backgroundColor="background" foregroundColor="TextInfo" valign="center" transparent="1" />
+   <widget name="webactive" position="1230,570" zPosition="2" backgrouneColor="background" pixmap="skin_default/icons/lock_on.png" size="32,32" alphatest="on" />
+   <widget name="webinactive" position="1230,570" zPosition="2" backgrouneColor="background" pixmap="skin_default/icons/lock_off.png" size="32,32" alphatest="on" />
+   <widget name="labiface" position="1200,200" size="600,40" font="Regular;28" valign="center" foregroundColor="TextInfo" backgroundColor="lightblue" />
+   <widget name="labport" position="1200,250" size="600,40" font="Regular;28" valign="center" foregroundColor="TextInfo" backgroundColor="lightblue" />
+   <widget name="labtelnetport" position="1200,300" size="600,40" font="Regular;28" valign="center" foregroundColor="TextInfo" backgroundColor="lightblue" />
+   <widget name="labsharedir" position="1200,350" size="600,150" font="Regular;28" valign="top" foregroundColor="TextInfo" backgroundColor="lightblue" text="Verzeichnis" />
+   <widget name="sharedir" position="825,350" size="200,80" font="Regular;28" backgroundColor="background" foregroundColor="TextInfo" valign="center" transparent="1" />
+   <widget name="web" position="900,565" size="300,40" font="Regular;28" backgroundColor="background" foregroundColor="TextInfo" valign="center" transparent="1" />
+   <widget name="telnet" position="900,610" size="300,40" font="Regular;28" backgroundColor="background" foregroundColor="TextInfo" valign="center" transparent="1" />
+   <widget name="telnetactive" position="1230,620" zPosition="2" backgrouneColor="background" pixmap="skin_default/icons/lock_on.png" size="32,32" alphatest="on" />
+   <widget name="telnetinactive" position="1230,620" zPosition="2" backgrouneColor="background" pixmap="skin_default/icons/lock_off.png" size="32,32" alphatest="on" />
+   <widget name="xbox" position="1305,565" size="400,40" font="Regular;28" backgroundColor="background" foregroundColor="TextInfo" valign="center" transparent="1" />
+   <widget name="xboxactive" position="1720,570" zPosition="2" backgrouneColor="background" pixmap="skin_default/icons/lock_on.png" size="32,32" alphatest="on" />
+   <widget name="xboxinactive" position="1720,570" zPosition="2" backgrouneColor="background" pixmap="skin_default/icons/lock_off.png" size="32,32" alphatest="on" />
+   <widget name="dlna" position="1305,610" size="400,40" font="Regular;28" backgroundColor="background" foregroundColor="TextInfo" valign="center" transparent="1" />
+   <widget name="dlnaactive" position="1720,620" zPosition="2" backgrouneColor="background" pixmap="skin_default/icons/lock_on.png" size="32,32" alphatest="on" />
+   <widget name="dlnainactive" position="1720,620" zPosition="2" backgrouneColor="background" pixmap="skin_default/icons/lock_off.png" size="32,32" alphatest="on" />  
+</screen>
+<screen name="NetworkuShareSetup" position="center,center" size="1920,1080" title="NetworkuShareSetup" flags="wfNoBorder">
+   <ePixmap position="center,-2" zPosition="-10" size="1920,1080" pixmap="SphereFHD/png/bg3.png" />
+   <panel name="Time" />
+   <widget font="Regular; 42" position="892,762" render="Label" size="850,50" source="Title" transparent="1" valign="top" zPosition="1" halign="center" backgroundColor="background" foregroundColor="TextInfo" />
+   <widget position="860,7" name="config" itemHeight="35" font="Regular;28" backgroundColor="background" scrollbarMode="showOnDemand" selectionPixmap="SphereFHD/selpic/1240x75.png" foregroundColor="TextInfo" size="900,764" valign="center" halign="center" transparent="1" />
+   <widget name="HelpWindow" pixmap="vkey_icon.png" position="927,525" size="300,200" font="Regular;32" backgroundColor="background" foregroundColor="TextInfo" valign="center" transparent="1" />
+   <panel name="color_buttons" />
+   <panel name="buttons_rg" />
+</screen>
+<screen name="NetworkVpnLog" position="center,center" size="1920,1080" title="NetworkVpnLog" flags="wfNoBorder">
+   <ePixmap position="center,-2" zPosition="-10" size="1920,1080" pixmap="SphereFHD/png/bg3.png" />
+   <panel name="Time" />
+   <widget font="Regular; 42" position="892,762" render="Label" size="850,50" source="Title" transparent="1" valign="top" zPosition="1" halign="center" backgroundColor="background" foregroundColor="TextInfo" />
+   <widget position="860,7" name="infotext" font="Regular;26" scrollbarMode="showOnDemand" backgroundColor="background" size="900,764" transparent="1" />
 </screen>
   <screen name="HdmiCECSetupScreen" position="center,center" size="1920,1080" title="HDMI CEC setup" backgroundColor="transparent" flags="wfNoBorder">
     <ePixmap position="0,0" zPosition="-10" size="1920,1080" pixmap="SphereFHD/png/bg3.png" />
