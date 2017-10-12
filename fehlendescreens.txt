@@ -16,10 +16,6 @@ FritzCallSetup
 FritzDisplayCalls
 FritzDisplayPhonebook
 FritzMenu
-HdmiCECSetupScreen
-HistoryZapSelector
-HotkeySetup
-HotkeySetupSelect
 ImageBackup
 Info
 InfoBarMoviePlayerSummary
