@@ -34,14 +34,6 @@ IPKGSource
 IPTV
 NameserverSetup
 Net_test
-NetworkOpenvpn
-NetworkSABnzbd
-NetworkSamba
-NetworkServiceSetup
-NetworkTelnet
-NetworkuShare
-NetworkuShareSetup
-NetworkVpnLog
 new ePixmap
 NFR4XBootImageChoose
 NFR4XBootImageInstall
