@@ -5763,7 +5763,66 @@ MultiContentEntryPixmapAlphaTest(pos = (10, 17), size = (100, 40), png = 2),
     <ePixmap pixmap="SphereFHD/buttons/menu.png" position="756,1016" size="50,50" alphatest="blend" />
     <ePixmap pixmap="SphereFHD/buttons/ok.png" position="306,1016" size="50,50" alphatest="blend" />
     <ePixmap pixmap="SphereFHD/buttons/exit.png" position="1685,1022" size="50,50" alphatest="blend" />
-</screen>
+  </screen>
+  <screen name="DownloadOnLineImage" position="center,center" size="1920,1080" title="NFR4XBoot - Download Image" flags="wfNoBorder">
+     <ePixmap position="center,-2" zPosition="-10" size="1920,1080" pixmap="SphereFHD/png/bg3.png" />
+     <panel name="Time" />
+     <widget font="Regular; 42" position="892,762" render="Label" size="850,50" source="Title" transparent="1" valign="top" zPosition="1" halign="center" backgroundColor="background" foregroundColor="TextInfo" />
+     <widget backgroundColor="Background" selectionPixmap="SphereFHD/selpic/1240x75.png" enableWrapAround="1" itemHeight="35" name="imageList" position="955,33" scrollbarMode="showOnDemand" size="700,700" font="Regular;30" halign="left" valign="top" transparent="1" />
+     <panel name="function_buttons_4" />
+     <panel name="color_buttons" />
+     <panel name="buttons_rg" />
+   </screen>
+   <screen name="DreamExplorerII" position="center,center" size="1920,1080" title="DreamExplorerII" flags="wfNoBorder">
+     <ePixmap position="2,-2" zPosition="-10" size="1920,1080" pixmap="SphereFHD/png/bg3.png" />
+     <panel name="Time" />
+     <widget font="Regular; 42" position="892,762" render="Label" size="850,50" source="Title" transparent="1" valign="top" zPosition="1" halign="center" backgroundColor="background" foregroundColor="TextInfo" />
+     <widget name="filelist" position="893,14" font="Regular; 26" itemHeight="30" selectionPixmap="SkalliHD-NFR-FullHD/selpic/1240x75.png" scrollbarMode="showOnDemand" size="800,690" zPosition="4" transparent="1" backgroundColor="background" />
+     <ePixmap pixmap="SphereFHD/buttons/red.png" position="3,1008" size="50,50" alphatest="blend" />
+     <ePixmap pixmap="SphereFHD/buttons/green.png" position="319,1008" size="50,50" alphatest="blend" />
+     <ePixmap pixmap="SphereFHD/buttons/yellow.png" position="617,1008" size="50,50" alphatest="blend" />
+     <ePixmap pixmap="SphereFHD/buttons/blue.png" position="924,1008" size="50,50" alphatest="blend" />
+     <eLabel backgroundColor="background" font="Regular;30" halign="left" position="60,1020" size="240,35" text="Delete" transparent="1" valign="top" zPosition="1" />
+     <eLabel backgroundColor="background" font="Regular;30" halign="left" position="373,1020" size="240,35" text="Rename" transparent="1" valign="top" zPosition="1" />
+     <eLabel backgroundColor="background" font="Regular;30" halign="left" position="674,1020" size="240,35" text="Move/Copy" transparent="1" valign="top" zPosition="1" />
+     <eLabel backgroundColor="background" font="Regular;30" halign="left" position="990,1020" size="240,35" text="Bookmarks" transparent="1" valign="top" zPosition="1" />
+     <ePixmap name="new ePixmap" pixmap="SphereFHD/buttons/info.png" position="1564,1020" size="100,35" transparent="0" alphatest="blend" />
+     <eLabel backgroundColor="background" font="Regular;30" halign="left" position="1321,1020" size="240,35" text="Options" transparent="1" valign="top" zPosition="1" />
+     <ePixmap name="new ePixmap" pixmap="SphereFHD/buttons/menu.png" position="1246,1015" size="50,50" alphatest="blend" transparent="0" />
+     <eLabel backgroundColor="background" font="Regular;30" halign="left" position="1666,1020" size="240,35" text="Info" transparent="1" valign="top" zPosition="1" />
+   </screen>
+   <screen name="DVDPlayer" position="center,center" size="1920,1080" title="DVDPlayer" flags="wfNoBorder">
+     <ePixmap position="7,-2" zPosition="-10" size="1920,1080" pixmap="SphereFHD/png/bg_EPGsel" transparent="1" />
+     <panel name="Time" />
+     <widget font="Regular; 42" position="571,847" render="Label" size="850,50" source="Title" transparent="1" valign="top" zPosition="1" halign="center" backgroundColor="background" foregroundColor="TextInfo" />
+     <widget backgroundColor="background" font="Regular; 38" noWrap="1" options="movetype=running,startpoint=0,direction=left,steptime=50,repeat=5,startdelay=2500,always=0" position="434,921" render="MetrixHDRunningText" size="800,60" source="session.CurrentService" transparent="1" valign="top" zPosition="1">
+       <convert type="ServiceName">Name</convert>
+     </widget>
+     <widget backgroundColor="background" font="Regular; 22" halign="right" position="1195,1022" render="Label" size="80,40" source="session.CurrentService" transparent="1" valign="center" zPosition="1">
+       <convert type="ServicePosition">Length</convert>
+     </widget>
+     <eLabel backgroundColor="background" font="Regular; 22" halign="center" position="1160,1022" size="50,40" text="/" transparent="1" valign="center" zPosition="1" />
+     <widget backgroundColor="background" font="Regular; 22" halign="right" position="1090,1022" render="Label" shadowColor="Background" shadowOffset="-1,-1" size="80,40" source="session.CurrentService" transparent="1" valign="center" zPosition="1">
+       <convert type="ServicePosition">Position</convert>
+     </widget>
+     <widget backgroundColor="background" font="Regular; 28" halign="right" position="1241,924" render="Label" size="122,50" source="session.CurrentService" transparent="1" valign="Center" zPosition="1">
+       <convert type="ServicePosition">Remaining</convert>
+     </widget>
+     <widget position="290,996" render="PositionGauge" size="1015,7" source="session.CurrentService" transparent="1">
+       <convert type="ServicePosition">Gauge</convert>
+     </widget>
+     <widget foregroundColor="blue" backgroundColor="black" position="290,996" render="Progress" size="1015,7" source="session.CurrentService" zPosition="10">
+       <convert type="ServicePosition">Position</convert>
+     </widget>
+     <widget name="subtitleLabel" position="432,1022" size="110,40" font="Regular; 18" backgroundColor="background" transparent="1" valign="center" />
+     <widget name="audioLabel" position="285,1022" size="110,40" font="Regular; 18" backgroundColor="background" transparent="1" valign="center" />
+     <widget name="chapterLabel" position="634,1022" size="225,40" font="Regular; 18" backgroundColor="background" transparent="1" valign="center" />
+  </screen>
+  <screen name="DVDSummary" position="0,0" size="132,64">
+    <widget font="Regular;45" halign="center" position="0,0" render="Label" size="132,64" source="session.CurrentService" valign="top">
+      <convert type="ServicePosition">Remaining</convert>
+    </widget>
+  </screen>
   <screen name="E2log" position="center,center" size="1920,1080" title="E2log erstellen" backgroundColor="transparent" flags="wfNoBorder">
     <ePixmap position="0,0" zPosition="-10" size="1920,1080" pixmap="SphereFHD/png/bg3.png" />
     <panel name="Time" />
