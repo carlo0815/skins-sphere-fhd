@@ -41,8 +41,6 @@ NfrHD_Config
 NfrHDScreens
 NFRPasswdScreen
 NumberZapExt
-QuickMenuDevices 
-QuitMainloopScreen
 RadioInfoBar
 RadiologoSetupScreen
 RdsInfoDisplay
