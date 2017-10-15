@@ -7507,5 +7507,33 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
   <widget name="key_yellow" position="1072,970" size="300,70" halign="left" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
   <widget name="key_blue" position="1425,970" size="300,70" halign="left" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
   <panel name="function_buttons" />
+</screen>
+  <screen name="QuickMenuDevices" position="center,center" size="1920,1080" title="Devices" flags="wfNoBorder">
+  <ePixmap position="0,-5" zPosition="-10" size="1920,1080" pixmap="SphereFHD/png/bg3.png" />
+  <panel name="Time" />
+  <ePixmap position="66,808" size="220,220" zPosition="1" pixmap="SphereFHD/menu/setup.png" alphatest="blend" transparent="1" />
+  <ePixmap position="833,60" size="931,600" zPosition="5" pixmap="SphereFHD/png/listboxen/listbox_60.png" alphatest="blend" />
+  <ePixmap position="66,808" size="220,220" zPosition="1" pixmap="SphereFHD/menu/setup.png" alphatest="blend" transparent="1" />
+  <widget name="lab1" zPosition="2" position="959,66" size="700,40" font="Regular;30" backgroundColor="background" halign="center" transparent="1" />
+  <widget source="devicelist" render="Listbox" position="833,60" size="931,600" zPosition="2" scrollbarMode="showNever" scrollbarWidth="0" scrollbarSliderBorderColor="grey" backgroundColor="transpGrey" transparent="1" enableWrapAround="1">
+    <convert type="TemplatedMultiContent">
+			{"template": [
+					MultiContentEntryPixmapAlphaTest(pos = (18, 5), size = (48, 48), png = 4), # index 4 is the status pixmap
+					MultiContentEntryText(pos = (90, 5), size = (590, 28), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 2), # index 0 is the name
+					MultiContentEntryText(pos = (100, 35), size = (590, 20), font=1, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 0), # index 2 is the description
+				],
+			"fonts": [gFont("Regular", 24),gFont("Regular", 18)],
+			"itemHeight": 60
+			}
+		</convert>
+  </widget>
+  <eLabel text="Detected Devices:" position="833,10" size="800,40" zPosition="10" font="Regular;32" halign="left" transparent="1" backgroundColor="transpGrey" foregroundColor="white" />
+  <eLabel text="Devices" position="1050,780" size="500,50" font="Bold;40" halign="center" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+  <panel name="color_buttons" />
+  <panel name="function_buttons" />
+</screen>
+  <screen name="QuitMainloopScreen" flags="wfNoBorder" position="0,0" size="1920,1080" backgroundColor="transparent">
+  <ePixmap pixmap="SphereFHD/Cover.png" position="0,0" size="1920,1080" alphatest="blend" zPosition="-1" />
+  <widget name="text" position="0,918" size="1920,160" font="Regular;35" foregroundColor="white" transparent="1" halign="center" backgroundColor="transpGrey" />
 </screen>	
 </skin>
