@@ -41,15 +41,6 @@ NfrHD_Config
 NfrHDScreens
 NFRPasswdScreen
 NumberZapExt
-PacketManager
-PluginDeinstall
-PluginDetails
-PluginDownloadBrowser
-PluginInstall
-PluginManager
-PluginManagerHelp
-PluginManagerInfo
-PositionerSetup
 QuickMenuDevices 
 QuitMainloopScreen
 RadioInfoBar
