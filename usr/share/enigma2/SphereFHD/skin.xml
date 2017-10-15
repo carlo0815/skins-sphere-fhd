@@ -7299,5 +7299,213 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
   <widget name="list" position="833,40" size="931,520" itemHeight="40" scrollbarMode="showNever" transparent="1" />
   <widget name="choosen" position="846,588" zPosition="1" size="900,60" itemHeight="60" font="Regular;28" halign="center" scrollbarMode="showOnDemand" transparent="1" foregroundColor="white" backgroundColor="transpGrey" />
   <panel name="function_buttons" />
+</screen>
+  <screen name="PacketManager" position="center,center" size="1920,1080" title="PacketManager" flags="wfNoBorder">
+    <ePixmap position="0,0" zPosition="-10" size="1920,1080" pixmap="SphereFHD/png/bg3.png" />
+    <panel name="Time" />
+    <ePixmap position="66,808" size="220,220" zPosition="1" pixmap="SphereFHD/menu/setup.png" alphatest="blend" transparent="1" />
+    <ePixmap position="833,10" size="931,600" zPosition="5" pixmap="SphereFHD/png/listboxen/listbox_60.png" alphatest="blend" />
+    <widget source="list" render="Listbox" position="833,10" size="931,600" zPosition="2" scrollbarMode="showNever" scrollbarWidth="0" scrollbarSliderBorderColor="grey" backgroundColor="transpGrey" transparent="1" enableWrapAround="1">
+      <convert type="TemplatedMultiContent">
+			{"template": [
+					MultiContentEntryPixmapAlphaTest(pos = (18, 5), size = (48, 48), png = 4), # index 4 is the status pixmap
+					MultiContentEntryText(pos = (90, 5), size = (590, 28), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 2), # index 0 is the name
+					MultiContentEntryText(pos = (100, 35), size = (590, 20), font=1, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 0), # index 2 is the description
+				],
+			"fonts": [gFont("Regular", 24),gFont("Regular", 18)],
+			"itemHeight": 60
+			}
+		</convert>
+    </widget>
+    <eLabel text="PacketManager" position="1100,780" size="400,50" font="Bold;40" halign="center" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+    <panel name="color_buttons" />
+    <widget source="key_red" render="Label" position="382,970" size="370,70" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+    <widget source="key_green" render="Label" position="732,970" size="370,70" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+    <panel name="function_buttons" />
+  </screen>
+  <screen name="PluginDeinstall" position="center,center" size="1920,1080" title="Deinstalliere Plugins" flags="wfNoBorder">
+    <ePixmap position="0,0" zPosition="-10" size="1920,1080" pixmap="SphereFHD/png/bg4.png" />
+    <panel name="Time" />
+    <ePixmap position="66,808" size="220,220" zPosition="1" pixmap="SphereFHD/menu/setup.png" alphatest="blend" transparent="1" />
+    <ePixmap position="110,5" size="800,600" zPosition="5" pixmap="SphereFHD/png/listboxen/listbox_60.png" alphatest="blend" />
+    <widget source="list" render="Listbox" position="110,8" size="800,600" zPosition="2" scrollbarMode="showNever" scrollbarWidth="0" scrollbarSliderBorderColor="grey" backgroundColor="transpGrey" transparent="1" enableWrapAround="1">
+      <convert type="TemplatedMultiContent">
+			{"template": [
+					MultiContentEntryPixmapAlphaTest(pos = (18, 5), size = (48, 48), png = 4), # index 4 is the status pixmap
+					MultiContentEntryText(pos = (90, 5), size = (590, 28), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 2), # index 0 is the name
+					MultiContentEntryText(pos = (100, 35), size = (590, 20), font=1, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 0), # index 2 is the description
+				],
+			"fonts": [gFont("Regular", 24),gFont("Regular", 18)],
+			"itemHeight": 60
+			}
+		</convert>
+    </widget>
+    <widget source="Title" render="Label" position="755,785" size="400,50" font="Bold;40" halign="center" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+    <widget font="Regular; 32" backgroundColor="transpGrey" foregroundColor="white" halign="center" name="text" position="1000,535" size="500, 200" transparent="0" valign="center" zPosition="1" />
+    <eLabel name="" position="1050,5" size="700,40" backgroundColor="transpGrey" foregroundColor="white" font="Regular; 30" text="Liste der zu deinstallierenden Plugins" zPosition="3" halign="center" transparent="0" />
+    <widget name="status" position="1000,62" zPosition="3" size="800,450" backgroundColor="transpGrey" foregroundColor="white" scrollbarMode="showNever" font="Regular;28" halign="center" noWrap="1" transparent="0" />
+    <panel name="color_buttons" />
+    <widget source="key_red" render="Label" position="382,970" size="370,70" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+    <widget source="key_green" render="Label" position="732,970" size="370,70" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+    <panel name="function_buttons" />
+  </screen>
+  <screen name="PluginInstall" position="center,center" size="1920,1080" title="Installiere Plugins" flags="wfNoBorder">
+    <ePixmap position="0,0" zPosition="-10" size="1920,1080" pixmap="SphereFHD/png/bg4.png" />
+    <panel name="Time" />
+    <ePixmap position="66,808" size="220,220" zPosition="1" pixmap="SphereFHD/menu/setup.png" alphatest="blend" transparent="1" />
+    <ePixmap position="110,5" size="800,600" zPosition="5" pixmap="SphereFHD/png/listboxen/listbox_60.png" alphatest="blend" />
+    <widget source="list" render="Listbox" position="110,8" size="800,600" zPosition="2" scrollbarMode="showNever" scrollbarWidth="0" scrollbarSliderBorderColor="grey" backgroundColor="transpGrey" transparent="1" enableWrapAround="1">
+      <convert type="TemplatedMultiContent">
+			{"template": [
+					MultiContentEntryPixmapAlphaTest(pos = (18, 5), size = (48, 48), png = 4), # index 4 is the status pixmap
+					MultiContentEntryText(pos = (90, 5), size = (590, 28), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 2), # index 0 is the name
+					MultiContentEntryText(pos = (100, 35), size = (590, 20), font=1, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 0), # index 2 is the description
+				],
+			"fonts": [gFont("Regular", 24),gFont("Regular", 18)],
+			"itemHeight": 60
+			}
+		</convert>
+    </widget>
+    <widget source="Title" render="Label" position="755,785" size="400,50" font="Bold;40" halign="center" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+    <widget font="Regular; 32" backgroundColor="transpGrey" foregroundColor="white" halign="center" name="text" position="1000,535" size="500, 200" transparent="0" valign="center" zPosition="1" />
+    <eLabel name="" position="1050,5" size="700,40" backgroundColor="transpGrey" foregroundColor="white" font="Regular; 30" text="Liste der zu Installierenden Plugins" zPosition="3" halign="center" transparent="0" />
+    <widget name="status" position="1000,62" zPosition="3" size="800,450" backgroundColor="transpGrey" foregroundColor="white" scrollbarMode="showNever" font="Regular;28" halign="center" noWrap="1" transparent="0" />
+    <panel name="color_buttons" />
+    <widget source="key_red" render="Label" position="382,970" size="370,70" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+    <widget source="key_green" render="Label" position="732,970" size="370,70" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+    <panel name="function_buttons" />
+  </screen>
+  <screen name="PluginDetails" position="center,center" size="1920,1080" title="Plugin details" flags="wfNoBorder">
+    <ePixmap position="3,-10" zPosition="-10" size="1920,1080" pixmap="SphereFHD/png/bg4.png" />
+    <panel name="Time" />
+    <ePixmap position="66,808" size="220,220" zPosition="1" pixmap="SphereFHD/menu/setup.png" alphatest="blend" transparent="1" />
+    <widget alphatest="blend" name="statuspic" position="120,75" size=" 48, 48" />
+    <widget alphatest="blend" name="screenshot" position="340,260" size="420,320" zPosition="10" font="Regular; 24" />
+    <widget source="Title" render="Label" position="755,785" size="400,50" font="Bold;40" halign="center" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+    <widget backgroundColor="transpGrey" font="Regular;27" position="200,80" size="700,40" render="Label" source="author" transparent="1" />
+    <widget backgroundColor="transpGrey" font="Regular; 28" name="detailtext" position="1100,80" size="600,500" transparent="1" />
+    <panel name="color_buttons" />
+    <widget source="key_red" render="Label" position="382,970" size="370,70" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+    <widget source="key_green" render="Label" position="732,970" size="370,70" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+    <panel name="function_buttons" />
+  </screen>
+  <screen name="PluginManager" position="center,center" size="1920,1080" title="Plugin Manager" flags="wfNoBorder">
+    <ePixmap position="0,0" zPosition="-10" size="1920,1080" pixmap="SphereFHD/png/bg3.png" />
+    <panel name="Time" />
+    <ePixmap position="66,808" size="220,220" zPosition="1" pixmap="SphereFHD/menu/setup.png" alphatest="blend" transparent="1" />
+    <ePixmap position="833,10" size="931,600" zPosition="5" pixmap="SphereFHD/png/listboxen/listbox_60.png" alphatest="blend" />
+    <widget source="list" render="Listbox" position="833,10" size="931,600" zPosition="2" scrollbarMode="showNever" scrollbarWidth="0" scrollbarSliderBorderColor="grey" backgroundColor="transpGrey" transparent="1" enableWrapAround="1">
+      <convert type="TemplatedMultiContent">
+			{"template": [
+					MultiContentEntryPixmapAlphaTest(pos = (18, 5), size = (48, 48), png = 4), # index 4 is the status pixmap
+					MultiContentEntryText(pos = (90, 5), size = (590, 28), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 2), # index 0 is the name
+					MultiContentEntryText(pos = (100, 35), size = (590, 20), font=1, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 0), # index 2 is the description
+				],
+			"fonts": [gFont("Regular", 24),gFont("Regular", 18)],
+			"itemHeight": 60
+			}
+		</convert>
+    </widget>
+    <eLabel text="PluginManager" position="1100,780" size="400,50" font="Bold;40" halign="center" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+    <panel name="color_buttons" />
+    <widget name="key_red2" position="372,970" size="300,70" halign="left" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+    <widget name="key_green2" position="722,970" size="300,70" halign="left" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+    <widget name="key_yellow" position="1072,970" size="300,70" halign="left" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+    <widget name="key_blue" position="1425,970" size="300,70" halign="left" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+    <panel name="function_buttons" />
+  </screen>
+  <screen name="PluginManagerInfo" position="center,center" size="1920,1080" title="Plugin manager activity" flags="wfNoBorder">
+    <ePixmap position="0,-5" zPosition="-10" size="1920,1080" pixmap="SphereFHD/png/bg3.png" />
+    <panel name="Time" />
+    <ePixmap position="66,808" size="220,220" zPosition="1" pixmap="SphereFHD/menu/setup.png" alphatest="blend" transparent="1" />
+    <ePixmap position="833,10" size="931,600" zPosition="5" pixmap="SphereFHD/png/listboxen/listbox_60.png" alphatest="blend" />
+    <widget source="list" render="Listbox" position="833,10" size="931,600" zPosition="2" scrollbarMode="showNever" scrollbarWidth="0" scrollbarSliderBorderColor="grey" backgroundColor="transpGrey" transparent="1" enableWrapAround="1">
+      <convert type="TemplatedMultiContent">
+			{"template": [
+					MultiContentEntryPixmapAlphaTest(pos = (18, 5), size = (48, 48), png = 4), # index 4 is the status pixmap
+					MultiContentEntryText(pos = (90, 5), size = (590, 28), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 2), # index 0 is the name
+					MultiContentEntryText(pos = (100, 35), size = (590, 20), font=1, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 0), # index 2 is the description
+				],
+			"fonts": [gFont("Regular", 24),gFont("Regular", 18)],
+			"itemHeight": 60
+			}
+		</convert>
+    </widget>
+    <widget backgroundColor="transpGrey" font="Regular; 28" halign="center" position="900,645" render="Label" size="800,70" source="status" transparent="1" />
+    <eLabel text="Plugin manager activity" position="1050,780" size="500,50" font="Bold;40" halign="center" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+    <panel name="color_buttons" />
+    <widget name="key_red2" position="372,970" size="300,70" halign="left" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+    <widget name="key_green2" position="722,970" size="300,70" halign="left" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+    <panel name="function_buttons" />
+  </screen>
+  <screen name="PluginManagerHelp" position="center,center" size="1920,1080" title="Plugin manager help" flags="wfNoBorder">
+    <ePixmap position="0,-5" zPosition="-10" size="1920,1080" pixmap="SphereFHD/png/bg3.png" />
+    <panel name="Time" />
+    <ePixmap position="66,808" size="220,220" zPosition="1" pixmap="SphereFHD/menu/setup.png" alphatest="blend" transparent="1" />
+    <ePixmap position="833,10" size="931,600" zPosition="5" pixmap="SphereFHD/png/listboxen/listbox_60.png" alphatest="blend" />
+    <widget source="list" render="Listbox" position="833,10" size="931,600" zPosition="2" scrollbarMode="showNever" scrollbarWidth="0" scrollbarSliderBorderColor="grey" backgroundColor="transpGrey" transparent="1" enableWrapAround="1">
+      <convert type="TemplatedMultiContent">
+			{"template": [
+					MultiContentEntryPixmapAlphaTest(pos = (18, 5), size = (48, 48), png = 4), # index 4 is the status pixmap
+					MultiContentEntryText(pos = (90, 5), size = (590, 28), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 2), # index 0 is the name
+					MultiContentEntryText(pos = (100, 35), size = (590, 20), font=1, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 0), # index 2 is the description
+				],
+			"fonts": [gFont("Regular", 24),gFont("Regular", 18)],
+			"itemHeight": 60
+			}
+		</convert>
+    </widget>
+    <widget backgroundColor="transpGrey" font="Regular; 28" halign="center" position="900,645" render="Label" size="800,70" source="status" transparent="1" />
+    <eLabel text="Plugin manager help" position="1050,780" size="500,50" font="Bold;40" halign="center" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+    <panel name="color_buttons" />
+    <widget name="key_red2" position="372,970" size="300,70" halign="left" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+    <widget name="key_green2" position="722,970" size="300,70" halign="left" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+    <panel name="function_buttons" />
+  </screen>
+  <screen name="PluginDownloadBrowser" position="center,center" size="1920,1080" title="Downloadable plugins" flags="wfNoBorder">
+    <ePixmap position="0,0" zPosition="-10" size="1920,1080" pixmap="SphereFHD/png/bg3.png" />
+    <ePixmap position="68,805" size="220,220" zPosition="1" pixmap="SphereFHD/menu/plugin.png" alphatest="blend" transparent="1" />
+    <panel name="Time" />
+    <eLabel text="Downloadable plugins" position="1100,870" size="400,50" font="Bold;40" halign="center" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+    <ePixmap position="833,10" size="931,600" zPosition="5" pixmap="SphereFHD/png/listboxen/listbox_50.png" alphatest="blend" />
+    <widget name="list" position="833,10" size="931,600" font="Regular;30" secondfont="Regular;30" itemHeight="50" scrollbarMode="showNever" scrollbarWidth="0" scrollbarSliderBorderColor="grey" backgroundColor="transpGrey" enableWrapAround="1" transparent="1" />
+    <ePixmap pixmap="SphereFHD/buttons/red.png" position="325,980" size="50,50" alphatest="blend" />
+    <ePixmap pixmap="SphereFHD/buttons/green.png" position="750,980" size="50,50" alphatest="blend" />
+    <ePixmap pixmap="SphereFHD/buttons/yellow.png" position="1025,980" size="50,50" alphatest="blend" />
+    <ePixmap pixmap="SphereFHD/buttons/blue.png" position="1375,980" size="50,50" alphatest="blend" />
+    <widget backgroundColor="transpGrey" font="Regular; 32" foregroundColor="white" halign="center" name="text" position="1050,636" size="500, 200" transparent="1" valign="center" zPosition="1" />
+    <panel name="function_buttons" />
+  </screen>
+  <screen name="PositionerSetup" position="center,center" size="1920,1080" title="Positioner setup..." flags="wfNoBorder">
+  <ePixmap position="3,-10" zPosition="-10" size="1920,1080" pixmap="SphereFHD/png/bg4.png" />
+  <panel name="Time" />
+  <ePixmap position="66,808" size="220,220" zPosition="1" pixmap="SphereFHD/menu/setup.png" alphatest="blend" transparent="1" />
+  <widget source="Title" render="Label" position="755,785" size="400,50" font="Bold;40" halign="center" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+  <widget backgroundColor="transpGrey" font="Regular;30" itemHeight="35" name="list" selectionPixmap="SphereFHD/selpic/1240x75.png" position="710,122" size="500,250" transparent="1" />
+  <widget backgroundColor="red" font="Regular;21" halign="center" name="red" position="610,395" size="170,100" valign="center" />
+  <widget backgroundColor="green" font="Regular;21" halign="center" name="green" position="780,395" size="170,100" valign="center" />
+  <widget backgroundColor="yellow" font="Regular;21" halign="center" name="yellow" position="950,395" size="170,100" valign="center" />
+  <widget backgroundColor="blue" font="Regular;21" halign="center" name="blue" position="1120,395" size="170,100" valign="center" />
+  <widget backgroundColor="transpGrey" font="Regular;25" halign="center" name="snr_db" position="661,555" size="200,30" transparent="1" valign="center" />
+  <eLabel backgroundColor="transpGrey" font="Regular;25" position="570,590" size="80,30" text="SNR:" transparent="1" />
+  <widget borderWidth="1" name="snr_bar" position="660,590" size="200,30" transparent="1" />
+  <widget backgroundColor="transpGrey" font="Regular;25" name="snr_percentage" position="870,590" size="80,30" transparent="1" />
+  <eLabel backgroundColor="transpGrey" font="Regular;25" position="570,625" size="80,30" text="BER:" transparent="1" />
+  <widget borderWidth="1" name="ber_bar" position="660,625" size="200,30" transparent="1" />
+  <widget backgroundColor="transpGrey" font="Regular;25" name="ber_value" position="870,625" size="80,30" transparent="1" />
+  <eLabel backgroundColor="transpGrey" font="Regular;25" position="570,660" size="80,30" text="Lock:" transparent="1" />
+  <widget backgroundColor="transpGrey" font="Regular;25" name="lock_state" position="660,660" size="200,30" transparent="1" />
+  <eLabel backgroundColor="transpGrey" font="Regular;25" position="990,590" size="150,30" text="Frequency:" transparent="1" />
+  <widget backgroundColor="transpGrey" font="Regular;25" name="frequency_value" position="1150,590" size="150,30" transparent="1" />
+  <eLabel backgroundColor="transpGrey" font="Regular;25" position="990,625" size="150,30" text="Symbolrate:" transparent="1" />
+  <widget backgroundColor="transpGrey" font="Regular;25" name="symbolrate_value" position="1150,625" size="150,30" transparent="1" />
+  <eLabel backgroundColor="transpGrey" font="Regular;25" position="990,660" size="150,30" text="FEC:" transparent="1" />
+  <widget backgroundColor="transpGrey" font="Regular;25" name="fec_value" position="1150,660" size="150,30" transparent="1" />
+  <panel name="color_buttons" />
+  <widget name="key_red2" position="372,970" size="300,70" halign="left" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+  <widget name="key_green2" position="722,970" size="300,70" halign="left" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+  <widget name="key_yellow" position="1072,970" size="300,70" halign="left" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+  <widget name="key_blue" position="1425,970" size="300,70" halign="left" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+  <panel name="function_buttons" />
 </screen>	
 </skin>
