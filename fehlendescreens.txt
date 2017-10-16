@@ -41,10 +41,6 @@ NfrHD_Config
 NfrHDScreens
 NFRPasswdScreen
 NumberZapExt
-RadioInfoBar
-RadiologoSetupScreen
-RdsInfoDisplay
-RestartDevice
 Satfinder
 Satloader
 Screen Vorlage
