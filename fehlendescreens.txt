@@ -64,11 +64,6 @@ SubservicesQuickzap
 SwapOverviewScreen
 SystemMemoryInfo
 SystemNetworkInfo
-TelnetCommand
-TempFanControl
-TimeInput
-TimerLog
-TimerSelection
 UpdatePlugin
 UpdatePluginMenu
 UpgradeStatus
