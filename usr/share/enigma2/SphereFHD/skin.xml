@@ -7686,5 +7686,131 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
   <widget name="arrowup2" position="-100,-100" size="37,70" pixmap="skin_default/arrowup.png" zPosition="11" alphatest="on" />
   <widget name="HelpWindow" pixmap="skin_default/buttons/key_text.png" position="380,435" zPosition="1" size="1,1" transparent="1" alphatest="on" />
   <panel name="function_buttons_3" />
+</screen>
+  <screen name="TelnetCommand" position="center,center" size="1920,1080" title="TelnetCommand" backgroundColor="transparent" flags="wfNoBorder">
+  <ePixmap position="0,0" zPosition="-10" size="1920,1080" pixmap="SphereFHD/png/bg3.png" />
+  <panel name="Time" />
+  <ePixmap position="68,805" size="220,220" zPosition="1" pixmap="SphereFHD/menu/setup.png" alphatest="blend" transparent="1" />
+  <widget source="Title" render="Label" position="1100,780" size="400,50" font="Bold;40" halign="center" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+  <ePixmap position="833,80" size="931,520" zPosition="5" pixmap="SphereFHD/png/listboxen/listbox_40.png" alphatest="blend" />
+  <widget name="config" position="833,80" size="931,520" itemHeight="35" scrollbarMode="showOnDemand" transparent="1" />
+  <panel name="color_buttons" />
+  <widget name="key_red2" position="372,970" size="300,70" halign="left" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+  <widget name="key_green2" position="722,970" size="300,70" halign="left" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+  <widget name="key_yellow" position="1072,970" size="300,70" halign="left" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+  <widget name="key_blue" position="1425,970" size="300,70" halign="left" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+  <panel name="function_buttons" />
+</screen>
+  <screen name="TempFanControl" position="center,center" size="1920,1080" title="Fan Control" flags="wfNoBorder">
+  <ePixmap position="0,0" zPosition="-10" size="1920,1080" pixmap="SphereFHD/png/bg3.png" />
+  <panel name="Time" />
+  <ePixmap position="68,805" size="220,220" zPosition="1" pixmap="SphereFHD/menu/fan.png" alphatest="blend" transparent="1" />
+  
+  <widget name="config" position="873,10" size="800,410" font="Regular;30" textOffset="5,2" secondfont="Regular;30" itemHeight="40" zPosition="2" scrollbarMode="showNever" scrollbarWidth="0" scrollbarSliderBorderColor="grey" backgroundColor="transpGrey" transparent="1" /> /&gt;
+  <widget backgroundColor="background" source="SensorTempText0" render="Label" position="781,450" zPosition="1" size="240,25" font="Regular;23" halign="left" valign="top" transparent="1" />
+  <widget backgroundColor="background" source="SensorTemp0" render="Label" position="1024,450" zPosition="1" foregroundColor="white" size="240,25" font="Regular;23" halign="left" transparent="1">
+    <convert type="SensorToText" />
+  </widget>
+  <widget backgroundColor="background" source="SensorTempText1" render="Label" position="781,490" zPosition="1" size="240,25" font="Regular;23" halign="left" valign="top" transparent="1" />
+  <widget backgroundColor="background" source="SensorTemp1" render="Label" position="1024,490" zPosition="1" foregroundColor="white" size="240,25" font="Regular;23" halign="left" transparent="1">
+    <convert type="SensorToText" />
+  </widget>
+  <widget backgroundColor="background" source="SensorTempText2" render="Label" position="781,530" zPosition="1" size="240,25" font="Regular;23" halign="left" valign="top" transparent="1" />
+  <widget backgroundColor="background" source="SensorTemp2" render="Label" position="1024,530" zPosition="1" foregroundColor="white" size="240,25" font="Regular;23" halign="left" transparent="1">
+    <convert type="SensorToText" />
+  </widget>
+  <widget backgroundColor="background" source="SensorTempText3" render="Label" position="781,570" zPosition="1" size="240,25" font="Regular;23" halign="left" valign="top" transparent="1" />
+  <widget backgroundColor="background" source="SensorTemp3" render="Label" position="1024,570" zPosition="1" foregroundColor="white" size="240,25" font="Regular;23" halign="left" transparent="1">
+    <convert type="SensorToText" />
+  </widget>
+  <widget backgroundColor="background" source="SensorTempText4" render="Label" position="781,610" zPosition="1" size="240,25" font="Regular;23" halign="left" valign="top" transparent="1" />
+  <widget backgroundColor="background" source="SensorTemp4" render="Label" position="1024,610" zPosition="1" foregroundColor="white" size="240,25" font="Regular;23" halign="left" transparent="1">
+    <convert type="SensorToText" />
+  </widget>
+  <widget backgroundColor="background" source="SensorTempText5" render="Label" position="781,650" zPosition="1" size="240,25" font="Regular;23" halign="left" valign="top" transparent="1" />
+  <widget backgroundColor="background" source="SensorTemp5" render="Label" position="1024,650" zPosition="1" foregroundColor="white" size="240,25" font="Regular;23" halign="left" transparent="1">
+    <convert type="SensorToText" />
+  </widget>
+  <widget backgroundColor="background" source="SensorTempText6" render="Label" position="781,690" zPosition="1" size="240,25" font="Regular;23" halign="left" valign="top" transparent="1" />
+  <widget backgroundColor="background" source="SensorTemp6" render="Label" position="1024,690" zPosition="1" foregroundColor="white" size="240,25" font="Regular;23" halign="left" transparent="1">
+    <convert type="SensorToText" />
+  </widget>
+  <widget backgroundColor="background" source="SensorTempText7" render="Label" position="781,730" zPosition="1" size="240,25" font="Regular;23" halign="left" valign="top" transparent="1" />
+  <widget backgroundColor="background" source="SensorTemp7" render="Label" position="1024,730" zPosition="1" foregroundColor="white" size="240,25" font="Regular;23" halign="left" transparent="1">
+    <convert type="SensorToText" />
+  </widget>
+  <widget backgroundColor="background" source="SensorFanText0" render="Label" position="1299,450" zPosition="1" size="240,25" font="Regular;23" halign="right" valign="top" transparent="1" />
+  <widget backgroundColor="background" source="SensorFan0" render="Label" position="1541,450" zPosition="1" foregroundColor="white" size="240,25" font="Regular;23" halign="right" transparent="1">
+    <convert type="SensorToText" />
+  </widget>
+  <widget backgroundColor="background" source="SensorFanText1" render="Label" position="1299,490" zPosition="1" size="240,25" font="Regular;23" halign="right" valign="top" transparent="1" />
+  <widget backgroundColor="background" source="SensorFan1" render="Label" position="1541,490" zPosition="1" foregroundColor="white" size="240,25" font="Regular;23" halign="right" transparent="1">
+    <convert type="SensorToText" />
+  </widget>
+  <widget backgroundColor="background" source="SensorFanText2" render="Label" position="1299,530" zPosition="1" size="240,25" font="Regular;23" halign="right" valign="top" transparent="1" />
+  <widget backgroundColor="background" source="SensorFan2" render="Label" position="1541,530" zPosition="1" foregroundColor="white" size="240,25" font="Regular;23" halign="right" transparent="1">
+    <convert type="SensorToText" />
+  </widget>
+  <widget backgroundColor="background" source="SensorFanText3" render="Label" position="1299,570" zPosition="1" size="240,25" font="Regular;23" halign="right" valign="top" transparent="1" />
+  <widget backgroundColor="background" source="SensorFan3" render="Label" position="1541,570" zPosition="1" foregroundColor="white" size="240,25" font="Regular;23" halign="right" transparent="1">
+    <convert type="SensorToText" />
+  </widget>
+  <widget backgroundColor="background" source="SensorFanText4" render="Label" position="1299,610" zPosition="1" size="240,25" font="Regular;23" halign="right" valign="top" transparent="1" />
+  <widget backgroundColor="background" source="SensorFan4" render="Label" position="1541,610" zPosition="1" foregroundColor="white" size="240,25" font="Regular;23" halign="right" transparent="1">
+    <convert type="SensorToText" />
+  </widget>
+  <widget backgroundColor="background" source="SensorFanText5" render="Label" position="1299,650" zPosition="1" size="240,25" font="Regular;23" halign="right" valign="top" transparent="1" />
+  <widget backgroundColor="background" source="SensorFan5" render="Label" position="1541,650" zPosition="1" foregroundColor="white" size="240,25" font="Regular;23" halign="right" transparent="1">
+    <convert type="SensorToText" />
+  </widget>
+  <widget backgroundColor="background" source="SensorFanText6" render="Label" position="1299,690" zPosition="1" size="240,25" font="Regular;23" halign="right" valign="top" transparent="1" />
+  <widget backgroundColor="background" source="SensorFan6" render="Label" position="1541,690" zPosition="1" foregroundColor="white" size="240,25" font="Regular;23" halign="right" transparent="1">
+    <convert type="SensorToText" />
+  </widget>
+  <widget backgroundColor="background" source="SensorFanText7" render="Label" position="1299,730" zPosition="1" size="240,25" font="Regular;23" halign="right" valign="top" transparent="1" />
+  <widget backgroundColor="background" source="SensorFan7" render="Label" position="1541,730" zPosition="1" foregroundColor="white" size="240,25" font="Regular;23" halign="right" transparent="1">
+    <convert type="SensorToText" />
+  </widget>  
+  <eLabel text="Fancontrol" position="1100,780" size="400,50" font="Bold;40" halign="center" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+  <panel name="color_buttons" />
+  <widget name="key_red2" position="372,970" size="300,70" halign="left" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+  <widget name="key_green2" position="722,970" size="300,70" halign="left" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+  <widget name="key_yellow" position="1072,970" size="300,70" halign="left" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+  <widget name="key_blue" position="1425,970" size="300,70" halign="left" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+  <panel name="function_buttons" />
+</screen>
+  <screen name="TimeInput" position="center,center" size="1920,1080" title="Time Input" flags="wfNoBorder">
+  <ePixmap position="0,0" zPosition="-10" size="1920,1080" pixmap="SphereFHD/png/bg3.png" />
+  <panel name="Time" />
+  <ePixmap position="68,805" size="220,220" zPosition="1" pixmap="SphereFHD/menu/setup.png" alphatest="blend" transparent="1" />
+  <widget source="Title" render="Label" position="1100,780" size="400,50" font="Bold;40" halign="center" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+  <ePixmap position="831,10" size="931,600" zPosition="5" pixmap="SphereFHD/png/listboxen/listbox_40.png" alphatest="blend" />
+  <widget name="config" position="833,10" size="931,600" font="Regular;30" textOffset="5,2" itemHeight="40" scrollbarMode="showNever" scrollbarWidth="0" scrollbarSliderBorderColor="grey" backgroundColor="transpGrey" transparent="1" />
+  <panel name="color_buttons" />
+  <widget name="canceltext" position="382,970" size="370,70" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+  <widget name="oktext" position="732,970" size="370,70" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+  <panel name="function_buttons" />
+</screen>
+  <screen name="TimerLog" position="center,center" size="1920,1080" title="Timer Log" backgroundColor="transparent" flags="wfNoBorder">
+  <ePixmap position="0,0" zPosition="-10" size="1920,1080" pixmap="SphereFHD/png/bg3.png" />
+  <panel name="Time" />
+  <ePixmap position="68,805" size="220,220" zPosition="1" pixmap="SphereFHD/menu/setup.png" alphatest="blend" transparent="1" />
+  <widget source="Title" render="Label" position="1100,780" size="400,50" font="Bold;40" halign="center" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+  <widget name="loglist" position="940,24" scrollbarMode="showOnDemand" scrollbarWidth="5" selectionPixmap="SphereFHD/selpic/1240x75.png" scrollbarSliderBorderWidth="1" size="700,250" transparent="1" />
+  <widget font="Regular;25" name="logentry" position="940,359" size="700,180" transparent="1" />
+  <panel name="color_buttons" />
+  <widget name="key_red2" position="372,970" size="300,70" halign="left" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+  <widget name="key_green2" position="722,970" size="300,70" halign="left" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+  <widget name="key_yellow" position="1072,970" size="300,70" halign="left" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+  <widget name="key_blue" position="1425,970" size="300,70" halign="left" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+  <panel name="function_buttons" />
+</screen>
+  <screen name="TimerSelection" position="center,center" size="1920,1080" title="Timer selection" flags="wfNoBorder">
+  <ePixmap position="0,0" zPosition="-10" size="1920,1080" pixmap="SphereFHD/png/bg3.png" />
+  <panel name="Time" />
+  <ePixmap position="68,805" size="220,220" zPosition="1" pixmap="SphereFHD/menu/info.png" alphatest="blend" transparent="1" />
+  <eLabel text="Timer Editor" position="1100,780" size="400,50" font="Bold;40" halign="center" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+  <widget name="timerlist" position="833,10" size="931,600" itemHeight="40" selectionDisabled="1" scrollbarMode="showNever" scrollbarWidth="0" scrollbarSliderBorderColor="grey" backgroundColor="transpGrey" transparent="1" />
+  <panel name="function_buttons" />
 </screen>	
 </skin>
