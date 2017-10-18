@@ -12,13 +12,6 @@ FritzCallSetup
 FritzDisplayCalls
 FritzDisplayPhonebook
 FritzMenu
-ImageBackup
-Info
-InfoBarMoviePlayerSummary
-InfoBarSummary
-infodna
-Infopanel
-InfopanelManagerScreen
 Installall
 InstallIpk
 InstallRar
