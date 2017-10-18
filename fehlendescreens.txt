@@ -12,15 +12,6 @@ FritzCallSetup
 FritzDisplayCalls
 FritzDisplayPhonebook
 FritzMenu
-Installall
-InstallIpk
-InstallRar
-InstallTarGZ
-InstallZip
-IpkgInstaller
-IPKGMenu
-IPKGSource
-IPTV
 NameserverSetup
 Net_test
 new ePixmap
