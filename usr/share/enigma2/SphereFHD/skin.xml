@@ -119,6 +119,11 @@
     <ePixmap pixmap="SphereFHD/buttons/yellow.png" position="1025,980" size="50,50" alphatest="blend" />
     <ePixmap pixmap="SphereFHD/buttons/blue.png" position="1375,980" size="50,50" alphatest="blend" />
   </screen>
+<screen name="color_buttons2">
+  <ePixmap pixmap="SphereFHD/buttons/red.png" position="325,980" size="50,50" alphatest="blend" />
+  <ePixmap pixmap="SphereFHD/buttons/green.png" position="675,980" size="50,50" alphatest="blend" />
+  <ePixmap pixmap="SphereFHD/buttons/yellow.png" position="1375,980" size="50,50" alphatest="blend" />
+</screen>	
   <screen name="function_buttons">
     <ePixmap pixmap="SphereFHD/buttons/ok.png" position="1805,1010" size="50,50" alphatest="blend" />
     <ePixmap pixmap="SphereFHD/buttons/exit.png" position="1865,1020" size="50,50" alphatest="blend" />
