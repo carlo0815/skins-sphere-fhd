@@ -48,12 +48,6 @@ SubservicesQuickzap
 SwapOverviewScreen
 SystemMemoryInfo
 SystemNetworkInfo
-UpdatePlugin
-UpdatePluginMenu
-UpgradeStatus
-UserInterfacePositioner
-UserMainMenuConfig
-uShareSelection
 vEditor
 VideoFinetune
 VlcMediaListScreen
