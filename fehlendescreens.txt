@@ -48,14 +48,6 @@ SubservicesQuickzap
 SwapOverviewScreen
 SystemMemoryInfo
 SystemNetworkInfo
-vEditor
-VideoFinetune
-VlcMediaListScreen
-VlcServerConfigScreen
-VlcServerListScreen
-VPS_check_PDC_Screen
-VPS_Screen_Info
-VPS_Setup
 VuplusAuthenticity
 WlanConfig
 WlanScanAp
