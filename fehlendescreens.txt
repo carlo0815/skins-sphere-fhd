@@ -48,7 +48,6 @@ SubservicesQuickzap
 SwapOverviewScreen
 SystemMemoryInfo
 SystemNetworkInfo
-VuplusAuthenticity
 WlanConfig
 WlanScanAp
 WlanSelection
