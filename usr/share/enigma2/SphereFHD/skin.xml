@@ -8046,5 +8046,95 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
   <widget name="key_yellow" position="1072,970" size="300,70" halign="left" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
   <widget name="key_blue" position="1425,970" size="300,70" halign="left" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
   <panel name="function_buttons_3" />
+</screen>
+  <screen name="UpdatePlugin" position="center,center" size="1920,1080" title="Software Update..." flags="wfNoBorder">
+    <ePixmap position="0,0" zPosition="-10" size="1920,1080" pixmap="SphereFHD/png/bg3.png" />
+    <panel name="Time" />
+    <ePixmap position="68,805" size="220,220" zPosition="1" pixmap="SphereFHD/menu/setup.png" alphatest="blend" transparent="1" />
+    <eLabel text="Software Update..." position="1100,780" size="400,50" font="Bold;40" halign="center" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+    <widget name="activityslider" position="910,150" size="700,15" font="Regular;24" backgroundColor="transpGrey" transparent="1" />
+    <widget render="Label" source="package" position="910,190" size="700,40" font="Regular;24" backgroundColor="transpGrey" transparent="1" />
+    <widget render="Label" source="status" position="910,350" size="700,60" font="Regular;24" backgroundColor="transpGrey" transparent="1" />
+    <widget name="slider" position="910,430" size="700,20" font="Regular;24" backgroundColor="transpGrey" transparent="1" />
+  </screen>
+  <screen name="UpdatePluginMenu" position="center,center" size="1920,1080" title="Softwaremanager..." backgroundColor="transparent" flags="wfNoBorder">
+    <ePixmap position="0,0" zPosition="-10" size="1920,1080" pixmap="SphereFHD/png/bg3.png" />
+    <panel name="Time" />
+    <ePixmap position="68,805" size="220,220" zPosition="1" pixmap="SphereFHD/menu/setup.png" alphatest="blend" transparent="1" />
+    <widget source="Title" render="Label" position="1100,780" size="400,50" font="Bold;40" halign="center" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+    <widget source="menu" render="Listbox" position="945,20" scrollbarMode="showOnDemand" scrollbarWidth="5" selectionPixmap="SphereFHD/selpic/1240x75.png" scrollbarSliderBorderWidth="1" size="700,400" transparent="1">
+      <convert type="TemplatedMultiContent">{"template":
+					[
+						MultiContentEntryText(pos = (15, 2), size = (700, 35), flags = RT_HALIGN_LEFT, text = 1), # index 0 is the MenuText,
+					],
+					"fonts": [gFont("Regular", 28)],
+					"itemHeight": 40
+				}</convert>
+    </widget>
+    <widget font="Regular;25" source="menu" render="Listbox" position="945,465" size="700,270" transparent="1">
+      <convert type="TemplatedMultiContent">{"template":
+					[
+						MultiContentEntryText(pos = (0, 0), size = (500, 270), flags = RT_HALIGN_CENTER|RT_VALIGN_TOP|RT_WRAP, text = 2), # index 2 is the Description,
+					],
+					"fonts": [gFont("Regular", 26)],
+					"itemHeight": 270
+				}</convert>
+    </widget>
+    <panel name="color_buttons" />
+    <widget name="key_red2" position="372,970" size="300,70" halign="left" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+    <panel name="function_buttons" />
+  </screen>
+  <screen name="UpgradeStatus" position="center,center" size="1920,1080" title="FPGA Upgrade" flags="wfNoBorder">
+    <ePixmap position="0,0" zPosition="-10" size="1920,1080" pixmap="SphereFHD/png/bg3.png" />
+    <panel name="Time" />
+    <ePixmap position="68,805" size="220,220" zPosition="1" pixmap="SphereFHD/menu/setup.png" alphatest="blend" transparent="1" />
+    <eLabel text="FPGA Upgrade" position="1100,780" size="400,50" font="Bold;40" halign="center" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+    <widget name="slider" position="935,210" size="700,60" font="Regular;24" backgroundColor="transpGrey" transparent="1" />
+    <widget backgroundColor="transpGrey" font="Regular;24" foregroundColor="orange" halign="center" name="status" position="935,210" size="700,60" transparent="1" zPosition="1" />
+    <widget name="name" position="935,83" size="700,60" font="Regular;24" backgroundColor="transpGrey" transparent="1" />
+    <widget render="Label" source="info" position="935,335" size="700,60" font="Regular;24" backgroundColor="transpGrey" transparent="1" />
+  </screen>
+  <screen name="UserInterfacePositioner" position="center,center" size="1920,1080" title="UserInterfacePositioner" flags="wfNoBorder">
+  <ePixmap position="0,0" zPosition="-10" size="1920,1080" pixmap="SphereFHD/png/bg4.png" />
+  <panel name="Time" />
+  <ePixmap position="68,805" size="220,220" zPosition="1" pixmap="SphereFHD/menu/info.png" alphatest="blend" transparent="1" />
+  <eLabel font="Regular; 32" position="1030,75" size="800,450" text="positioniere die Benutzeroberfläche" transparent="1" valign="center" zPosition="1" halign="center" backgroundColor="transpGrey" foregroundColor="white" />
+  <widget enableWrapAround="1" position="80,30" name="config" itemHeight="35" font="Regular;28" scrollbarMode="showOnDemand" size="800,540" selectionPixmap="SphereFHD/selpic/1240x75.png" transparent="1" />
+  <eLabel text="UserInterfacePositioner" position="765,788" size="400,50" font="Bold;40" halign="center" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+  <panel name="color_buttons2" />
+  <widget name="key_red" position="375,980" size="300,50" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+  <widget name="key_green" position="725,980" size="300,50" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+  <widget name="key_yellow" position="1425,980" size="370,50" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+  <panel name="function_buttons_3" />
+</screen>
+  <screen name="UserMainMenuConfig" position="center,center" size="1920,1080" title="openNFR UserMainMenu" flags="wfNoBorder">
+  <ePixmap position="0,0" zPosition="-10" size="1920,1080" pixmap="SphereFHD/png/bg4.png" />
+  <panel name="Time" />
+  <ePixmap position="68,805" size="220,220" zPosition="1" pixmap="SphereFHD/menu/info.png" alphatest="blend" transparent="1" />
+  <eLabel text="openNFR UserMainMenu" position="756,786" size="400,50" font="Bold;40" halign="center" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+  <widget enableWrapAround="1" position="560,45" source="menu" render="Listbox" itemHeight="35" font="Regular;28" scrollbarMode="showOnDemand" size="800,700" selectionPixmap="SphereFHD/selpic/1240x75.png" transparent="1">
+    <convert type="TemplatedMultiContent" transparent="0">{"template": [
+		  MultiContentEntryPixmapAlphaTest(pos = (4, 2), size = (48, 48), png = 2),
+		  MultiContentEntryText(pos = (60, 6), size = (900, 40), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 0),
+		  ],
+		  "fonts": [gFont("Regular", 30),gFont("Regular", 16)],
+		  "itemHeight": 52
+	  }</convert>
+  </widget>
+  <panel name="color_buttons2" />
+  <widget name="key_red" position="375,980" size="300,50" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+  <widget name="key_green" position="725,980" size="300,50" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+  <widget name="key_yellow" position="1425,980" size="370,50" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+</screen>
+  <screen name="uShareSelection" position="center,center" size="1920,1080" title="uShareSelection" flags="wfNoBorder">
+  <ePixmap position="0,0" zPosition="-10" size="1920,1080" pixmap="SphereFHD/png/bg4.png" />
+  <panel name="Time" />
+  <ePixmap position="68,805" size="220,220" zPosition="1" pixmap="SphereFHD/menu/info.png" alphatest="blend" transparent="1" />
+  <eLabel text="uShareSelection" position="756,786" size="400,50" font="Bold;40" halign="center" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+  <widget enableWrapAround="1" position="560,45" name="checkList" itemHeight="35" font="Regular;28" scrollbarMode="showOnDemand" size="800,700" selectionPixmap="SphereFHD/selpic/1240x75.png" transparent="1" />
+  <panel name="color_buttons2" />
+  <widget name="key_red" position="375,980" size="300,50" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+  <widget name="key_green" position="725,980" size="300,50" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+  <widget name="key_yellow" position="1425,980" size="370,50" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
 </screen>	
 </skin>
