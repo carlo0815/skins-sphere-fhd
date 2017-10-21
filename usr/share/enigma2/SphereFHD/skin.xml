@@ -6019,7 +6019,7 @@ MultiContentEntryPixmapAlphaTest(pos = (10, 17), size = (100, 40), png = 2),
   <panel name="Time" />
   <widget font="Regular; 42" position="892,762" render="Label" size="850,50" source="Title" transparent="1" valign="top" zPosition="1" halign="center" backgroundColor="background" foregroundColor="TextInfo" />
   <widget backgroundColor="background" font="Regular; 24" name="text" position="1031,80" size="540,250" transparent="1" />
-  <widget backgroundColor="background" font="Regular; 26" name="url" position="1087,383" size="440,60" transparent="1" />
+  <widget backgroundColor="background" font="Regular; 26" name="url" position="847,387" size="940,60" transparent="1" />
   <ePixmap pixmap="SphereFHD/buttons/ok.png" position="1805,1010" size="50,50" alphatest="blend" />
   <ePixmap alphatest="blend" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/FritzCall/images/website.png" position="1213,491" size="175,175" transparent="1" zPosition="4" />
 </screen>
