@@ -1,17 +1,3 @@
-FastScanScreen
-FileBrowser
-Filebrowser
-FilebrowserConfigScreen
-FindMovieList
-FindMovieListCoverSetup
-FindMovieListScanPath
-FPGAUpgrade
-FPUpgrade
-FritzAbout
-FritzCallSetup
-FritzDisplayCalls
-FritzDisplayPhonebook
-FritzMenu
 NameserverSetup
 Net_test
 new ePixmap
