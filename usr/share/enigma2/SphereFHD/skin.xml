@@ -5656,7 +5656,7 @@ MultiContentEntryPixmapAlphaTest(pos = (10, 17), size = (100, 40), png = 2),
       <convert type="ServiceName">Name</convert>
     </widget>
     <widget backgroundColor="darkgrey" foregroundColor="lightblue" name="Timeline" pointer="skin_default/position_arrow.png:3,5" position="255,855" size="1400,40" zPosition="5" />
-    <widget position="25,150" render="Listbox" scrollbarMode="showOnDemand" scrollbarWidth="5" scrollbarSliderForegroundColor="lightgrey" scrollbarSliderBorderColor="darkgrey" scrollbarSliderBorderWidth="1" size="700,500" source="cutlist" zPosition="3" selectionPixmap="SkalliHD-NFR-FullHD/selpic/1240x75.png" transparent="1">
+    <widget position="25,150" render="Listbox" scrollbarMode="showOnDemand" scrollbarWidth="5" scrollbarSliderForegroundColor="lightgrey" scrollbarSliderBorderColor="darkgrey" scrollbarSliderBorderWidth="1" size="700,500" source="cutlist" zPosition="3" selectionPixmap="SphereFHD/selpic/1240x75.png" transparent="1">
       <convert type="TemplatedMultiContent">{"template": [MultiContentEntryText(pos=(0,4), size=(280, 26), text = 1, flags = RT_HALIGN_CENTER),
              MultiContentEntryText(pos=(400,4), size=(100, 26), text = 2, flags = RT_HALIGN_CENTER)],
              "fonts": [gFont("Regular", 28)], "itemHeight": 35}</convert>
@@ -5749,7 +5749,7 @@ MultiContentEntryPixmapAlphaTest(pos = (10, 17), size = (100, 40), png = 2),
     <panel name="Time" />
     <widget font="Regular; 42" position="892,762" render="Label" size="850,50" source="Title" transparent="1" valign="top" zPosition="1" halign="center" backgroundColor="background" foregroundColor="TextInfo" />
     <widget backgroundColor="background" foregroundColor="blue" font="Regular;36" name="movie_name" position="816,20" size="950,45" transparent="1" />
-    <widget backgroundColor="background" enableWrapAround="1" name="movielist" position="868,68" itemHeight="40" font="Regular;26" selectionPixmap="SkalliHD-NFR-FullHD/selpic/1240x75.png" scrollbarMode="showOnDemand" size="860,500" transparent="1" />
+    <widget backgroundColor="background" enableWrapAround="1" name="movielist" position="868,68" itemHeight="40" font="Regular;26" selectionPixmap="SphereFHD/selpic/1240x75.png" scrollbarMode="showOnDemand" size="860,500" transparent="1" />
     <widget backgroundColor="background" font="Regular;28" foregroundColor="yellow" halign="center" name="resulttext" position="870,565" size="860,150" transparent="1" />
     <widget backgroundColor="background" font="Regular;25" halign="left" name="save" position="383,1022" size="350,36" transparent="1" />
     <widget backgroundColor="background" font="Regular;25" halign="left" name="setup" position="836,1022" size="350,36" transparent="1" />
@@ -5772,7 +5772,7 @@ MultiContentEntryPixmapAlphaTest(pos = (10, 17), size = (100, 40), png = 2),
      <ePixmap position="2,-2" zPosition="-10" size="1920,1080" pixmap="SphereFHD/png/bg3.png" />
      <panel name="Time" />
      <widget font="Regular; 42" position="892,762" render="Label" size="850,50" source="Title" transparent="1" valign="top" zPosition="1" halign="center" backgroundColor="background" foregroundColor="TextInfo" />
-     <widget name="filelist" position="893,14" font="Regular; 26" itemHeight="30" selectionPixmap="SkalliHD-NFR-FullHD/selpic/1240x75.png" scrollbarMode="showOnDemand" size="800,690" zPosition="4" transparent="1" backgroundColor="background" />
+     <widget name="filelist" position="893,14" font="Regular; 26" itemHeight="30" selectionPixmap="SphereFHD/selpic/1240x75.png" scrollbarMode="showOnDemand" size="800,690" zPosition="4" transparent="1" backgroundColor="background" />
      <ePixmap pixmap="SphereFHD/buttons/red.png" position="3,1008" size="50,50" alphatest="blend" />
      <ePixmap pixmap="SphereFHD/buttons/green.png" position="319,1008" size="50,50" alphatest="blend" />
      <ePixmap pixmap="SphereFHD/buttons/yellow.png" position="617,1008" size="50,50" alphatest="blend" />
@@ -5883,7 +5883,7 @@ MultiContentEntryPixmapAlphaTest(pos = (10, 17), size = (100, 40), png = 2),
   <widget source="key_blue" render="Label" position="1432,970" size="370,70" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
   <panel name="Time" />
   <widget source="Title" render="Label" position="1100,780" size="400,50" font="Bold;40" halign="center" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
-  <widget enableWrapAround="1" position="890,22" name="menu" itemHeight="35" font="Regular;28" scrollbarMode="showOnDemand" size="800,650" selectionPixmap="SkalliHD-NFR-FullHD/selpic/1240x75.png" transparent="1">
+  <widget enableWrapAround="1" position="890,22" name="menu" itemHeight="35" font="Regular;28" scrollbarMode="showOnDemand" size="800,650" selectionPixmap="SphereFHD/selpic/1240x75.png" transparent="1">
   <convert type="TemplatedMultiContent">{"template": [	MultiContentEntryText(pos = (20,0), size = (465,38), flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 0	) ],
 				"fonts": [gFont("Regular",28)],
 				"itemHeight": 38
@@ -5930,6 +5930,177 @@ MultiContentEntryPixmapAlphaTest(pos = (10, 17), size = (100, 40), png = 2),
   <widget name="key_green" position="732,970" size="370,70" valign="center" halign="left" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
   <widget name="key_yellow" position="1082,970" size="370,70" valign="center" halign="left" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
   <widget name="key_blue" position="1432,970" size="370,70" valign="center" halign="left" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+</screen>
+<screen name="FastScanScreen" position="center,center" size="1920,1080" title="FastScanScreen" flags="wfNoBorder">
+    <ePixmap position="0,0" zPosition="-10" size="1920,1080" pixmap="SphereFHD/png/bg3.png" />
+    <panel name="Time" />
+    <widget font="Regular; 42" position="892,762" render="Label" size="850,50" source="Title" transparent="1" valign="top" zPosition="1" halign="center" backgroundColor="background" foregroundColor="TextInfo" />
+    <widget name="config" position="844,43" itemHeight="35" size="900,600" scrollbarMode="showOnDemand" selectionPixmap="SphereFHD/selpic/1240x75.png" transparent="1" font="Regular; 28" />
+    <widget name="introduction" position="0,0" size="0,0" />
+    <widget name="cancel" position="0,0" size="0,0" backgroundColor="transparent" />
+    <widget name="ok" position="0,0" size="0,0" backgroundColor="transparent" />
+    <eLabel name="Cancel" position="387,1000" size="300,70" font="Regular; 30" text="Cancel" backgroundColor="background" transparent="1" zPosition="1" />
+    <eLabel name="Scan" position="757,1000" size="300,70" font="Regular; 30" text="Scan" backgroundColor="background" transparent="1" zPosition="1" />
+    <panel name="color_buttons" />
+  </screen>
+  <screen name="FileBrowser" position="center,center" size="1920,1080" title="DVD File Browser" flags="wfNoBorder">
+    <ePixmap position="0,0" zPosition="-10" size="1920,1080" pixmap="SphereFHD/png/bg3.png" />
+    <panel name="Time" />
+    <widget font="Regular; 42" position="892,762" render="Label" size="850,50" source="Title" transparent="1" valign="top" zPosition="1" halign="center" backgroundColor="background" foregroundColor="TextInfo" />
+    <widget name="config" position="844,43" itemHeight="35" size="900,600" scrollbarMode="showOnDemand" selectionPixmap="SphereFHD/selpic/1240x75.png" transparent="1" font="Regular; 28" />
+    <panel name="color_buttons" />
+    <panel name="buttons_rg" />
+  </screen>
+  <screen name="FilebrowserConfigScreen" position="center,center" size="1920,1080" title="" flags="wfNoBorder">
+    <ePixmap position="0,0" zPosition="-10" size="1920,1080" pixmap="SphereFHD/png/bg3.png" />
+    <panel name="Time" />
+    <widget font="Regular; 42" position="892,762" render="Label" size="850,50" source="Title" transparent="1" valign="top" zPosition="1" halign="center" backgroundColor="background" foregroundColor="TextInfo" />
+    <widget backgroundColor="Background" enableWrapAround="1" itemHeight="30" name="config" position="895,137" scrollbarMode="showOnDemand" size="800,510" transparent="1" font="Regular; 26" />
+    <panel name="color_buttons" />
+    <panel name="buttons_rg" />
+  </screen>
+  <screen name="FindMovieList" position="center,center" size="1920,1080" title="" flags="wfNoBorder">
+    <ePixmap position="0,0" zPosition="-10" size="1920,1080" pixmap="SphereFHD/png/bg3.png" />
+    <panel name="Time" />
+    <widget font="Regular; 42" position="892,762" render="Label" size="850,50" source="Title" transparent="1" valign="top" zPosition="1" halign="center" backgroundColor="background" foregroundColor="TextInfo" />
+    <widget name="cover" position="1446,233" size="246,380" zPosition="3" alphatest="blend" backgroundColor="background" />
+    <widget name="info" position="892,126" size="800,40" font="Regular;30" transparent="0" foregroundColor="yellow" halign="left" backgroundColor="background" />
+    <widget name="path" position="892,178" size="800,40" font="Regular;30" transparent="0" foregroundColor="yellow" halign="left" backgroundColor="background" />
+    <widget name="found" position="1064,317" size="300,40" font="Regular;30" transparent="0" foregroundColor="yellow" halign="left" backgroundColor="background" />
+    <widget name="notfound" position="1064,380" size="300,40" font="Regular;30" transparent="0" foregroundColor="yellow" halign="left" backgroundColor="background" />
+    <widget name="error" position="1064,440" size="300,40" font="Regular;30" transparent="0" foregroundColor="yellow" halign="left" backgroundColor="background" />
+    <panel name="color_buttons" />
+    <panel name="buttons_rgyb" />
+    <panel name="function_buttons_4" />
+  </screen>
+  <screen name="FindMovieListCoverSetup" position="center,center" size="1920,1080" title="" flags="wfNoBorder">
+    <ePixmap position="0,0" zPosition="-10" size="1920,1080" pixmap="SphereFHD/png/bg3.png" />
+    <panel name="Time" />
+    <widget font="Regular; 42" position="892,762" render="Label" size="850,50" source="Title" transparent="1" valign="top" zPosition="1" halign="center" backgroundColor="background" foregroundColor="TextInfo" />
+    <widget name="config" position="844,80" itemHeight="35" size="900,600" scrollbarMode="showOnDemand" selectionPixmap="SphereFHD/selpic/1240x75.png" transparent="1" font="Regular; 28" />
+    <widget name="info" position="892,30" size="800,40" font="Regular;30" transparent="0" foregroundColor="yellow" halign="left" backgroundColor="background" />
+    <panel name="color_buttons" />
+    <panel name="buttons_rgyb" />
+    <panel name="function_buttons_4" />
+  </screen>
+  <screen name="FindMovieListScanPath" position="center,center" size="1920,1080" title="" flags="wfNoBorder">
+    <ePixmap position="0,0" zPosition="-10" size="1920,1080" pixmap="SphereFHD/png/bg3.png" />
+    <panel name="Time" />
+    <widget font="Regular; 42" position="892,762" render="Label" size="850,50" source="Title" transparent="1" valign="top" zPosition="1" halign="center" backgroundColor="background" foregroundColor="TextInfo" />
+    <widget name="folderlist" position="844,80" itemHeight="35" size="900,600" scrollbarMode="showOnDemand" selectionPixmap="SphereFHD/selpic/1240x75.png" transparent="1" font="Regular; 28" />
+    <widget name="media" position="892,30" size="800,40" font="Regular;30" transparent="0" foregroundColor="yellow" halign="left" backgroundColor="background" />
+    <panel name="color_buttons" />
+    <panel name="buttons_rg" />
+    <panel name="function_buttons_4" />
+</screen>
+  <screen name="FPGAUpgrade" position="center,center" size="1920,1080" title="FPGA Upgrade" flags="wfNoBorder">
+   <ePixmap position="0,0" zPosition="-10" size="1920,1080" pixmap="SphereFHD/png/bg3.png" />
+   <panel name="Time" />
+   <widget font="Regular; 42" position="892,762" render="Label" size="850,50" source="Title" transparent="1" valign="top" zPosition="1" halign="center" backgroundColor="background" foregroundColor="TextInfo" />
+   <widget backgroundColor="background" font="Regular; 28" foregroundColor="yellow" halign="left" position="924,127" render="Label" size="750,60" source="status" transparent="1" zPosition="1" />
+   <widget name="file_list" position="924,214" scrollbarMode="showOnDemand" scrollbarWidth="5" scrollbarSliderForegroundColor="lightgrey" scrollbarSliderBorderColor="darkgrey" scrollbarSliderBorderWidth="1" size="750,505" transparent="1" />
+   <panel name="color_buttons" />
+  <panel name="buttons_rgyb" />
+</screen>
+  <screen name="FPUpgrade" position="center,center" size="1920,1080" title="FP upgrade required" flags="wfNoBorder">
+  <ePixmap position="0,0" zPosition="-10" size="1920,1080" pixmap="SphereFHD/png/bg3.png" />
+  <panel name="Time" />
+  <widget font="Regular; 42" position="892,762" render="Label" size="850,50" source="Title" transparent="1" valign="top" zPosition="1" halign="center" backgroundColor="background" foregroundColor="TextInfo" />
+  <widget name="text" position="860,116" size="850,160" font="Regular; 28" transparent="1" />
+  <widget name="oldversion_label" position="860,400" size="600,60" font="Regular; 28" transparent="1" />
+  <widget name="newversion_label" position="860,500" size="600,60" font="Regular; 28" transparent="1" />
+  <widget name="oldversion" position="1500,400" size="160,60" font="Regular; 28" transparent="1" />
+  <widget name="newversion" position="1500,500" size="160,60" font="Regular; 28" transparent="1" />
+  <panel name="color_buttons" />
+  <panel name="buttons_rg" />
+</screen>
+  <screen name="FritzAbout" position="center,center" size="1920,1080" title="About Fritz Call" flags="wfNoBorder">
+  <ePixmap position="0,0" zPosition="-10" size="1920,1080" pixmap="SphereFHD/png/bg3.png" />
+  <panel name="Time" />
+  <widget font="Regular; 42" position="892,762" render="Label" size="850,50" source="Title" transparent="1" valign="top" zPosition="1" halign="center" backgroundColor="background" foregroundColor="TextInfo" />
+  <widget backgroundColor="background" font="Regular; 24" name="text" position="1031,80" size="540,250" transparent="1" />
+  <widget backgroundColor="background" font="Regular; 26" name="url" position="1087,383" size="440,60" transparent="1" />
+  <ePixmap pixmap="SphereFHD/buttons/ok.png" position="1805,1010" size="50,50" alphatest="blend" />
+  <ePixmap alphatest="blend" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/FritzCall/images/website.png" position="1213,491" size="175,175" transparent="1" zPosition="4" />
+</screen>
+  <screen name="FritzCallSetup" position="center,center" size="1920,1080" title="Fritz Call Setup" flags="wfNoBorder">
+  <ePixmap position="0,0" zPosition="-10" size="1920,1080" pixmap="SphereFHD/png/bg4.png" />
+  <panel name="Time" />
+  <widget font="Regular; 42" position="center,795" render="Label" size="1150,54" source="Title" transparent="0" valign="top" zPosition="1" halign="center" backgroundColor="black" foregroundColor="TextInfo" />
+  <widget backgroundColor="background" foregroundColor="blue" font="Regular; 32" name="consideration" position="center,20" size="1500,70" transparent="1" halign="center" />
+  <widget backgroundColor="background" enableWrapAround="1" itemHeight="30" name="config" position="center,99" scrollbarMode="showOnDemand" scrollbarWidth="5" selectionPixmap="SphereFHD/selpic/1240x75.png" scrollbarSliderBorderWidth="1" size="909,690" transparent="1" font="Regular; 28" />
+  <panel name="color_buttons" />
+  <panel name="buttons_rgyb" />
+  <ePixmap pixmap="SphereFHD/buttons/menu.png" position="1745,1000" size="50,50" alphatest="blend" />
+</screen>
+  <screen name="FritzDisplayCalls" position="center,center" size="1920,1080" title="Fritz Display Calls" flags="wfNoBorder">
+  <ePixmap position="0,0" zPosition="-10" size="1920,1080" pixmap="SphereFHD/png/bg4.png" />
+  <panel name="Time" />
+  <widget font="Regular; 42" position="center,762" render="Label" size="850,50" source="Title" transparent="1" valign="top" zPosition="1" halign="center" backgroundColor="background" foregroundColor="TextInfo" />
+  
+  <widget backgroundColor="background" ForegroundColor="blue" font="Regular; 32" name="statusbar" position="center,20" size="1200,40" transparent="1" halign="center" />
+  <widget backgroundColor="background" position="center,99" render="Listbox" scrollbarMode="showOnDemand" scrollbarWidth="5" selectionPixmap="SphereFHD/selpic/1240x75.png" scrollbarSliderBorderWidth="1" size="950,600" source="entries" transparent="1" zPosition="3">
+     <convert type="TemplatedMultiContent">{"template": [
+				   MultiContentEntryText(pos = (5,5),size = (120,24),flags = RT_HALIGN_LEFT,text = 1),# index 0 is the MenuText,
+				   MultiContentEntryPixmapAlphaTest(pos = (130,5),size = (25,25),png = 2),# index 1 i direction pixmap
+				   MultiContentEntryText(pos = (160,5),size = (270,24),flags = RT_HALIGN_LEFT,text = 3),# index 2 is remote name/number
+				   MultiContentEntryText(pos = (440,5),size = (60,24),flags = RT_HALIGN_LEFT,text = 4),# index 3 is length of call
+				   MultiContentEntryText(pos = (510,5),size = (225,24),flags = RT_HALIGN_CENTER,text = 5),# index 4 is my number/name for number
+					],
+				   "fonts": [gFont("Regular",18)],
+				   "itemHeight": 30
+			    }</convert>
+    </widget>
+  <panel name="color_buttons" />
+  <panel name="buttons_rgyb" />
+  <ePixmap pixmap="SphereFHD/buttons/menu.png" position="1745,1000" size="50,50" alphatest="blend" />
+  <ePixmap pixmap="SphereFHD/buttons/ok.png" position="1805,1010" size="50,50" alphatest="blend" />
+</screen>
+  <screen name="FritzDisplayPhonebook" position="center,center" size="1920,1080" title="Fritz Display Phonebook" flags="wfNoBorder">
+  <ePixmap position="0,0" zPosition="-10" size="1920,1080" pixmap="SphereFHD/png/bg4.png" />
+  <panel name="Time" />
+  <widget font="Regular; 42" position="center,762" render="Label" size="850,50" source="Title" transparent="1" valign="top" zPosition="1" halign="center" backgroundColor="background" foregroundColor="TextInfo" />
+  
+    <widget enableWrapAround="1" position="center,125" render="Listbox" scrollbarMode="showOnDemand" scrollbarWidth="5" selectionPixmap="SphereFHD/selpic/1240x75.png" scrollbarSliderBorderWidth="1" size="950,600" source="entries" transparent="1">
+      <convert type="TemplatedMultiContent">{"template": [
+						MultiContentEntryText(pos = (5,5),size = (320,24),flags = RT_HALIGN_LEFT,text = 1),# index 0 is the name,index 1 is shortname
+					    MultiContentEntryText(pos = (340,5),size = (360,24),flags = RT_HALIGN_LEFT,text = 2),# index 2 is number
+						 ],
+						"fonts": [gFont("Regular",20)],
+						"itemHeight": 35
+					}</convert>
+    </widget>
+  <panel name="color_buttons" />
+  <panel name="buttons_rgyb" />
+  <ePixmap pixmap="SphereFHD/buttons/menu.png" position="1745,1000" size="50,50" alphatest="blend" />
+  <ePixmap pixmap="SphereFHD/buttons/ok.png" position="1805,1010" size="50,50" alphatest="blend" />
+
+</screen>
+  <screen name="FritzMenu" position="center,center" size="1920,1080" title="FRITZ!Box Fon Status" flags="wfNoBorder">
+  <ePixmap position="2,center" zPosition="-10" size="1920,1080" pixmap="SphereFHD/png/bg4.png" />
+  <panel name="Time" />
+  <widget font="Regular; 42" position="center,762" render="Label" size="850,50" source="Title" transparent="1" valign="top" zPosition="1" halign="center" backgroundColor="background" foregroundColor="TextInfo" />
+  <widget name="FBFInfo" position="center,50" size="630,80" font="Regular;26" foregroundColor="foreground" backgroundColor="background" transparent="1" />
+  <widget name="FBFInternet" position="center,150" size="630,75" font="Regular; 24" foregroundColor="foreground" backgroundColor="background" transparent="1" valign="top" />
+  <widget name="internet_inactive" position="570,160" size="50,50" pixmap="SphereFHD/buttons/grey.png" alphatest="blend" />
+  <widget name="internet_active" position="570,160" size="50,50" pixmap="SphereFHD/buttons/green.png" alphatest="blend" />
+  <widget name="FBFDsl" position="center,250" size="630,75" font="Regular; 24" foregroundColor="foreground" backgroundColor="background" transparent="1" valign="top" />
+  <widget name="dsl_inactive" position="570,265" size="50,50" pixmap="SphereFHD/buttons/grey.png" alphatest="blend" />
+  <widget name="dsl_active" position="570,265" size="50,50" pixmap="SphereFHD/buttons/green.png" alphatest="blend" />
+  <widget name="FBFWlan" position="648,350" size="630,75" font="Regular; 24" foregroundColor="foreground" backgroundColor="background" transparent="1" valign="top" />
+  <widget name="wlan_inactive" position="570,360" size="50,50" pixmap="SphereFHD/buttons/grey.png" alphatest="blend" />
+  <widget name="wlan_active" position="570,360" size="50,50" pixmap="SphereFHD/buttons/green.png" alphatest="blend" />
+  <widget name="FBFFax" position="643,450" size="630,75" font="Regular; 24" foregroundColor="foreground" backgroundColor="background" transparent="1" valign="top" />
+  <widget name="fax_inactive" position="570,460" size="50,50" pixmap="SphereFHD/buttons/grey.png" alphatest="blend" />
+  <widget name="fax_active" position="570,460" size="50,50" pixmap="SphereFHD/buttons/green.png" alphatest="blend" />
+  <widget name="FBFRufuml" position="center,550" size="630,75" font="Regular; 24" foregroundColor="foreground" backgroundColor="background" transparent="1" valign="top" />
+  <widget name="rufuml_inactive" position="570,560" size="50,50" pixmap="SphereFHD/buttons/grey.png" alphatest="blend" />
+  <widget name="rufuml_active" position="570,560" size="50,50" pixmap="SphereFHD/buttons/green.png" alphatest="blend" />
+  <widget name="FBFGast" position="center,650" size="630,75" font="Regular; 24" foregroundColor="foreground" backgroundColor="background" transparent="1" valign="top" />
+  <widget name="gast_inactive" position="570,660" size="50,50" pixmap="SphereFHD/buttons/grey.png" alphatest="blend" />
+  <widget name="gast_active" position="570,660" size="50,50" pixmap="SphereFHD/buttons/green.png" alphatest="blend" />
+  <panel name="color_buttons" />
+  <panel name="buttons_rgy" />
 </screen>
   <screen name="MoveVideos_int" position="center,center" size="1920,1080" title="Move Bootvideos back to Flash" flags="wfNoBorder">
   <ePixmap position="0,0" zPosition="-10" size="1920,1080" pixmap="SphereFHD/png/bg3.png" />
@@ -6078,9 +6249,9 @@ MultiContentEntryPixmapAlphaTest(pos = (10, 17), size = (100, 40), png = 2),
 <screen name="QuickMenu" position="4,center" size="1920,1080" backgroundColor="background" flags="wfNoBorder">
   <ePixmap position="center,-2" zPosition="-10" size="1920,1080" pixmap="SphereFHD/png/bg2.png" transparent="1" />
   <eLabel text="Schnellstart Menü" position="388,51" size="383,50" font="Regular; 42" backgroundColor="background" transparent="1" valign="top" zPosition="1" halign="left" foregroundColor="white" />
-  <widget name="list" position="320,108" size="490,630" backgroundColor="background" itemHeight="70" selectionPixmap="SkalliHD-NFR-FullHD/selpic/1240x75.png" transparent="1" scrollbarMode="showOnDemand" />
+  <widget name="list" position="320,108" size="490,630" backgroundColor="background" itemHeight="70" selectionPixmap="SphereFHD/selpic/1240x75.png" transparent="1" scrollbarMode="showOnDemand" />
   <widget name="description" position="22,759" size="1000,212" zPosition="1" font="Regular; 28" halign="center" backgroundColor="transpGrey3" foregroundColor="blue" transparent="1" />
-  <widget name="sublist" position="1274,108" size="490,630" backgroundColor="background" itemHeight="70" selectionPixmap="SkalliHD-NFR-FullHD/selpic/1240x75.png" transparent="1" scrollbarMode="showOnDemand" />
+  <widget name="sublist" position="1274,108" size="490,630" backgroundColor="background" itemHeight="70" selectionPixmap="SphereFHD/selpic/1240x75.png" transparent="1" scrollbarMode="showOnDemand" />
   <widget source="key_red" render="Label" position="392,970" size="300,70" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
   <widget source="key_green" render="Label" position="757,970" size="300,70" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
   <widget source="key_yellow" render="Label" position="1125,970" size="300,70" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
@@ -6667,7 +6838,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
   <widget name="key_blue" position="1425,970" size="300,70" halign="left" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
   <panel name="function_buttons" />
 </screen>
-  <screen name="KodiSetupScreen" position="center,center" size="1920,1080" title="Kodi Settings" backgroundColor="transparent" flags="wfNoBorder">
+<screen name="KodiSetupScreen" position="center,center" size="1920,1080" title="Kodi Settings" backgroundColor="transparent" flags="wfNoBorder">
   <ePixmap position="0,0" zPosition="-10" size="1920,1080" pixmap="SphereFHD/png/bg3.png" />
   <panel name="Time" />
   <ePixmap position="68,805" size="220,220" zPosition="1" pixmap="SphereFHD/menu/setup.png" alphatest="blend" transparent="1" />
@@ -6681,7 +6852,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
   <widget name="key_blue" position="1425,970" size="300,70" halign="left" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
   <panel name="function_buttons" />
 </screen>
-  <screen name="GraphicalEPGPIG" position="center,center" size="1920,1080" title="Electronic Programm Guide" flags="wfNoBorder">
+<screen name="GraphicalEPGPIG" position="center,center" size="1920,1080" title="Electronic Programm Guide" flags="wfNoBorder">
   <ePixmap position="0,0" zPosition="-10" size="1920,1080" pixmap="SphereFHD/png/bg4.png" />
   <widget source="global.CurrentTime" render="Label" position="1660,795" size="210,48" font="Regular;38" halign="center" foregroundColor="white" backgroundColor="transpGrey" transparent="1">
     <convert type="ClockToText">Default</convert>
