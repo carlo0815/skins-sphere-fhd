@@ -34,11 +34,5 @@ SubservicesQuickzap
 SwapOverviewScreen
 SystemMemoryInfo
 SystemNetworkInfo
-WlanConfig
-WlanScanAp
-WlanSelection
-WlanSetup
-WlanStatus
-Wlanstatus
 YahooWeather
 YahooWeatherList
