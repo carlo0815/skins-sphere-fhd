@@ -8408,5 +8408,93 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
   <panel name="color_buttons" />
   <widget name="key_red2" position="372,970" size="300,70" halign="left" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
   <widget name="key_green2" position="722,970" size="300,70" halign="left" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+</screen>
+  <screen name="WlanConfig" position="center,center" size="1920,1080" title="Wireless Network Configuration..." backgroundColor="transparent" flags="wfNoBorder">
+  <ePixmap position="2,-2" zPosition="-10" size="1920,1080" pixmap="SphereFHD/png/bg3.png" />
+  <panel name="Time" />
+  <ePixmap position="68,805" size="220,220" zPosition="1" pixmap="SphereFHD/menu/setup.png" alphatest="blend" transparent="1" />
+  <widget source="Title" render="Label" position="900,20" size="800,50" font="Bold;40" halign="center" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+  <widget name="config" position="940,100" scrollbarMode="showOnDemand" scrollbarWidth="5" selectionPixmap="SphereFHD/selpic/1240x75.png" scrollbarSliderBorderWidth="1" size="700,400" transparent="1" />
+  <eLabel backgroundColor="transpGrey" font="Regular;28" position="1070,510" size="220,32" text="IP Address : " transparent="1" />
+  <widget backgroundColor="transpGrey" font="Regular; 28" halign="center" position="1290,510" render="Label" size="220,32" source="ipaddress" transparent="1" valign="center" zPosition="1" />
+  <eLabel backgroundColor="transpGrey" font="Regular;28" position="1070,550" size="220,32" text="NetMask : " transparent="1" />
+  <widget backgroundColor="transpGrey" font="Regular; 28" halign="center" position="1290,550" render="Label" size="220,32" source="netmask" transparent="1" valign="center" zPosition="1" />
+  <eLabel backgroundColor="transpGrey" font="Regular;28" position="1070,590" size="220,32" text="Gateway : " transparent="1" />
+  <widget backgroundColor="transpGrey" font="Regular; 28" halign="center" position="1290,590" render="Label" size="220,32" source="gateway" transparent="1" valign="center" zPosition="1" />
+  <panel name="color_buttons" />
+  <widget name="key_red2" position="372,970" size="300,70" halign="left" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+  <widget name="key_green2" position="722,970" size="300,70" halign="left" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+</screen>
+  <screen name="WlanScanAp" position="center,center" size="1920,1080" title="Wireless Network Configuration..." backgroundColor="transparent" flags="wfNoBorder">
+  <ePixmap position="2,-2" zPosition="-10" size="1920,1080" pixmap="SphereFHD/png/bg3.png" />
+  <panel name="Time" />
+  <ePixmap position="68,805" size="220,220" zPosition="1" pixmap="SphereFHD/menu/setup.png" alphatest="blend" transparent="1" />
+  <widget source="Title" render="Label" position="900,20" size="800,50" font="Bold;40" halign="center" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+  <widget name="menulist" position="940,100" scrollbarMode="showOnDemand" scrollbarWidth="5" selectionPixmap="SphereFHD/selpic/1240x75.png" scrollbarSliderBorderWidth="1" size="700,400" transparent="1" />
+  <widget render="Label" source="Address" backgroundColor="transpGrey" font="Regular;28" position="1180,510" size="220,32" transparent="1" />
+  <widget backgroundColor="transpGrey" font="Regular; 28" halign="center" position="1180,710" render="Label" size="220,32" source="BitRate" transparent="1" valign="center" zPosition="1" />
+  <widget backgroundColor="transpGrey" font="Regular;28" position="1180,552" render="Label" source="ESSID" size="220,32" transparent="1" />
+  <widget backgroundColor="transpGrey" font="Regular; 28" halign="center" position="1180,670" render="Label" size="220,32" source="Encryption key" transparent="1" valign="center" zPosition="1" />
+  <widget backgroundColor="transpGrey" font="Regular;28" position="1180,590" render="Label" source="Protocol" size="220,32" transparent="1" />
+  <widget backgroundColor="transpGrey" font="Regular; 28" halign="center" position="1180,630" render="Label" source="Frequency" size="220,32" transparent="1" valign="center" zPosition="1" />
+  <panel name="color_buttons" />
+  <widget name="key_red2" position="372,970" size="300,70" halign="left" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+  <widget name="key_green2" position="722,970" size="300,70" halign="left" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+  <widget name="key_yellow" position="1072,970" size="300,70" halign="left" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+  <widget name="key_blue" position="1425,970" size="300,70" halign="left" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+</screen>
+  <screen name="WlanSelection" position="center,center" size="1920,1080" title="Wireless Network Configuration..." backgroundColor="transparent" flags="wfNoBorder">
+  <ePixmap position="2,-2" zPosition="-10" size="1920,1080" pixmap="SphereFHD/png/bg3.png" />
+  <panel name="Time" />
+  <ePixmap position="68,805" size="220,220" zPosition="1" pixmap="SphereFHD/menu/setup.png" alphatest="blend" transparent="1" />
+  <widget source="Title" render="Label" position="900,20" size="800,50" font="Bold;40" halign="center" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+  <widget backgroundColor="transpGrey" name="menulist" position="900,170" scrollbarMode="showOnDemand" scrollbarWidth="5" selectionPixmap="SkalliHD-NFR-FullHD/selpic/1240x75.png" scrollbarSliderBorderWidth="1" size="340,438" transparent="1" zPosition="10" />
+  <widget backgroundColor="transpGrey" font="Regular;20" halign="center" position="1420,170" render="Label" size="280,460" source="description" transparent="1" valign="center" />  
+  <panel name="color_buttons" />
+  <widget name="key_red2" position="372,970" size="300,70" halign="left" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+  <widget name="key_green2" position="722,970" size="300,70" halign="left" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+</screen>
+  <screen name="WlanSetup" position="center,center" size="1920,1080" title="Wireless Network Configuration..." backgroundColor="transparent" flags="wfNoBorder">
+  <ePixmap position="2,-2" zPosition="-10" size="1920,1080" pixmap="SphereFHD/png/bg3.png" />
+  <panel name="Time" />
+  <ePixmap position="68,805" size="220,220" zPosition="1" pixmap="SphereFHD/menu/setup.png" alphatest="blend" transparent="1" />
+  <widget source="Title" render="Label" position="900,20" size="800,50" font="Bold;40" halign="center" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+  <widget backgroundColor="transpGrey" name="menulist" position="900,170" scrollbarMode="showOnDemand" scrollbarWidth="5" selectionPixmap="SkalliHD-NFR-FullHD/selpic/1240x75.png" scrollbarSliderBorderWidth="1" size="340,438" transparent="1" zPosition="10" />
+  <widget backgroundColor="transpGrey" font="Regular;20" halign="center" position="1420,170" render="Label" size="280,460" source="description" transparent="1" valign="center" />  
+  <panel name="color_buttons" />
+  <widget name="key_red2" position="372,970" size="300,70" halign="left" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+  <widget name="key_green2" position="722,970" size="300,70" halign="left" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+</screen>
+  <screen name="WlanStatus" position="center,center" size="1920,1080" title="Wireless Network State" backgroundColor="transparent" flags="wfNoBorder">
+  <ePixmap position="2,-2" zPosition="-10" size="1920,1080" pixmap="SphereFHD/png/bg3.png" />
+  <panel name="Time" />
+  <ePixmap position="68,805" size="220,220" zPosition="1" pixmap="SphereFHD/menu/setup.png" alphatest="blend" transparent="1" />
+  <widget source="Title" render="Label" position="900,20" size="800,50" font="Bold;40" halign="center" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+  <widget alphatest="blend" name="statuspic" position="1672,110" size=" 48, 48" />
+  <widget backgroundColor="Background" foregroundColor="lightblue" font="Regular;30" position="880,110" render="Label" size="495,40" source="IF" transparent="1" />
+  <widget font="Regular;28" position="1390,110" render="Label" size="270,35" source="Statustext" transparent="1" />
+  <widget backgroundColor="transpGrey" font="Regular;26" foregroundColor="white" position="1000,200" render="Label" size="250,35" source="LabelBSSID" transparent="1" valign="center" />
+  <widget backgroundColor="transpGrey" font="Regular;26" foregroundColor="white" position="1000,245" render="Label" size="250,35" source="LabelESSID" transparent="1" valign="center" />
+  <widget backgroundColor="transpGrey" font="Regular;26" foregroundColor="white" position="1000,290" render="Label" size="250,35" source="LabelQuality" transparent="1" valign="center" />
+  <widget backgroundColor="transpGrey" font="Regular;26" foregroundColor="white" position="1000,335" render="Label" size="250,35" source="LabelSignal" transparent="1" valign="center" />
+  <widget backgroundColor="transpGrey" font="Regular;26" foregroundColor="white" position="1000,380" render="Label" size="250,35" source="LabelBitrate" transparent="1" valign="center" />
+  <widget backgroundColor="transpGrey" font="Regular;26" foregroundColor="white" position="1000,425" render="Label" size="250,35" source="LabelEnc" transparent="1" valign="center" />
+  <widget backgroundColor="transpGrey" font="Regular;26" position="1320,200" render="Label" size="280,35" source="BSSID" transparent="1" valign="center" />
+  <widget backgroundColor="transpGrey" font="Regular;26" position="1320,245" render="Label" size="280,35" source="ESSID" transparent="1" valign="center" />
+  <widget backgroundColor="transpGrey" font="Regular;26" position="1320,290" render="Label" size="280,35" source="quality" transparent="1" valign="center" />
+  <widget backgroundColor="transpGrey" font="Regular;26" position="1320,332" render="Label" size="280,35" source="signal" transparent="1" valign="center" />
+  <widget backgroundColor="transpGrey" font="Regular;26" position="1320,380" render="Label" size="280,35" source="bitrate" transparent="1" valign="center" />
+  <widget backgroundColor="transpGrey" font="Regular;26" position="1320,425" render="Label" size="280,35" source="enc" transparent="1" valign="center" />
+<panel name="color_buttons" />
+  <widget name="key_red2" position="372,970" size="300,70" halign="left" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+</screen>
+  <screen name="Wlanstatus" position="center,center" size="1920,1080" title="Wireless Network Configuration..." backgroundColor="transparent" flags="wfNoBorder">
+  <ePixmap position="2,-2" zPosition="-10" size="1920,1080" pixmap="SphereFHD/png/bg3.png" />
+  <panel name="Time" />
+  <ePixmap position="68,805" size="220,220" zPosition="1" pixmap="SphereFHD/menu/setup.png" alphatest="blend" transparent="1" />
+  <widget source="Title" render="Label" position="900,20" size="800,50" font="Bold;40" halign="center" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+  <widget backgroundColor="Background" foregroundColor="lightblue" font="Regular;30" position="945,110" render="Label" size="710,500" source="status" transparent="1" />
+<panel name="color_buttons" />
+  <widget name="key_red2" position="372,970" size="300,70" halign="left" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
 </screen>	
 </skin>
