@@ -8456,14 +8456,28 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
     <convert type="FrontendInfo">LOCK</convert>
     <convert type="ConditionalShowHide">Invert</convert>
   </widget>
-  
   <widget itemHeight="35" font="Regular;28" name="config" position="1000,340" scrollbarMode="showOnDemand" scrollbarWidth="5" selectionPixmap="SkalliHD-NFR-FullHD/selpic/1240x75.png" scrollbarSliderBorderWidth="1" size="600,400" transparent="1" />
   <widget backgroundColor="Background" font="Regular;28" halign="center" name="introduction" position="950,760" size="700,35" transparent="1" />
-
 <panel name="color_buttons" />
   <widget name="key_red" position="372,970" size="300,70" halign="left" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
   <widget name="key_green" position="722,970" size="300,70" halign="left" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
   <widget name="key_yellow" position="1072,970" size="300,70" halign="left" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
   <widget name="key_blue" position="1425,970" size="300,70" halign="left" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
 </screen>
+  <screen name="Satloader" position="center,center" size="1920,1080" title="Satloader Plugin" backgroundColor="transparent" flags="wfNoBorder">
+  <ePixmap position="2,-2" zPosition="-10" size="1920,1080" pixmap="SphereFHD/png/bg3.png" />
+  <panel name="Time" />
+  <ePixmap position="68,805" size="220,220" zPosition="1" pixmap="SphereFHD/menu/setup.png" alphatest="blend" transparent="1" />
+  <widget source="Title" render="Label" position="900,20" size="800,50" font="Bold;40" halign="center" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+  <widget itemHeight="35" font="Regular;28" name="list" position="900,100" scrollbarMode="showOnDemand" scrollbarWidth="5" selectionPixmap="SkalliHD-NFR-FullHD/selpic/1240x75.png" scrollbarSliderBorderWidth="1" size="800,540" transparent="1" />
+  <widget backgroundColor="Background" font="Regular;28" halign="center" name="info" position="950,680" size="700,35" transparent="1" />
+  <panel name="color_buttons" />
+  <widget name="key_red" position="372,970" size="300,70" halign="left" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+  <widget name="key_green" position="722,970" size="300,70" halign="left" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+  <widget name="key_yellow" position="1072,970" size="300,70" halign="left" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+  <widget name="key_blue" position="1425,970" size="300,70" halign="left" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+</screen>
+  <screen name="ScreenSaver" position="0,0" size="1920,1080" flags="wfNoBorder" transparent="1" backgroundColor="transparent" zPosition="15">
+  <widget name="picture" pixmap="/usr/share/enigma2/distro-logo.png" position="center,center" size="500,500" alphatest="on" zPosition="17" transparent="1" />
+</screen>	
 </skin>
