@@ -11,13 +11,6 @@ NfrHD_Config
 NfrHDScreens
 NFRPasswdScreen
 NumberZapExt
-ScriptExecuterkey
-ScriptExecuteruninstall
-ScriptRunner
-SetupSummary
-SHOUTcastSetup
-SHOUTcastStreamripperRecordingPath
-SHOUTcastWidget
 SimplePlayer
 SimpleSummary
 SmartHomeMonitorMain
