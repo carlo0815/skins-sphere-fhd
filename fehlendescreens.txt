@@ -11,11 +11,6 @@ NfrHD_Config
 NfrHDScreens
 NFRPasswdScreen
 NumberZapExt
-SimplePlayer
-SimpleSummary
-SmartHomeMonitorMain
-SoftwareManagerSetup
-SoftwarePanel
 SortableMenu
 SpinnerSelectionBox
 SubservicesQuickzap
