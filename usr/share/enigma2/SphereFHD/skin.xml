@@ -8479,5 +8479,87 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 </screen>
   <screen name="ScreenSaver" position="0,0" size="1920,1080" flags="wfNoBorder" transparent="1" backgroundColor="transparent" zPosition="15">
   <widget name="picture" pixmap="/usr/share/enigma2/distro-logo.png" position="center,center" size="500,500" alphatest="on" zPosition="17" transparent="1" />
+</screen>
+  <screen name="ScriptExecuterkey" position="center,center" size="1920,1080" title="DNA Key Update" backgroundColor="transparent" flags="wfNoBorder">
+    <ePixmap position="2,-2" zPosition="-10" size="1920,1080" pixmap="SphereFHD/png/bg3.png" />
+    <panel name="Time" />
+    <ePixmap position="68,805" size="220,220" zPosition="1" pixmap="SphereFHD/menu/setup.png" alphatest="blend" transparent="1" />
+    <widget source="Title" render="Label" position="900,20" size="800,50" font="Bold;40" halign="center" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+    <widget itemHeight="35" font="Regular;28" name="list" position="900,100" scrollbarMode="showOnDemand" scrollbarWidth="5" selectionPixmap="SkalliHD-NFR-FullHD/selpic/1240x75.png" scrollbarSliderBorderWidth="1" size="800,540" transparent="1" />
+    <ePixmap pixmap="/usr/lib/enigma2/python/Plugins/Extensions/DNAUpdater/images/banner-green.png" position="800,670" size="1000,100" zPosition="-1" />
+    <panel name="color_buttons" />
+    <widget name="key_red" text="zurück" position="372,970" size="300,70" halign="left" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+    <widget name="key_green" position="722,970" size="300,70" halign="left" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+    <widget name="key_yellow" position="1072,970" size="300,70" halign="left" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+    <widget name="key_blue" position="1425,970" size="300,70" halign="left" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+  </screen>
+  <screen name="ScriptExecuteruninstall" position="center,center" size="1920,1080" title="DNA Update Addon Remove" backgroundColor="transparent" flags="wfNoBorder">
+    <ePixmap position="2,-2" zPosition="-10" size="1920,1080" pixmap="SphereFHD/png/bg3.png" />
+    <panel name="Time" />
+    <ePixmap position="68,805" size="220,220" zPosition="1" pixmap="SphereFHD/menu/setup.png" alphatest="blend" transparent="1" />
+    <widget source="Title" render="Label" position="900,20" size="800,50" font="Bold;40" halign="center" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+    <widget itemHeight="35" font="Regular;28" name="list" position="900,100" scrollbarMode="showOnDemand" scrollbarWidth="5" selectionPixmap="SkalliHD-NFR-FullHD/selpic/1240x75.png" scrollbarSliderBorderWidth="1" size="800,540" transparent="1" />
+    <ePixmap pixmap="/usr/lib/enigma2/python/Plugins/Extensions/DNAUpdater/images/banner-green.png" position="800,670" size="1000,100" zPosition="-1" />
+    <panel name="function_buttons_4" />
+  </screen>
+  <screen name="ScriptRunner" position="center,center" size="1920,1080" title="Job Manager" backgroundColor="transparent" flags="wfNoBorder">
+  <ePixmap position="2,-2" zPosition="-10" size="1920,1080" pixmap="SphereFHD/png/bg3.png" />
+  <panel name="Time" />
+  <ePixmap position="68,805" size="220,220" zPosition="1" pixmap="SphereFHD/menu/setup.png" alphatest="blend" transparent="1" />
+  <widget source="Title" render="Label" position="900,20" size="800,50" font="Bold;40" halign="center" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+  <widget itemHeight="35" font="Regular;28" name="list" position="900,100" scrollbarMode="showOnDemand" scrollbarWidth="5" selectionPixmap="SkalliHD-NFR-FullHD/selpic/1240x75.png" scrollbarSliderBorderWidth="1" size="800,540" transparent="1" />
+  <widget name="lab1" position="900,670" size="800,70" zPosition="10" font="Regular;32" halign="left" valign="center" transparent="1" foregroundColor="white" />
+  <panel name="color_buttons" />
+  <widget render="Label" source="key_red" position="372,970" size="300,70" halign="left" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+  <widget render="Label" source="key_green" position="722,970" size="300,70" halign="left" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+</screen>
+  <screen name="SetupSummary" position="0,0" size="200,20">
+    <widget font="Regular;20" position="0,0" render="Label" size="200,20" source="SetupTitle" />
+</screen>
+  <screen name="SHOUTcastSetup" position="center,center" size="1920,1080" title="SHOUTcast Setup" backgroundColor="transparent" flags="wfNoBorder">
+  <ePixmap position="2,-2" zPosition="-10" size="1920,1080" pixmap="SphereFHD/png/bg3.png" />
+  <panel name="Time" />
+  <ePixmap position="68,805" size="220,220" zPosition="1" pixmap="SphereFHD/menu/setup.png" alphatest="blend" transparent="1" />
+  <widget source="Title" render="Label" position="900,20" size="800,50" font="Bold;40" halign="center" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+  <widget itemHeight="35" font="Regular;28" name="config" position="900,100" scrollbarMode="showOnDemand" scrollbarWidth="5" selectionPixmap="SkalliHD-NFR-FullHD/selpic/1240x75.png" scrollbarSliderBorderWidth="1" size="800,540" transparent="1" />
+  <ePixmap position="320,380" size="120,35" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/SHOUTcast/shoutcast-logo1-fs8.png" />  
+  <panel name="color_buttons" />
+  <widget render="Label" source="key_red" position="372,970" size="300,70" halign="left" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+  <widget render="Label" source="key_green" position="722,970" size="300,70" halign="left" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+  <widget render="Label" source="key_yellow" position="1072,970" size="300,70" halign="left" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+  <widget render="Label" source="key_blue" position="1425,970" size="300,70" halign="left" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+  <panel name="function_buttons_4" />
+</screen>
+  <screen name="SHOUTcastStreamripperRecordingPath" position="center,center" size="1920,1080" title="Select record path for streamripper" backgroundColor="transparent" flags="wfNoBorder">
+  <ePixmap position="2,-2" zPosition="-10" size="1920,1080" pixmap="SphereFHD/png/bg3.png" />
+  <panel name="Time" />
+  <ePixmap position="68,805" size="220,220" zPosition="1" pixmap="SphereFHD/menu/setup.png" alphatest="blend" transparent="1" />
+  <widget source="Title" render="Label" position="900,20" size="800,50" font="Bold;40" halign="center" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+  <widget itemHeight="35" font="Regular;28" name="filelist" position="900,100" scrollbarMode="showOnDemand" scrollbarWidth="5" selectionPixmap="SkalliHD-NFR-FullHD/selpic/1240x75.png" scrollbarSliderBorderWidth="1" size="800,540" transparent="1" />
+  <ePixmap position="320,380" size="120,35" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/SHOUTcast/shoutcast-logo1-fs8.png" />  
+  <widget name="target" position="950,690" size="700,40" font="Regular;32" backgroundColor="transpGrey" foregroundColor="white" transparent="1" />
+  <panel name="color_buttons" />
+  <widget render="Label" source="key_red" position="372,970" size="300,70" halign="left" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+  <widget render="Label" source="key_green" position="722,970" size="300,70" halign="left" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+  <widget render="Label" source="key_yellow" position="1072,970" size="300,70" halign="left" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+  <widget render="Label" source="key_blue" position="1425,970" size="300,70" halign="left" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+  <panel name="function_buttons_4" />
+</screen>
+  <screen name="SHOUTcastWidget" position="center,center" size="1920,1080" title="SHOUTcast" flags="wfNoBorder">
+  <ePixmap position="0,0" zPosition="-10" size="1920,1080" pixmap="SphereFHD/png/bg4.png" />
+  <panel name="Time" />
+  <widget name="cover" position="68,805" size="220,220" backgroundColor="background" alphatest="blend" />
+  <ePixmap position="25,25" size="120,35" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/SHOUTcast/shoutcast-logo1-fs8.png" />  
+  <widget enableWrapAround="1" position="260,80" name="list" itemHeight="35" font="Regular;28" scrollbarMode="showOnDemand" size="1400,600" selectionPixmap="SphereFHD/selpic/1240x75.png" transparent="1" />
+  <widget name="headertext" position="560,25" size="800,40" zPosition="10" font="Regular;36" halign="left" valign="center" transparent="1" backgroundColor="transpGrey" foregroundColor="white" />
+  <widget name="titel" position="360,700" size="1200,40" zPosition="10" font="Regular;30" halign="left" valign="center" transparent="1" backgroundColor="transpGrey" foregroundColor="white" />
+  <widget name="station" position="360,740" size="1200,80" zPosition="10" font="Regular;30" halign="left" valign="center" transparent="1" backgroundColor="transpGrey" foregroundColor="white" />
+  <widget name="console" position="360,780" size="1200,80" zPosition="10" font="Regular;30" halign="left" valign="center" transparent="1" backgroundColor="transpGrey" foregroundColor="white" />
+  <panel name="color_buttons" />
+  <widget render="Label" source="key_red" position="372,970" size="300,70" halign="left" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+  <widget render="Label" source="key_green" position="722,970" size="300,70" halign="left" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+  <widget render="Label" source="key_yellow" position="1072,970" size="300,70" halign="left" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+  <widget render="Label" source="key_blue" position="1425,970" size="300,70" halign="left" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+  <panel name="function_buttons_3" />
 </screen>	
 </skin>
