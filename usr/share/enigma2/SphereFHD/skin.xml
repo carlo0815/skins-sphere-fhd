@@ -6245,7 +6245,7 @@ MultiContentEntryPixmapAlphaTest(pos = (10, 17), size = (100, 40), png = 2),
   </screen>
   <screen name="QuickMenu" position="4,center" size="1920,1080" backgroundColor="background" flags="wfNoBorder">
     <ePixmap position="center,-2" zPosition="-10" size="1920,1080" pixmap="SphereFHD/png/bg2.png" transparent="1" />
-    <eLabel text="Schnellstart Menü" position="388,51" size="383,50" font="Regular; 42" backgroundColor="background" transparent="1" valign="top" zPosition="1" halign="left" foregroundColor="white" />
+    <eLabel text="Schnellstart MenÃ¼" position="388,51" size="383,50" font="Regular; 42" backgroundColor="background" transparent="1" valign="top" zPosition="1" halign="left" foregroundColor="white" />
     <widget name="list" position="320,108" size="490,630" backgroundColor="background" itemHeight="70" selectionPixmap="SphereFHD/selpic/1240x75.png" transparent="1" scrollbarMode="showOnDemand" />
     <widget name="description" position="22,759" size="1000,212" zPosition="1" font="Regular; 28" halign="center" backgroundColor="transpGrey3" foregroundColor="blue" transparent="1" />
     <widget name="sublist" position="1274,108" size="490,630" backgroundColor="background" itemHeight="70" selectionPixmap="SphereFHD/selpic/1240x75.png" transparent="1" scrollbarMode="showOnDemand" />
@@ -6574,8 +6574,8 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
     <ePixmap pixmap="SphereFHD/buttons/green.png" position="635,980" size="50,50" alphatest="blend" />
     <ePixmap pixmap="SphereFHD/buttons/yellow.png" position="975,980" size="50,50" alphatest="blend" />
     <ePixmap pixmap="SphereFHD/buttons/blue.png" position="1313,980" size="50,50" alphatest="blend" />
-    <widget name="key_red2" position="372,970" size="330,70" halign="left" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
-    <widget name="key_green2" position="707,970" size="330,70" halign="left" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+    <widget name="key_red" position="372,970" size="330,70" halign="left" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+    <widget name="key_green" position="707,970" size="330,70" halign="left" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
     <widget name="key_yellow" position="1042,970" size="330,70" halign="left" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
     <widget name="key_blue" position="1380,970" size="330,70" halign="left" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
     <panel name="function_buttons_4" />
@@ -6779,11 +6779,10 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
     <widget name="LogsSize" position="833,10" size="931,40" foregroundColor="white" backgroundColor="transpGrey" font="Regular;30" zPosition="2" halign="left" valign="center" transparent="1" />
     <widget name="list" position="833,80" size="931,520" itemHeight="35" scrollbarMode="showOnDemand" transparent="1" />
     <panel name="color_buttons" />
-    <widget name="key_red2" position="372,970" size="300,70" halign="left" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
-    <widget name="key_green2" position="722,970" size="300,70" halign="left" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
-    <widget name="key_yellow" position="1072,970" size="300,70" halign="left" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
-    <widget name="key_blue" position="1425,970" size="300,70" halign="left" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
-    <panel name="function_buttons" />
+    <widget name="key_red" position="382,970" size="370,70" valign="center" halign="left" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+    <widget name="key_green" position="732,970" size="370,70" valign="center" halign="left" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+    <widget name="key_yellow" position="1082,970" size="370,70" valign="center" halign="left" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+    <widget name="key_blue" position="1432,970" size="370,70" valign="center" halign="left" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
   </screen>
   <screen name="LogManagerViewLog" position="center,center" size="1920,1080" title="LogManager" backgroundColor="transparent" flags="wfNoBorder">
     <ePixmap position="0,0" zPosition="-10" size="1920,1080" pixmap="SphereFHD/png/bg3.png" />
@@ -6792,12 +6791,6 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
     <widget source="Title" render="Label" position="1100,780" size="400,50" font="Bold;40" halign="center" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
     <ePixmap position="833,80" size="931,520" zPosition="5" pixmap="SphereFHD/png/listboxen/listbox_40.png" alphatest="blend" />
     <widget name="list" position="833,80" size="931,520" itemHeight="35" scrollbarMode="showOnDemand" transparent="1" />
-    <panel name="color_buttons" />
-    <widget name="key_red2" position="372,970" size="300,70" halign="left" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
-    <widget name="key_green2" position="722,970" size="300,70" halign="left" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
-    <widget name="key_yellow" position="1072,970" size="300,70" halign="left" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
-    <widget name="key_blue" position="1425,970" size="300,70" halign="left" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
-    <panel name="function_buttons" />
   </screen>
   <screen name="LogManagerFb" position="center,center" size="1920,1080" title="LogManager" backgroundColor="transparent" flags="wfNoBorder">
     <ePixmap position="0,0" zPosition="-10" size="1920,1080" pixmap="SphereFHD/png/bg3.png" />
@@ -6806,12 +6799,6 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
     <widget source="Title" render="Label" position="1100,780" size="400,50" font="Bold;40" halign="center" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
     <ePixmap position="833,80" size="931,520" zPosition="5" pixmap="SphereFHD/png/listboxen/listbox_40.png" alphatest="blend" />
     <widget name="list" position="833,80" size="931,520" itemHeight="35" scrollbarMode="showOnDemand" transparent="1" />
-    <panel name="color_buttons" />
-    <widget name="key_red2" position="372,970" size="300,70" halign="left" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
-    <widget name="key_green2" position="722,970" size="300,70" halign="left" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
-    <widget name="key_yellow" position="1072,970" size="300,70" halign="left" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
-    <widget name="key_blue" position="1425,970" size="300,70" halign="left" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
-    <panel name="function_buttons" />
   </screen>
   <screen name="JobView" position="center,center" size="1920,1080" title="Job View" backgroundColor="transparent" flags="wfNoBorder">
   <ePixmap position="0,0" zPosition="-10" size="1920,1080" pixmap="SphereFHD/png/bg3.png" />
@@ -6846,10 +6833,10 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
     <ePixmap position="833,80" size="931,520" zPosition="5" pixmap="SphereFHD/png/listboxen/listbox_40.png" alphatest="blend" />
     <widget name="config" position="833,80" size="931,520" itemHeight="35" scrollbarMode="showOnDemand" transparent="1" />
     <panel name="color_buttons" />
-    <widget name="key_red2" position="372,970" size="300,70" halign="left" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
-    <widget name="key_green2" position="722,970" size="300,70" halign="left" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
-    <widget name="key_yellow" position="1072,970" size="300,70" halign="left" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
-    <widget name="key_blue" position="1425,970" size="300,70" halign="left" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+    <widget render="Label" source="key_red" position="372,970" size="300,70" halign="left" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+    <widget render="Label" source="key_green" position="722,970" size="300,70" halign="left" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+    <widget render="Label" source="key_yellow" position="1072,970" size="300,70" halign="left" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+    <widget render="Label" source="key_blue" position="1425,970" size="300,70" halign="left" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
     <panel name="function_buttons" />
   </screen>
   <screen name="GraphicalEPGPIG" position="center,center" size="1920,1080" title="Electronic Programm Guide" flags="wfNoBorder">
@@ -7107,10 +7094,10 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
     <ePixmap position="833,80" size="931,520" zPosition="5" pixmap="SphereFHD/png/listboxen/listbox_40.png" alphatest="blend" />
     <widget name="list" position="833,80" size="931,520" itemHeight="35" scrollbarMode="showOnDemand" transparent="1" />
     <panel name="color_buttons" />
-    <widget name="key_red2" position="372,970" size="300,70" halign="left" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
-    <widget name="key_green2" position="722,970" size="300,70" halign="left" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
-    <widget name="key_yellow" position="1072,970" size="300,70" halign="left" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
-    <widget name="key_blue" position="1425,970" size="300,70" halign="left" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+    <widget render="Label" source="key_red" position="372,970" size="300,70" halign="left" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+    <widget render="Label" source="key_green" position="722,970" size="300,70" halign="left" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+    <widget render="Label" source="key_yellow position="1072,970" size="300,70" halign="left" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+    <widget render="Label" source="key_blue" position="1425,970" size="300,70" halign="left" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
     <panel name="function_buttons" />
   </screen>
   <screen name="HddInfo" position="center,center" size="1920,1080" title="Hard Drive Info" flags="wfNoBorder">
@@ -7143,8 +7130,8 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
     <ePixmap position="833,80" size="931,520" zPosition="5" pixmap="SphereFHD/png/listboxen/listbox_40.png" alphatest="blend" />
     <widget name="menu" position="833,80" size="931,520" itemHeight="35" scrollbarMode="showOnDemand" transparent="1" />
     <panel name="color_buttons" />
-    <widget name="key_red2" position="372,970" size="300,70" halign="left" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
-    <widget name="key_green2" position="722,970" size="300,70" halign="left" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+    <widget name="key_red" position="372,970" size="300,70" halign="left" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+    <widget name="key_green" position="722,970" size="300,70" halign="left" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
     <widget name="key_yellow" position="1072,970" size="300,70" halign="left" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
     <widget name="key_blue" position="1425,970" size="300,70" halign="left" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
     <panel name="function_buttons" />
@@ -7166,10 +7153,10 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 				}</convert>
     </widget>
     <panel name="color_buttons" />
-    <widget name="key_red2" position="372,970" size="300,70" halign="left" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
-    <widget name="key_green2" position="722,970" size="300,70" halign="left" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
-    <widget name="key_yellow" position="1072,970" size="300,70" halign="left" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
-    <widget name="key_blue" position="1425,970" size="300,70" halign="left" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+    <widget render="Label" source="key_red" position="372,970" size="300,70" halign="left" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+    <widget render="Label" source="key_green" position="722,970" size="300,70" halign="left" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+    <widget render="Label" source="key_yellow" position="1072,970" size="300,70" halign="left" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+    <widget render="Label" source="key_blue" position="1425,970" size="300,70" halign="left" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
     <panel name="function_buttons" />
   </screen>
   <screen name="HddSetup" position="center,center" size="1920,1080" title="Hard Drive Setup" backgroundColor="transparent" flags="wfNoBorder">
@@ -7189,8 +7176,8 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 				}</convert>
     </widget>
     <panel name="color_buttons" />
-    <widget name="key_red2" position="372,970" size="300,70" halign="left" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
-    <widget name="key_green2" position="722,970" size="300,70" halign="left" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+    <widget name="key_red" position="372,970" size="300,70" halign="left" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+    <widget name="key_green" position="722,970" size="300,70" halign="left" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
     <widget name="key_yellow" position="1072,970" size="300,70" halign="left" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
     <widget name="key_blue" position="1425,970" size="300,70" halign="left" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
     <panel name="function_buttons" />
@@ -7432,10 +7419,10 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
     <widget source="current_address" render="Label" position="900,595" size="800,35" zPosition="10" font="Regular;26" halign="left" valign="center" transparent="1" foregroundColor="white" />
     <widget source="fixed_address" render="Label" position="900,660" size="800,35" zPosition="10" font="Regular;26" halign="left" valign="center" transparent="1" foregroundColor="white" />
     <panel name="color_buttons" />
-    <widget name="key_red2" position="372,970" size="300,70" halign="left" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
-    <widget name="key_green2" position="722,970" size="300,70" halign="left" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
-    <widget name="key_yellow" position="1072,970" size="300,70" halign="left" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
-    <widget name="key_blue" position="1425,970" size="300,70" halign="left" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+    <widget render="Label" source="key_red" position="372,970" size="300,70" halign="left" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+    <widget render="Label" source="key_green" position="722,970" size="300,70" halign="left" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+    <widget render="Label" source="key_yellow" position="1072,970" size="300,70" halign="left" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+    <widget render="Label" source="key_blue" position="1425,970" size="300,70" halign="left" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
     <panel name="function_buttons" />
   </screen>
   <screen name="HistoryZapSelector" position="center,center" size="1920,1080" title="History Zap" backgroundColor="transparent" flags="wfNoBorder">
@@ -7587,10 +7574,10 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
     </widget>
     <eLabel text="PluginManager" position="1100,780" size="400,50" font="Bold;40" halign="center" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
     <panel name="color_buttons" />
-    <widget name="key_red2" position="372,970" size="300,70" halign="left" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
-    <widget name="key_green2" position="722,970" size="300,70" halign="left" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
-    <widget name="key_yellow" position="1072,970" size="300,70" halign="left" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
-    <widget name="key_blue" position="1425,970" size="300,70" halign="left" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+    <widget render="Label" source="key_red" position="372,970" size="300,70" halign="left" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+    <widget render="Label" source="key_green" position="722,970" size="300,70" halign="left" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+    <widget render="Label" source="key_yellow" position="1072,970" size="300,70" halign="left" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+    <widget render="Label" source="key_blue" position="1425,970" size="300,70" halign="left" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
     <panel name="function_buttons" />
   </screen>
   <screen name="PluginManagerInfo" position="center,center" size="1920,1080" title="Plugin manager activity" flags="wfNoBorder">
@@ -7613,8 +7600,8 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
     <widget backgroundColor="transpGrey" font="Regular; 28" halign="center" position="900,645" render="Label" size="800,70" source="status" transparent="1" />
     <eLabel text="Plugin manager activity" position="1050,780" size="500,50" font="Bold;40" halign="center" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
     <panel name="color_buttons" />
-    <widget name="key_red2" position="372,970" size="300,70" halign="left" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
-    <widget name="key_green2" position="722,970" size="300,70" halign="left" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+    <widget render="Label" source="key_red" position="372,970" size="300,70" halign="left" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+    <widget render="Label" source="key_green" position="722,970" size="300,70" halign="left" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
     <panel name="function_buttons" />
   </screen>
   <screen name="PluginManagerHelp" position="center,center" size="1920,1080" title="Plugin manager help" flags="wfNoBorder">
@@ -7637,8 +7624,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
     <widget backgroundColor="transpGrey" font="Regular; 28" halign="center" position="900,645" render="Label" size="800,70" source="status" transparent="1" />
     <eLabel text="Plugin manager help" position="1050,780" size="500,50" font="Bold;40" halign="center" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
     <panel name="color_buttons" />
-    <widget name="key_red2" position="372,970" size="300,70" halign="left" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
-    <widget name="key_green2" position="722,970" size="300,70" halign="left" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+    <widget render="Label" source="key_red" position="372,970" size="300,70" halign="left" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
     <panel name="function_buttons" />
   </screen>
   <screen name="PluginDownloadBrowser" position="center,center" size="1920,1080" title="Downloadable plugins" flags="wfNoBorder">
@@ -7681,8 +7667,8 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
     <eLabel backgroundColor="transpGrey" font="Regular;25" position="990,660" size="150,30" text="FEC:" transparent="1" />
     <widget backgroundColor="transpGrey" font="Regular;25" name="fec_value" position="1150,660" size="150,30" transparent="1" />
     <panel name="color_buttons" />
-    <widget name="key_red2" position="372,970" size="300,70" halign="left" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
-    <widget name="key_green2" position="722,970" size="300,70" halign="left" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+    <widget name="key_red" position="372,970" size="300,70" halign="left" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+    <widget name="key_green" position="722,970" size="300,70" halign="left" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
     <widget name="key_yellow" position="1072,970" size="300,70" halign="left" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
     <widget name="key_blue" position="1425,970" size="300,70" halign="left" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
     <panel name="function_buttons" />
@@ -7871,8 +7857,8 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
     <ePixmap position="833,80" size="931,520" zPosition="5" pixmap="SphereFHD/png/listboxen/listbox_40.png" alphatest="blend" />
     <widget name="config" position="833,80" size="931,520" itemHeight="35" scrollbarMode="showOnDemand" transparent="1" />
     <panel name="color_buttons" />
-    <widget name="key_red2" position="372,970" size="300,70" halign="left" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
-    <widget name="key_green2" position="722,970" size="300,70" halign="left" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+    <widget name="key_red" position="372,970" size="300,70" halign="left" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+    <widget name="key_green" position="722,970" size="300,70" halign="left" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
     <widget name="key_yellow" position="1072,970" size="300,70" halign="left" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
     <widget name="key_blue" position="1425,970" size="300,70" halign="left" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
     <panel name="function_buttons" />
@@ -7882,7 +7868,14 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
     <panel name="Time" />
     <ePixmap position="68,805" size="220,220" zPosition="1" pixmap="SphereFHD/menu/fan.png" alphatest="blend" transparent="1" />
     <widget name="config" position="873,10" size="800,410" font="Regular;30" textOffset="5,2" secondfont="Regular;30" itemHeight="40" zPosition="2" scrollbarMode="showNever" scrollbarWidth="0" scrollbarSliderBorderColor="grey" backgroundColor="transpGrey" transparent="1" /> /&gt;
-  <widget backgroundColor="background" source="SensorTempText0" render="Label" position="781,450" zPosition="1" size="240,25" font="Regular;23" halign="left" valign="top" transparent="1" /><widget backgroundColor="background" source="SensorTemp0" render="Label" position="1024,450" zPosition="1" foregroundColor="white" size="240,25" font="Regular;23" halign="left" transparent="1"><convert type="SensorToText" /></widget><widget backgroundColor="background" source="SensorTempText1" render="Label" position="781,490" zPosition="1" size="240,25" font="Regular;23" halign="left" valign="top" transparent="1" /><widget backgroundColor="background" source="SensorTemp1" render="Label" position="1024,490" zPosition="1" foregroundColor="white" size="240,25" font="Regular;23" halign="left" transparent="1"><convert type="SensorToText" /></widget><widget backgroundColor="background" source="SensorTempText2" render="Label" position="781,530" zPosition="1" size="240,25" font="Regular;23" halign="left" valign="top" transparent="1" /><widget backgroundColor="background" source="SensorTemp2" render="Label" position="1024,530" zPosition="1" foregroundColor="white" size="240,25" font="Regular;23" halign="left" transparent="1"><convert type="SensorToText" /></widget><widget backgroundColor="background" source="SensorTempText3" render="Label" position="781,570" zPosition="1" size="240,25" font="Regular;23" halign="left" valign="top" transparent="1" /><widget backgroundColor="background" source="SensorTemp3" render="Label" position="1024,570" zPosition="1" foregroundColor="white" size="240,25" font="Regular;23" halign="left" transparent="1"><convert type="SensorToText" /></widget><widget backgroundColor="background" source="SensorTempText4" render="Label" position="781,610" zPosition="1" size="240,25" font="Regular;23" halign="left" valign="top" transparent="1" /><widget backgroundColor="background" source="SensorTemp4" render="Label" position="1024,610" zPosition="1" foregroundColor="white" size="240,25" font="Regular;23" halign="left" transparent="1"><convert type="SensorToText" /></widget><widget backgroundColor="background" source="SensorTempText5" render="Label" position="781,650" zPosition="1" size="240,25" font="Regular;23" halign="left" valign="top" transparent="1" /><widget backgroundColor="background" source="SensorTemp5" render="Label" position="1024,650" zPosition="1" foregroundColor="white" size="240,25" font="Regular;23" halign="left" transparent="1"><convert type="SensorToText" /></widget><widget backgroundColor="background" source="SensorTempText6" render="Label" position="781,690" zPosition="1" size="240,25" font="Regular;23" halign="left" valign="top" transparent="1" /><widget backgroundColor="background" source="SensorTemp6" render="Label" position="1024,690" zPosition="1" foregroundColor="white" size="240,25" font="Regular;23" halign="left" transparent="1"><convert type="SensorToText" /></widget><widget backgroundColor="background" source="SensorTempText7" render="Label" position="781,730" zPosition="1" size="240,25" font="Regular;23" halign="left" valign="top" transparent="1" /><widget backgroundColor="background" source="SensorTemp7" render="Label" position="1024,730" zPosition="1" foregroundColor="white" size="240,25" font="Regular;23" halign="left" transparent="1"><convert type="SensorToText" /></widget><widget backgroundColor="background" source="SensorFanText0" render="Label" position="1299,450" zPosition="1" size="240,25" font="Regular;23" halign="right" valign="top" transparent="1" /><widget backgroundColor="background" source="SensorFan0" render="Label" position="1541,450" zPosition="1" foregroundColor="white" size="240,25" font="Regular;23" halign="right" transparent="1"><convert type="SensorToText" /></widget><widget backgroundColor="background" source="SensorFanText1" render="Label" position="1299,490" zPosition="1" size="240,25" font="Regular;23" halign="right" valign="top" transparent="1" /><widget backgroundColor="background" source="SensorFan1" render="Label" position="1541,490" zPosition="1" foregroundColor="white" size="240,25" font="Regular;23" halign="right" transparent="1"><convert type="SensorToText" /></widget><widget backgroundColor="background" source="SensorFanText2" render="Label" position="1299,530" zPosition="1" size="240,25" font="Regular;23" halign="right" valign="top" transparent="1" /><widget backgroundColor="background" source="SensorFan2" render="Label" position="1541,530" zPosition="1" foregroundColor="white" size="240,25" font="Regular;23" halign="right" transparent="1"><convert type="SensorToText" /></widget><widget backgroundColor="background" source="SensorFanText3" render="Label" position="1299,570" zPosition="1" size="240,25" font="Regular;23" halign="right" valign="top" transparent="1" /><widget backgroundColor="background" source="SensorFan3" render="Label" position="1541,570" zPosition="1" foregroundColor="white" size="240,25" font="Regular;23" halign="right" transparent="1"><convert type="SensorToText" /></widget><widget backgroundColor="background" source="SensorFanText4" render="Label" position="1299,610" zPosition="1" size="240,25" font="Regular;23" halign="right" valign="top" transparent="1" /><widget backgroundColor="background" source="SensorFan4" render="Label" position="1541,610" zPosition="1" foregroundColor="white" size="240,25" font="Regular;23" halign="right" transparent="1"><convert type="SensorToText" /></widget><widget backgroundColor="background" source="SensorFanText5" render="Label" position="1299,650" zPosition="1" size="240,25" font="Regular;23" halign="right" valign="top" transparent="1" /><widget backgroundColor="background" source="SensorFan5" render="Label" position="1541,650" zPosition="1" foregroundColor="white" size="240,25" font="Regular;23" halign="right" transparent="1"><convert type="SensorToText" /></widget><widget backgroundColor="background" source="SensorFanText6" render="Label" position="1299,690" zPosition="1" size="240,25" font="Regular;23" halign="right" valign="top" transparent="1" /><widget backgroundColor="background" source="SensorFan6" render="Label" position="1541,690" zPosition="1" foregroundColor="white" size="240,25" font="Regular;23" halign="right" transparent="1"><convert type="SensorToText" /></widget><widget backgroundColor="background" source="SensorFanText7" render="Label" position="1299,730" zPosition="1" size="240,25" font="Regular;23" halign="right" valign="top" transparent="1" /><widget backgroundColor="background" source="SensorFan7" render="Label" position="1541,730" zPosition="1" foregroundColor="white" size="240,25" font="Regular;23" halign="right" transparent="1"><convert type="SensorToText" /></widget><eLabel text="Fancontrol" position="1100,780" size="400,50" font="Bold;40" halign="center" foregroundColor="white" backgroundColor="transpGrey" transparent="1" /><panel name="color_buttons" /><widget name="key_red2" position="372,970" size="300,70" halign="left" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" /><widget name="key_green2" position="722,970" size="300,70" halign="left" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" /><widget name="key_yellow" position="1072,970" size="300,70" halign="left" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" /><widget name="key_blue" position="1425,970" size="300,70" halign="left" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" /><panel name="function_buttons" /></screen>
+    <widget backgroundColor="background" source="SensorTempText0" render="Label" position="781,450" zPosition="1" size="240,25" font="Regular;23" halign="left" valign="top" transparent="1" /><widget backgroundColor="background" source="SensorTemp0" render="Label" position="1024,450" zPosition="1" foregroundColor="white" size="240,25" font="Regular;23" halign="left" transparent="1"><convert type="SensorToText" /></widget><widget backgroundColor="background" source="SensorTempText1" render="Label" position="781,490" zPosition="1" size="240,25" font="Regular;23" halign="left" valign="top" transparent="1" /><widget backgroundColor="background" source="SensorTemp1" render="Label" position="1024,490" zPosition="1" foregroundColor="white" size="240,25" font="Regular;23" halign="left" transparent="1"><convert type="SensorToText" /></widget><widget backgroundColor="background" source="SensorTempText2" render="Label" position="781,530" zPosition="1" size="240,25" font="Regular;23" halign="left" valign="top" transparent="1" /><widget backgroundColor="background" source="SensorTemp2" render="Label" position="1024,530" zPosition="1" foregroundColor="white" size="240,25" font="Regular;23" halign="left" transparent="1"><convert type="SensorToText" /></widget><widget backgroundColor="background" source="SensorTempText3" render="Label" position="781,570" zPosition="1" size="240,25" font="Regular;23" halign="left" valign="top" transparent="1" /><widget backgroundColor="background" source="SensorTemp3" render="Label" position="1024,570" zPosition="1" foregroundColor="white" size="240,25" font="Regular;23" halign="left" transparent="1"><convert type="SensorToText" /></widget><widget backgroundColor="background" source="SensorTempText4" render="Label" position="781,610" zPosition="1" size="240,25" font="Regular;23" halign="left" valign="top" transparent="1" /><widget backgroundColor="background" source="SensorTemp4" render="Label" position="1024,610" zPosition="1" foregroundColor="white" size="240,25" font="Regular;23" halign="left" transparent="1"><convert type="SensorToText" /></widget><widget backgroundColor="background" source="SensorTempText5" render="Label" position="781,650" zPosition="1" size="240,25" font="Regular;23" halign="left" valign="top" transparent="1" /><widget backgroundColor="background" source="SensorTemp5" render="Label" position="1024,650" zPosition="1" foregroundColor="white" size="240,25" font="Regular;23" halign="left" transparent="1"><convert type="SensorToText" /></widget><widget backgroundColor="background" source="SensorTempText6" render="Label" position="781,690" zPosition="1" size="240,25" font="Regular;23" halign="left" valign="top" transparent="1" /><widget backgroundColor="background" source="SensorTemp6" render="Label" position="1024,690" zPosition="1" foregroundColor="white" size="240,25" font="Regular;23" halign="left" transparent="1"><convert type="SensorToText" /></widget><widget backgroundColor="background" source="SensorTempText7" render="Label" position="781,730" zPosition="1" size="240,25" font="Regular;23" halign="left" valign="top" transparent="1" /><widget backgroundColor="background" source="SensorTemp7" render="Label" position="1024,730" zPosition="1" foregroundColor="white" size="240,25" font="Regular;23" halign="left" transparent="1"><convert type="SensorToText" /></widget><widget backgroundColor="background" source="SensorFanText0" render="Label" position="1299,450" zPosition="1" size="240,25" font="Regular;23" halign="right" valign="top" transparent="1" /><widget backgroundColor="background" source="SensorFan0" render="Label" position="1541,450" zPosition="1" foregroundColor="white" size="240,25" font="Regular;23" halign="right" transparent="1"><convert type="SensorToText" /></widget><widget backgroundColor="background" source="SensorFanText1" render="Label" position="1299,490" zPosition="1" size="240,25" font="Regular;23" halign="right" valign="top" transparent="1" /><widget backgroundColor="background" source="SensorFan1" render="Label" position="1541,490" zPosition="1" foregroundColor="white" size="240,25" font="Regular;23" halign="right" transparent="1"><convert type="SensorToText" /></widget><widget backgroundColor="background" source="SensorFanText2" render="Label" position="1299,530" zPosition="1" size="240,25" font="Regular;23" halign="right" valign="top" transparent="1" /><widget backgroundColor="background" source="SensorFan2" render="Label" position="1541,530" zPosition="1" foregroundColor="white" size="240,25" font="Regular;23" halign="right" transparent="1"><convert type="SensorToText" /></widget><widget backgroundColor="background" source="SensorFanText3" render="Label" position="1299,570" zPosition="1" size="240,25" font="Regular;23" halign="right" valign="top" transparent="1" /><widget backgroundColor="background" source="SensorFan3" render="Label" position="1541,570" zPosition="1" foregroundColor="white" size="240,25" font="Regular;23" halign="right" transparent="1"><convert type="SensorToText" /></widget><widget backgroundColor="background" source="SensorFanText4" render="Label" position="1299,610" zPosition="1" size="240,25" font="Regular;23" halign="right" valign="top" transparent="1" /><widget backgroundColor="background" source="SensorFan4" render="Label" position="1541,610" zPosition="1" foregroundColor="white" size="240,25" font="Regular;23" halign="right" transparent="1"><convert type="SensorToText" /></widget><widget backgroundColor="background" source="SensorFanText5" render="Label" position="1299,650" zPosition="1" size="240,25" font="Regular;23" halign="right" valign="top" transparent="1" /><widget backgroundColor="background" source="SensorFan5" render="Label" position="1541,650" zPosition="1" foregroundColor="white" size="240,25" font="Regular;23" halign="right" transparent="1"><convert type="SensorToText" /></widget><widget backgroundColor="background" source="SensorFanText6" render="Label" position="1299,690" zPosition="1" size="240,25" font="Regular;23" halign="right" valign="top" transparent="1" /><widget backgroundColor="background" source="SensorFan6" render="Label" position="1541,690" zPosition="1" foregroundColor="white" size="240,25" font="Regular;23" halign="right" transparent="1"><convert type="SensorToText" /></widget><widget backgroundColor="background" source="SensorFanText7" render="Label" position="1299,730" zPosition="1" size="240,25" font="Regular;23" halign="right" valign="top" transparent="1" /><widget backgroundColor="background" source="SensorFan7" render="Label" position="1541,730" zPosition="1" foregroundColor="white" size="240,25" font="Regular;23" halign="right" transparent="1"><convert type="SensorToText" /></widget><eLabel text="Fancontrol" position="1100,780" size="400,50" font="Bold;40" halign="center" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+    <panel name="color_buttons" />
+    <widget render="Label" source="red" position="372,970" size="300,70" halign="left" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+    <widget render="Label" source="green" position="722,970" size="300,70" halign="left" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+    <widget render="Label" source="yellow" position="1072,970" size="300,70" halign="left" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+    <widget render="Label" source="blue" position="1425,970" size="300,70" halign="left" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+    <panel name="function_buttons" />
+  </screen>
   <screen name="TimeInput" position="center,center" size="1920,1080" title="Time Input" flags="wfNoBorder">
     <ePixmap position="0,0" zPosition="-10" size="1920,1080" pixmap="SphereFHD/png/bg3.png" />
     <panel name="Time" />
@@ -7903,8 +7896,8 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
     <widget name="loglist" position="940,24" scrollbarMode="showOnDemand" scrollbarWidth="5" selectionPixmap="SphereFHD/selpic/1240x75.png" scrollbarSliderBorderWidth="1" size="700,250" transparent="1" />
     <widget font="Regular;25" name="logentry" position="940,359" size="700,180" transparent="1" />
     <panel name="color_buttons" />
-    <widget name="key_red2" position="372,970" size="300,70" halign="left" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
-    <widget name="key_green2" position="722,970" size="300,70" halign="left" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+    <widget name="key_red" position="372,970" size="300,70" halign="left" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+    <widget name="key_green" position="722,970" size="300,70" halign="left" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
     <widget name="key_yellow" position="1072,970" size="300,70" halign="left" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
     <widget name="key_blue" position="1425,970" size="300,70" halign="left" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
     <panel name="function_buttons" />
@@ -7925,8 +7918,8 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
     <widget name="info-hdd" position="940,24" scrollbarMode="showOnDemand" scrollbarWidth="5" selectionPixmap="SphereFHD/selpic/1240x75.png" scrollbarSliderBorderWidth="1" size="700,250" transparent="1" />
     <widget font="Regular;25" name="info-usb" position="940,359" size="700,180" transparent="1" />
     <panel name="color_buttons" />
-    <widget name="key_red2" position="372,970" size="300,70" halign="left" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
-    <widget name="key_green2" position="722,970" size="300,70" halign="left" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+    <widget name="key_red" position="372,970" size="300,70" halign="left" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+    <widget name="key_green" position="722,970" size="300,70" halign="left" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
     <widget name="key_yellow" position="1072,970" size="300,70" halign="left" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
     <widget name="key_blue" position="1425,970" size="300,70" halign="left" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
     <panel name="function_buttons_3" />
@@ -7939,8 +7932,8 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
     <widget name="label2" position="940,20" scrollbarMode="showOnDemand" scrollbarWidth="5" selectionPixmap="SphereFHD/selpic/1240x75.png" scrollbarSliderBorderWidth="1" size="700,70" transparent="1" />
     <widget font="Regular;25" name="label1" position="940,150" size="700,580" transparent="1" />
     <panel name="color_buttons" />
-    <widget name="key_red2" position="372,970" size="300,70" halign="left" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
-    <widget name="key_green2" position="722,970" size="300,70" halign="left" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+    <widget name="key_red" position="372,970" size="300,70" halign="left" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+    <widget name="key_green" position="722,970" size="300,70" halign="left" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
     <widget name="key_yellow" position="1072,970" size="300,70" halign="left" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
     <widget name="key_blue" position="1425,970" size="300,70" halign="left" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
     <panel name="function_buttons_3" />
@@ -8019,10 +8012,10 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 	}</convert>
     </widget>
     <panel name="color_buttons" />
-    <widget name="key_red2" position="372,970" size="300,70" halign="left" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
-    <widget name="key_green2" position="722,970" size="300,70" halign="left" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
-    <widget name="key_yellow" position="1072,970" size="300,70" halign="left" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
-    <widget name="key_blue" position="1425,970" size="300,70" halign="left" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+    <widget render="Label" source="key_red" position="372,970" size="300,70" halign="left" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+    <widget render="Label" source="key_green" position="722,970" size="300,70" halign="left" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+    <widget render="Label" source="key_yellow" position="1072,970" size="300,70" halign="left" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+    <widget render="Label" source="key_blue" position="1425,970" size="300,70" halign="left" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
     <panel name="function_buttons_3" />
   </screen>
   <screen name="InstallRar" position="center,center" size="1920,1080" title="Package Manager For NFR" backgroundColor="transparent" flags="wfNoBorder">
@@ -8041,10 +8034,10 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 	}</convert>
     </widget>
     <panel name="color_buttons" />
-    <widget name="key_red2" position="372,970" size="300,70" halign="left" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
-    <widget name="key_green2" position="722,970" size="300,70" halign="left" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
-    <widget name="key_yellow" position="1072,970" size="300,70" halign="left" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
-    <widget name="key_blue" position="1425,970" size="300,70" halign="left" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+    <widget render="Label" source="key_red" position="372,970" size="300,70" halign="left" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+    <widget render="Label" source="key_green" position="722,970" size="300,70" halign="left" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+    <widget render="Label" source="key_yellow" position="1072,970" size="300,70" halign="left" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+    <widget render="Label" source="key_blue" position="1425,970" size="300,70" halign="left" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
     <panel name="function_buttons_3" />
   </screen>
   <screen name="InstallZip" position="center,center" size="1920,1080" title="Package Manager For NFR" backgroundColor="transparent" flags="wfNoBorder">
@@ -8063,10 +8056,10 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 	}</convert>
     </widget>
     <panel name="color_buttons" />
-    <widget name="key_red2" position="372,970" size="300,70" halign="left" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
-    <widget name="key_green2" position="722,970" size="300,70" halign="left" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
-    <widget name="key_yellow" position="1072,970" size="300,70" halign="left" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
-    <widget name="key_blue" position="1425,970" size="300,70" halign="left" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+    <widget render="Label" source="key_red" position="372,970" size="300,70" halign="left" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+    <widget render="Label" source="key_green" position="722,970" size="300,70" halign="left" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+    <widget render="Label" source="key_yellow" position="1072,970" size="300,70" halign="left" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+    <widget render="Label" source="key_blue" position="1425,970" size="300,70" halign="left" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
     <panel name="function_buttons_3" />
   </screen>
   <screen name="InstallTarGZ" position="center,center" size="1920,1080" title="Package Manager For NFR" backgroundColor="transparent" flags="wfNoBorder">
@@ -8085,10 +8078,10 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 	}</convert>
     </widget>
     <panel name="color_buttons" />
-    <widget name="key_red2" position="372,970" size="300,70" halign="left" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
-    <widget name="key_green2" position="722,970" size="300,70" halign="left" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
-    <widget name="key_yellow" position="1072,970" size="300,70" halign="left" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
-    <widget name="key_blue" position="1425,970" size="300,70" halign="left" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+    <widget render="Label" source="key_red" position="372,970" size="300,70" halign="left" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+    <widget render="Label" source="key_green" position="722,970" size="300,70" halign="left" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+    <widget render="Label" source="key_yellow" position="1072,970" size="300,70" halign="left" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+    <widget render="Label" source="key_blue" position="1425,970" size="300,70" halign="left" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
     <panel name="function_buttons_3" />
   </screen>
   <screen name="IpkgInstaller" position="center,center" size="1920,1080" title="IpkgInstaller" backgroundColor="transparent" flags="wfNoBorder">
@@ -8099,11 +8092,11 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
     <widget render="Label" source="introduction" position="940,20" scrollbarMode="showOnDemand" scrollbarWidth="5" selectionPixmap="SphereFHD/selpic/1240x75.png" scrollbarSliderBorderWidth="1" size="700,70" transparent="1" />
     <widget font="Regular;25" name="list" position="940,150" size="700,580" transparent="1" />
     <panel name="color_buttons" />
-    <widget name="key_red2" position="372,970" size="300,70" halign="left" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
-    <widget name="key_green2" position="722,970" size="300,70" halign="left" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
-    <widget name="key_yellow" position="1072,970" size="300,70" halign="left" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
-    <widget name="key_blue" position="1425,970" size="300,70" halign="left" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
-    <panel name="function_buttons_3" />
+    <widget render="Label" source="key_red" position="372,970" size="300,70" halign="left" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+    <widget render="Label" source="key_green" position="722,970" size="300,70" halign="left" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+    <widget render="Label" source="key_yellow" position="1072,970" size="300,70" halign="left" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+    <widget render="Label" source="key_blue" position="1425,970" size="300,70" halign="left" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+	<panel name="function_buttons_3" />
   </screen>
   <screen name="IPKGMenu" position="center,center" size="1920,1080" title="Select IPKG source....." backgroundColor="transparent" flags="wfNoBorder">
     <ePixmap position="0,0" zPosition="-10" size="1920,1080" pixmap="SphereFHD/png/bg3.png" />
@@ -8112,10 +8105,10 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
     <widget source="Title" render="Label" position="1100,780" size="400,50" font="Bold;40" halign="center" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
     <widget font="Regular;25" name="filelist" position="940,20" size="700,700" transparent="1" />
     <panel name="color_buttons" />
-    <widget name="key_red2" position="372,970" size="300,70" halign="left" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
-    <widget name="key_green2" position="722,970" size="300,70" halign="left" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
-    <widget name="key_yellow" position="1072,970" size="300,70" halign="left" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
-    <widget name="key_blue" position="1425,970" size="300,70" halign="left" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+    <widget render="Label" source="key_red" position="372,970" size="300,70" halign="left" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+    <widget render="Label" source="key_green" position="722,970" size="300,70" halign="left" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+    <widget render="Label" source="key_yellow" position="1072,970" size="300,70" halign="left" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+    <widget render="Label" source="key_blue" position="1425,970" size="300,70" halign="left" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
     <panel name="function_buttons_3" />
   </screen>
   <screen name="IPKGSource" position="center,center" size="1920,1080" title="IPKG source" backgroundColor="transparent" flags="wfNoBorder">
@@ -8125,10 +8118,10 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
     <widget source="Title" render="Label" position="1100,780" size="400,50" font="Bold;40" halign="center" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
     <widget font="Regular;25" name="text" position="940,20" size="700,700" transparent="1" />
     <panel name="color_buttons" />
-    <widget name="key_red2" position="372,970" size="300,70" halign="left" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
-    <widget name="key_green2" position="722,970" size="300,70" halign="left" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
-    <widget name="key_yellow" position="1072,970" size="300,70" halign="left" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
-    <widget name="key_blue" position="1425,970" size="300,70" halign="left" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+    <widget render="Label" source="key_red" position="372,970" size="300,70" halign="left" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+    <widget render="Label" source="key_green" position="722,970" size="300,70" halign="left" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+    <widget render="Label" source="key_yellow" position="1072,970" size="300,70" halign="left" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+    <widget render="Label" source="key_blue" position="1425,970" size="300,70" halign="left" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
     <panel name="function_buttons_3" />
   </screen>
   <screen name="IPTV" position="center,center" size="1920,1080" title="IPTV" backgroundColor="transparent" flags="wfNoBorder">
@@ -8139,8 +8132,8 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
     <widget name="text1" position="940,20" scrollbarMode="showOnDemand" scrollbarWidth="5" selectionPixmap="SphereFHD/selpic/1240x75.png" scrollbarSliderBorderWidth="1" size="700,70" transparent="1" />
     <widget font="Regular;25" name="IPTVList" position="940,150" size="700,580" transparent="1" />
     <panel name="color_buttons" />
-    <widget name="key_red2" position="372,970" size="300,70" halign="left" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
-    <widget name="key_green2" position="722,970" size="300,70" halign="left" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+    <widget name="key_red" position="372,970" size="300,70" halign="left" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+    <widget name="key_green" position="722,970" size="300,70" halign="left" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
     <widget name="key_yellow" position="1072,970" size="300,70" halign="left" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
     <widget name="key_blue" position="1425,970" size="300,70" halign="left" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
     <panel name="function_buttons_3" />
@@ -8179,7 +8172,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 				}</convert>
     </widget>
     <panel name="color_buttons" />
-    <widget name="key_red2" position="372,970" size="300,70" halign="left" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+    <widget render="Label" source="key_red" position="372,970" size="300,70" halign="left" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
     <panel name="function_buttons" />
   </screen>
   <screen name="UpgradeStatus" position="center,center" size="1920,1080" title="FPGA Upgrade" flags="wfNoBorder">
@@ -8196,7 +8189,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
     <ePixmap position="0,0" zPosition="-10" size="1920,1080" pixmap="SphereFHD/png/bg4.png" />
     <panel name="Time" />
     <ePixmap position="68,805" size="220,220" zPosition="1" pixmap="SphereFHD/menu/info.png" alphatest="blend" transparent="1" />
-    <eLabel font="Regular; 32" position="1030,75" size="800,450" text="positioniere die Benutzeroberfläche" transparent="1" valign="center" zPosition="1" halign="center" backgroundColor="transpGrey" foregroundColor="white" />
+    <eLabel font="Regular; 32" position="1030,75" size="800,450" text="positioniere die BenutzeroberflÃ¤che" transparent="1" valign="center" zPosition="1" halign="center" backgroundColor="transpGrey" foregroundColor="white" />
     <widget enableWrapAround="1" position="80,30" name="config" itemHeight="35" font="Regular;28" scrollbarMode="showOnDemand" size="800,540" selectionPixmap="SphereFHD/selpic/1240x75.png" transparent="1" />
     <eLabel text="UserInterfacePositioner" position="765,788" size="400,50" font="Bold;40" halign="center" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
     <panel name="color_buttons2" />
@@ -8242,10 +8235,10 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
     <eLabel text="File-Explorer" position="756,786" size="400,50" font="Bold;40" halign="center" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
     <widget enableWrapAround="1" position="560,45" name="filedata" itemHeight="35" font="Regular;28" scrollbarMode="showOnDemand" size="800,700" selectionPixmap="SphereFHD/selpic/1240x75.png" transparent="1" />
     <panel name="color_buttons" />
-    <widget name="key_red2" position="372,970" size="300,70" halign="left" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
-    <widget name="key_green2" position="722,970" size="300,70" halign="left" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
-    <widget name="key_yellow" position="1072,970" size="300,70" halign="left" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
-    <widget name="key_blue" position="1425,970" size="300,70" halign="left" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+    <widget render="Label" source="key_red" position="372,970" size="300,70" halign="left" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+    <widget render="Label" source="key_green" position="722,970" size="300,70" halign="left" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+    <widget render="Label" source="key_yellow" position="1072,970" size="300,70" halign="left" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+    <widget render="Label" source="key_blue" position="1425,970" size="300,70" halign="left" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
   </screen>
   <screen backgroundColor="transpGrey" flags="wfNoBorder" name="VideoFinetune" position="0,0" size="1920,1080">
     <widget position="center,200" render="Canvas" size="720,576" source="Canvas" />
@@ -8261,10 +8254,10 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
     <eLabel text="Vlc-Media file overview" position="775,653" size="370,40" font="Regular;30" halign="center" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
     <widget source="Title" render="Label" position="775,703" size="370,72" font="Regular;26" halign="center" backgroundColor="transpGrey" transparent="1" />
     <panel name="color_buttons" />
-    <widget name="key_red2" position="372,970" size="300,70" halign="left" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
-    <widget name="key_green2" position="722,970" size="300,70" halign="left" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
-    <widget name="key_yellow" position="1072,970" size="300,70" halign="left" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
-    <widget name="key_blue" position="1425,970" size="300,70" halign="left" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+    <widget render="Label" source="key_red" position="372,970" size="300,70" halign="left" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+    <widget render="Label" source="key_green" position="722,970" size="300,70" halign="left" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+    <widget render="Label" source="key_yellow" position="1072,970" size="300,70" halign="left" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+    <widget render="Label" source="key_blue" position="1425,970" size="300,70" halign="left" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
     <panel name="function_buttons" />
   </screen>
   <screen name="VlcServerListScreen" position="center,center" size="1920,1080" title="" flags="wfNoBorder">
@@ -8276,10 +8269,10 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
     <widget name="serverlabel" position="560,75" size="800,40" zPosition="10" font="Regular;36" halign="left" valign="center" transparent="1" backgroundColor="transpGrey" foregroundColor="white" />
     <eLabel text="Select a VLC-Server Profile" position="760,653" size="400,40" font="Regular;30" halign="center" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
     <panel name="color_buttons" />
-    <widget name="key_red2" position="372,970" size="300,70" halign="left" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
-    <widget name="key_green2" position="722,970" size="300,70" halign="left" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
-    <widget name="key_yellow" position="1072,970" size="300,70" halign="left" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
-    <widget name="key_blue" position="1425,970" size="300,70" halign="left" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+    <widget render="Label" source="key_red" position="372,970" size="300,70" halign="left" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+    <widget render="Label" source="key_green" position="722,970" size="300,70" halign="left" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+    <widget render="Label" source="key_yellow" position="1072,970" size="300,70" halign="left" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+    <widget render="Label" source="key_blue" position="1425,970" size="300,70" halign="left" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
     <panel name="function_buttons" />
   </screen>
   <screen name="VlcServerConfigScreen" position="center,center" size="1920,1080" title="" flags="wfNoBorder">
@@ -8290,10 +8283,10 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
     <widget enableWrapAround="1" position="560,85" name="config" itemHeight="35" font="Regular;28" scrollbarMode="showOnDemand" size="800,500" selectionPixmap="SphereFHD/selpic/1240x75.png" transparent="1" />
     <eLabel text="Edit VLC Server" position="760,653" size="400,40" font="Regular;30" halign="center" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
     <panel name="color_buttons" />
-    <widget name="key_red2" position="372,970" size="300,70" halign="left" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
-    <widget name="key_green2" position="722,970" size="300,70" halign="left" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
-    <widget name="key_yellow" position="1072,970" size="300,70" halign="left" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
-    <widget name="key_blue" position="1425,970" size="300,70" halign="left" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+    <widget render="Label" source="key_red" position="372,970" size="300,70" halign="left" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+    <widget render="Label" source="key_green" position="722,970" size="300,70" halign="left" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+    <widget render="Label" source="key_yellow" position="1072,970" size="300,70" halign="left" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+    <widget render="Label" source="key_blue" position="1425,970" size="300,70" halign="left" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
     <panel name="function_buttons" />
   </screen>
   <screen name="VPS_check_PDC_Screen" position="center,center" size="1920,1080" title="VPS-Plugin" flags="wfNoBorder">
@@ -8318,10 +8311,10 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
     <widget enableWrapAround="1" position="510,50" name="config" itemHeight="35" font="Regular;28" scrollbarMode="showOnDemand" size="900,600" selectionPixmap="SphereFHD/selpic/1240x75.png" transparent="1" />
     <widget source="help" render="Label" font="Regular; 26" position="510,470" size="900,180" transparent="1" foregroundColor="white" backgroundColor="transpGrey" />
     <panel name="color_buttons" />
-    <widget name="key_red2" position="372,970" size="300,70" halign="left" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
-    <widget name="key_green2" position="722,970" size="300,70" halign="left" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
-    <widget name="key_yellow" position="1072,970" size="300,70" halign="left" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
-    <widget name="key_blue" position="1425,970" size="300,70" halign="left" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+    <widget render="Label" source="key_red" position="372,970" size="300,70" halign="left" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+    <widget render="Label" source="key_green" position="722,970" size="300,70" halign="left" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+    <widget render="Label" source="key_yellow" position="1072,970" size="300,70" halign="left" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+    <widget render="Label" source="key_blue" position="1425,970" size="300,70" halign="left" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
     <panel name="function_buttons" />
   </screen>
   <screen name="VuplusAuthenticity" position="center,center" size="1920,1080" title="Return the Love Event (only for genuine box)" backgroundColor="transparent" flags="wfNoBorder">
@@ -8333,8 +8326,8 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
     <widget font="Regular;25" name="text1" position="940,370" size="700,180" transparent="1" />
     <widget font="Regular;25" name="text2" position="940,570" size="700,180" transparent="1" />
     <panel name="color_buttons" />
-    <widget name="key_red2" position="372,970" size="300,70" halign="left" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
-    <widget name="key_green2" position="722,970" size="300,70" halign="left" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+    <widget render="Label" source="key_red" position="372,970" size="300,70" halign="left" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+    <widget render="Label" source="key_green" position="722,970" size="300,70" halign="left" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
   </screen>
   <screen name="WlanConfig" position="center,center" size="1920,1080" title="Wireless Network Configuration..." backgroundColor="transparent" flags="wfNoBorder">
     <ePixmap position="2,-2" zPosition="-10" size="1920,1080" pixmap="SphereFHD/png/bg3.png" />
@@ -8349,8 +8342,8 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
     <eLabel backgroundColor="transpGrey" font="Regular;28" position="1070,590" size="220,32" text="Gateway : " transparent="1" />
     <widget backgroundColor="transpGrey" font="Regular; 28" halign="center" position="1290,590" render="Label" size="220,32" source="gateway" transparent="1" valign="center" zPosition="1" />
     <panel name="color_buttons" />
-    <widget name="key_red2" position="372,970" size="300,70" halign="left" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
-    <widget name="key_green2" position="722,970" size="300,70" halign="left" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+    <widget render="Label" source="key_red" position="372,970" size="300,70" halign="left" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+    <widget render="Label" source="key_green" position="722,970" size="300,70" halign="left" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
   </screen>
   <screen name="WlanScanAp" position="center,center" size="1920,1080" title="Wireless Network Configuration..." backgroundColor="transparent" flags="wfNoBorder">
     <ePixmap position="2,-2" zPosition="-10" size="1920,1080" pixmap="SphereFHD/png/bg3.png" />
@@ -8365,10 +8358,10 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
     <widget backgroundColor="transpGrey" font="Regular;28" position="1180,590" render="Label" source="Protocol" size="220,32" transparent="1" />
     <widget backgroundColor="transpGrey" font="Regular; 28" halign="center" position="1180,630" render="Label" source="Frequency" size="220,32" transparent="1" valign="center" zPosition="1" />
     <panel name="color_buttons" />
-    <widget name="key_red2" position="372,970" size="300,70" halign="left" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
-    <widget name="key_green2" position="722,970" size="300,70" halign="left" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
-    <widget name="key_yellow" position="1072,970" size="300,70" halign="left" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
-    <widget name="key_blue" position="1425,970" size="300,70" halign="left" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+    <widget render="Label" source="key_red" position="372,970" size="300,70" halign="left" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+    <widget render="Label" source="key_green" position="722,970" size="300,70" halign="left" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+    <widget render="Label" source="key_yellow" position="1072,970" size="300,70" halign="left" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+    <widget render="Label" source="key_blue" position="1425,970" size="300,70" halign="left" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
   </screen>
   <screen name="WlanSelection" position="center,center" size="1920,1080" title="Wireless Network Configuration..." backgroundColor="transparent" flags="wfNoBorder">
     <ePixmap position="2,-2" zPosition="-10" size="1920,1080" pixmap="SphereFHD/png/bg3.png" />
@@ -8378,8 +8371,8 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
     <widget backgroundColor="transpGrey" name="menulist" position="900,170" scrollbarMode="showOnDemand" scrollbarWidth="5" selectionPixmap="SkalliHD-NFR-FullHD/selpic/1240x75.png" scrollbarSliderBorderWidth="1" size="340,438" transparent="1" zPosition="10" />
     <widget backgroundColor="transpGrey" font="Regular;20" halign="center" position="1420,170" render="Label" size="280,460" source="description" transparent="1" valign="center" />
     <panel name="color_buttons" />
-    <widget name="key_red2" position="372,970" size="300,70" halign="left" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
-    <widget name="key_green2" position="722,970" size="300,70" halign="left" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+    <widget render="Label" source="key_red" position="372,970" size="300,70" halign="left" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+    <widget render="Label" source="key_green" position="722,970" size="300,70" halign="left" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
   </screen>
   <screen name="WlanSetup" position="center,center" size="1920,1080" title="Wireless Network Configuration..." backgroundColor="transparent" flags="wfNoBorder">
     <ePixmap position="2,-2" zPosition="-10" size="1920,1080" pixmap="SphereFHD/png/bg3.png" />
@@ -8389,8 +8382,8 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
     <widget backgroundColor="transpGrey" name="menulist" position="900,170" scrollbarMode="showOnDemand" scrollbarWidth="5" selectionPixmap="SkalliHD-NFR-FullHD/selpic/1240x75.png" scrollbarSliderBorderWidth="1" size="340,438" transparent="1" zPosition="10" />
     <widget backgroundColor="transpGrey" font="Regular;20" halign="center" position="1420,170" render="Label" size="280,460" source="description" transparent="1" valign="center" />
     <panel name="color_buttons" />
-    <widget name="key_red2" position="372,970" size="300,70" halign="left" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
-    <widget name="key_green2" position="722,970" size="300,70" halign="left" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+    <widget render="Label" source="key_red" position="372,970" size="300,70" halign="left" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+    <widget render="Label" source="key_green" position="722,970" size="300,70" halign="left" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
   </screen>
   <screen name="WlanStatus" position="center,center" size="1920,1080" title="Wireless Network State" backgroundColor="transparent" flags="wfNoBorder">
     <ePixmap position="2,-2" zPosition="-10" size="1920,1080" pixmap="SphereFHD/png/bg3.png" />
@@ -8413,7 +8406,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
     <widget backgroundColor="transpGrey" font="Regular;26" position="1320,380" render="Label" size="280,35" source="bitrate" transparent="1" valign="center" />
     <widget backgroundColor="transpGrey" font="Regular;26" position="1320,425" render="Label" size="280,35" source="enc" transparent="1" valign="center" />
     <panel name="color_buttons" />
-    <widget name="key_red2" position="372,970" size="300,70" halign="left" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+    <widget render="Label" source="key_red" position="372,970" size="300,70" halign="left" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
   </screen>
   <screen name="Wlanstatus" position="center,center" size="1920,1080" title="Wireless Network Configuration..." backgroundColor="transparent" flags="wfNoBorder">
     <ePixmap position="2,-2" zPosition="-10" size="1920,1080" pixmap="SphereFHD/png/bg3.png" />
@@ -8422,7 +8415,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
     <widget source="Title" render="Label" position="900,20" size="800,50" font="Bold;40" halign="center" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
     <widget backgroundColor="Background" foregroundColor="lightblue" font="Regular;30" position="945,110" render="Label" size="710,500" source="status" transparent="1" />
     <panel name="color_buttons" />
-    <widget name="key_red2" position="372,970" size="300,70" halign="left" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+    <widget render="Label" source="key_red" position="372,970" size="300,70" halign="left" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
   </screen>
   <screen name="Satfinder" position="center,center" size="1920,1080" title="Satfinder" backgroundColor="transparent" flags="wfNoBorder">
   <ePixmap position="2,-2" zPosition="-10" size="1920,1080" pixmap="SphereFHD/png/bg3.png" />
