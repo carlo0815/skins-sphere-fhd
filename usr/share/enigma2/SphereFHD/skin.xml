@@ -8561,5 +8561,92 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
   <widget render="Label" source="key_yellow" position="1072,970" size="300,70" halign="left" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
   <widget render="Label" source="key_blue" position="1425,970" size="300,70" halign="left" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
   <panel name="function_buttons_3" />
+</screen>
+  <screen name="SimplePlayer" position="0,0" size="1920,1080" title="InfoBar" zPosition="1" backgroundColor="transparent" flags="wfNoBorder">
+  <ePixmap position="0,0" zPosition="-5" size="1920,1080" pixmap="SphereFHD/png/infobar.png" />
+  <panel name="Time" />
+  <ePixmap position="56,791" zPosition="15" size="240,240" pixmap="SphereFHD/png/extra/cover.png" alphatest="blend" />
+  <!--widget source="session.CurrentService" render="Cover" position="112,816" size="133,200" zPosition="2" alphatest="blend" /-->
+  <widget source="session.CurrentService" render="Label" position="350,955" size="840,45" font="Regular;35" noWrap="1" foregroundColor="white" backgroundColor="transpGrey" transparent="1">
+    <convert type="ServiceName">Name</convert>
+  </widget>
+  <widget source="session.CurrentService" render="Label" position="350,955" size="940,40" font="Regular;30" halign="right" foregroundColor="white" backgroundColor="transpGrey" transparent="1">
+    <convert type="ServicePosition">Position</convert>
+  </widget>
+  <ePixmap position="350,1002" size="940,16" zPosition="1" pixmap="SphereFHD/png/extra/progress_back.png" />
+  <widget source="session.CurrentService" render="Progress" position="350,1002" size="940,16" pixmap="SphereFHD/png/extra/progress.png" borderWidth="2" borderColor="dark" zPosition="2" transparent="1">
+    <convert type="ServicePosition">Position</convert>
+  </widget>
+  <widget source="session.CurrentService" render="PositionGauge" position="350,1002" size="940,16" zPosition="3" transparent="1">
+    <convert type="ServicePosition">Gauge</convert>
+  </widget>
+  <widget source="session.CurrentService" render="Label" position="350,1030" size="200,45" font="Regular;30" foregroundColor="white" backgroundColor="transpGrey" transparent="1">
+    <convert type="ServicePosition">Length</convert>
+  </widget>
+  <widget source="session.CurrentService" render="Label" position="350,1030" size="940,32" font="Regular;30" halign="right" foregroundColor="white" backgroundColor="transpGrey" transparent="1">
+    <convert type="ServicePosition">Remaining</convert>
+  </widget>
+  <widget source="session.CurrentService" render="Label" position="1340,1005" size="80,30" font="Regular;26" halign="right" foregroundColor="white" backgroundColor="transpGrey" transparent="1">
+    <convert type="ServiceInfo">VideoWidth</convert>
+  </widget>
+  <eLabel text="x" position="1420,1005" size="15,30" font="Regular;26" halign="center" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+  <widget source="session.CurrentService" render="Label" position="1435,1005" size="80,30" font="Regular;26" halign="left" foregroundColor="white" backgroundColor="transpGrey" transparent="1">
+    <convert type="ServiceInfo">VideoHeight</convert>
+  </widget>
+  <ePixmap pixmap="SphereFHD/icons/ico_hd_off.png" position="1502,1006" size="49,24" zPosition="1" alphatest="blend" />
+  <widget source="session.CurrentService" render="Pixmap" pixmap="SphereFHD/icons/ico_hd_on.png" position="1502,1006" size="49,24" zPosition="2" alphatest="blend">
+    <convert type="ServiceInfo">VideoWidth</convert>
+    <convert type="ValueRange">721,1980</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <ePixmap pixmap="SphereFHD/icons/ico_format_off.png" position="1561,1005" size="41,26" zPosition="1" alphatest="blend" />
+  <widget source="session.CurrentService" render="Pixmap" pixmap="SphereFHD/icons/ico_format_on.png" position="1561,1005" size="41,26" zPosition="2" alphatest="blend">
+    <convert type="ServiceInfo">IsWidescreen</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <ePixmap pixmap="SphereFHD/icons/ico_txt_off.png" position="1612,1006" size="28,24" zPosition="1" alphatest="blend" />
+  <widget source="session.CurrentService" render="Pixmap" pixmap="SphereFHD/icons/ico_txt_on.png" position="1612,1006" size="28,24" zPosition="2" alphatest="blend">
+    <convert type="ServiceInfo">HasTelext</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <ePixmap pixmap="SphereFHD/icons/ico_dolby_off.png" position="1650,1006" size="64,23" zPosition="1" alphatest="blend" />
+  <widget source="session.CurrentService" render="Pixmap" pixmap="SphereFHD/icons/ico_dolby_on.png" position="1650,1006" size="64,23" zPosition="2" alphatest="blend">
+    <convert type="ServiceInfo">IsMultichannel</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <widget source="session.RecordState" render="Pixmap" position="1860,1005" size="32,32" pixmap="SphereFHD/png/extra/record.png" alphatest="blend">
+    <convert type="ConditionalShowHide">Blink</convert>
+  </widget>
+</screen>
+  <screen name="SimpleSummary" position="0,0" size="200,20">
+    <widget font="Regular;20" position="0,0" render="RollerCharLCD" size="200,20" source="parent.Title" />
+</screen>
+  <screen name="SmartHomeMonitorMain" position="center,center" size="1920,1080" title="Smart Home Monitor" backgroundColor="transparent" flags="wfNoBorder">
+  <ePixmap position="0,0" zPosition="-10" size="1920,1080" pixmap="SphereFHD/png/bg4.png" />
+  <panel name="Time" />
+  <ePixmap position="68,805" size="220,220" zPosition="1" pixmap="SphereFHD/menu/setup.png" alphatest="blend" transparent="1" />
+  <widget source="Title" render="Label" position="760,790" size="400,50" font="Bold;40" halign="center" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+  <widget name="info" position="465,23" size="620,35" zPosition="2" font="Regular; 28" foregroundColor="white" backgroundColor="transpGrey" noWrap="1" transparent="1" valign="center" halign="left" />
+  <widget name="adapterinfo" position="1180,105" size="250,405" zPosition="2" font="Regular;20" foregroundColor="white" backgroundColor="transpGrey" noWrap="1" transparent="1" />
+  <widget name="adapterchart" position="1545,250" zPosition="2" size="275,260" alphatest="on" />
+  <widget font="Regular;25" name="adapterlist" position="465,105" size="430,540" transparent="1" />
+  <panel name="color_buttons" />
+  <widget name="key_red" position="372,970" size="300,70" halign="left" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+  <widget name="key_green" position="722,970" size="300,70" halign="left" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+  <widget name="key_yellow" position="1072,970" size="300,70" halign="left" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+  <widget name="key_blue" position="1422,970" size="300,70" halign="left" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+  <panel name="function_buttons_3" />
+</screen>
+  <screen name="SoftwareManagerSetup" position="center,center" size="1920,1080" title="SoftwareManager Setup" flags="wfNoBorder">
+  <ePixmap position="0,0" zPosition="-10" size="1920,1080" pixmap="SphereFHD/png/bg4.png" />
+  <panel name="Time" />
+  <ePixmap position="68,805" size="220,220" zPosition="1" pixmap="SphereFHD/menu/info.png" alphatest="blend" transparent="1" />
+  <eLabel text="SoftwareManager Setup" position="660,750" size="600,50" font="Bold;40" halign="center" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+  <widget enableWrapAround="1" position="512,50" name="config" itemHeight="35" font="Regular;28" scrollbarMode="showOnDemand" size="900,400" selectionPixmap="SphereFHD/selpic/1240x75.png" transparent="1" />
+  <widget source="introduction" render="Label" font="Regular; 26" position="510,470" size="900,180" transparent="1" foregroundColor="white" backgroundColor="transpGrey" />
+  <panel name="color_buttons" />
+  <widget render="Label" source="key_red" position="372,970" size="300,70" halign="left" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+  <widget render="Label" source="key_green" position="722,970" size="300,70" halign="left" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+  <panel name="function_buttons_4" />
 </screen>	
 </skin>
