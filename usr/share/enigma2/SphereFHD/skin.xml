@@ -149,6 +149,12 @@
     <widget name="key_yellow" position="1072,970" size="300,70" halign="left" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
     <widget name="key_blue" position="1425,970" size="300,70" halign="left" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
   </screen>
+  <screen name="buttons_rgyb2">
+    <widget source="key_red" render="Label" position="382,970" size="370,70" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+    <widget source="key_green" render="Label" position="732,970" size="370,70" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+    <widget source="key_yellow" render="Label" position="1082,970" size="370,70" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+    <widget source="key_blue" render="Label" position="1432,970" size="370,70" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+  </screen>
   <screen name="buttons_rgy">
     <widget name="key_red" position="372,970" size="300,70" halign="left" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
     <widget name="key_green" position="722,970" size="300,70" halign="left" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
@@ -6099,6 +6105,86 @@ MultiContentEntryPixmapAlphaTest(pos = (10, 17), size = (100, 40), png = 2),
     <panel name="color_buttons" />
     <panel name="buttons_rgy" />
   </screen>
+  <screen name="NameserverSetup" position="center,center" size="1920,1080" title="Nameserver Setup" flags="wfNoBorder">
+    <ePixmap position="0,0" zPosition="-10" size="1920,1080" pixmap="SphereFHD/png/bg3.png" />
+    <panel name="Time" />
+    <widget font="Regular; 42" position="892,762" render="Label" size="850,50" source="Title" transparent="1" valign="top" zPosition="1" halign="center" backgroundColor="background" foregroundColor="TextInfo" />
+    <widget backgroundColor="background" font="Regular; 28" halign="center" name="introduction" position="896,652" size="800,41" transparent="1" />
+    <widget name="config" position="844,43" itemHeight="35" size="900,600" scrollbarMode="showOnDemand" selectionPixmap="SphereFHD/selpic/1240x75.png" transparent="1" font="Regular; 28" />
+    <panel name="color_buttons2" />
+    <panel name="buttons_rgy" />
+  </screen>
+  <screen name="Net_test" position="center,center" size="1920,1080" title="Iperf-Net_test" flags="wfNoBorder">
+    <ePixmap position="0,0" zPosition="-10" size="1920,1126" pixmap="SphereFHD/png/bg3.png" />
+    <panel name="Time" />
+    <widget font="Regular; 35" position="843,551" render="Label" size="900,146" source="Title" transparent="1" valign="top" zPosition="1" halign="center" backgroundColor="background" foregroundColor="TextInfo" />
+    <widget name="config" position="844,43" itemHeight="35" size="900,502" scrollbarMode="showOnDemand" selectionPixmap="SphereFHD/selpic/1240x75.png" transparent="1" font="Regular; 28" />
+    <panel name="color_buttons" />
+    <panel name="buttons_rgyb2" />
+    <ePixmap pixmap="SphereFHD/buttons/info.png" position="1065,730" size="100,35" alphatest="blend" zPosition="1" />
+    <widget backgroundColor="black" font="Regular; 30" halign="left" render="Label" source="key_info" position="1171,722" size="305,50" transparent="0" zPosition="1" valign="center" />
+  </screen>
+  <screen name="NFR4XBootImageChoose" position="center,center" size="1920,1080" title="NFR4XBoot - Menu" flags="wfNoBorder">
+    <ePixmap position="0,0" zPosition="-10" size="1920,1080" pixmap="SphereFHD/png/bg4.png" />
+    <panel name="Time" />
+    <widget font="Regular; 42" position="center,762" render="Label" size="850,50" source="Title" transparent="1" valign="top" zPosition="1" halign="center" backgroundColor="background" foregroundColor="TextInfo" /> 
+    <ePixmap pixmap="SphereFHD/buttons/menu.png" position="1630,1004" size="50,50" alphatest="blend" />
+    <widget name="device_icon" position="115,121" size="80,80" alphatest="on" />
+    <widget name="free_space_progressbar" position="110,308" size="674,13" borderWidth="1" zPosition="3" />
+    <widget name="label2" position="112,210" size="362,35" zPosition="1" font="Regular;30" backgroundColor="background" transparent="1" foregroundColor="TextInfo" />
+    <widget name="label6" position="485,210" size="300,35" zPosition="1" halign="right" font="Regular;30" backgroundColor="background" foregroundColor="TextInfo" transparent="1" />
+    <widget name="label3" position="113,265" size="362,35" zPosition="1" font="Regular;30" backgroundColor="background" transparent="1" foregroundColor="TextInfo" />
+    <widget name="label7" position="486,263" size="300,35" zPosition="1" halign="right" font="Regular;30" backgroundColor="background" foregroundColor="TextInfo" transparent="1" />
+    <widget name="label4" position="113,329" size="357,35" zPosition="1" font="Regular;30" backgroundColor="background" transparent="1" foregroundColor="TextInfo" />
+    <widget name="label8" position="432,329" size="357,35" zPosition="1" halign="right" font="Regular;30" backgroundColor="background" foregroundColor="TextInfo" transparent="1" />
+    <widget name="label9" position="432,391" size="357,35" zPosition="1" halign="right" font="Regular;30" backgroundColor="background" foregroundColor="TextInfo" transparent="1" />
+    <widget name="label5" position="112,389" size="357,35" zPosition="1" font="Regular;30" backgroundColor="background" transparent="1" foregroundColor="TextInfo" />
+    <widget name="label11" position="637,485" size="103,35" zPosition="1" halign="right" font="Regular;30" backgroundColor="background" foregroundColor="TextInfo" transparent="1" />
+    <widget name="label10" position="112,450" size="550,119" zPosition="1" font="Regular;30" backgroundColor="background" transparent="1" foregroundColor="TextInfo" />
+    <widget name="label1" position="844,43" size="900,116" zPosition="1" halign="left" font="Regular;30" backgroundColor="background" transparent="1" foregroundColor="yellow" />
+    <widget name="config" position="844,177" itemHeight="35" size="900,550" scrollbarMode="showOnDemand" selectionPixmap="SphereFHD/selpic/1240x75.png" transparent="1" font="Regular; 28" />
+    <widget name="key_menu" backgroundColor="Background" font="Regular; 30" position="1695,1012" render="Label" size="200,35" source="key_menu" transparent="1" zPosition="1" foregroundColor="Text1" />
+    <panel name="color_buttons" />
+    <panel name="buttons_rgyb" />
+ </screen>
+ <screen name="NFR4XBootImageInstall" position="center,center" size="1920,1080" title="NFR4XBoot - Image Installation" flags="wfNoBorder">
+    <ePixmap position="0,0" zPosition="-10" size="1920,1080" pixmap="SphereFHD/png/bg4.png" />
+    <panel name="Time" />
+    <widget font="Regular; 42" position="center,762" render="Label" size="850,50" source="Title" transparent="1" valign="top" zPosition="1" halign="center" backgroundColor="background" foregroundColor="TextInfo" />
+    <widget name="config" position="508,152" itemHeight="35" size="900,600" scrollbarMode="showOnDemand" selectionPixmap="SphereFHD/selpic/1240x75.png" transparent="1" font="Regular; 28" />
+    <panel name="function_buttons_4" />
+    <widget name="HelpWindow" position="1422,152" size="482,352" transparent="1" alphatest="blend" zPosition="2" />
+    <panel name="color_buttons2" />
+    <panel name="buttons_rgy" />
+ </screen>
+ <screen name="NFR4XBootInstallation" position="center,center" size="1920,1080" title="NFR4XBoot - Installation" flags="wfNoBorder">
+    <ePixmap position="0,0" zPosition="-10" size="1920,1080" pixmap="SphereFHD/png/bg4.png" />
+    <panel name="Time" />
+    <widget font="Regular; 42" position="center,762" render="Label" size="850,50" source="Title" transparent="1" valign="top" zPosition="1" halign="center" backgroundColor="background" foregroundColor="TextInfo" />
+    <widget name="key_menu" backgroundColor="background" font="Regular; 30" position="1681,991" render="Label" size="200,35" source="key_menu" transparent="1" zPosition="1" foregroundColor="Text1" />
+    <widget backgroundColor="background" foregroundColor="blue" selectionPixmap="SphereFHD/selpic/1240x75.png" enableWrapAround="1" itemHeight="40" name="label1" position="center,120" scrollbarMode="showOnDemand" size="700,40" font="Regular; 36" halign="left" valign="top" transparent="1" />
+    <widget backgroundColor="background" selectionPixmap="SphereFHD/selpic/1240x75.png" enableWrapAround="1" itemHeight="35" name="label2" position="center,209" size="700,200" font="Regular; 32" halign="left" valign="top" transparent="1" />
+    <widget backgroundColor="background" selectionPixmap="SphereFHD/selpic/1240x75.png" enableWrapAround="1" itemHeight="30" name="config" position="center,439" size="700,280" font="Regular; 26" halign="left" valign="top" scrollbarMode="showOnDemand" transparent="1" />
+    <ePixmap pixmap="SphereFHD/buttons/menu.png" position="1608,980" size="50,50" alphatest="blend" />
+    <panel name="color_buttons" />
+    <panel name="buttons_rgyb" />
+ </screen>
+ <screen name="NFR4XChooseOnLineImage" position="center,center" size="1920,1080" title="NFR4XBoot - Download OnLine Images" flags="wfNoBorder">
+    <ePixmap position="0,0" zPosition="-10" size="1920,1080" pixmap="SphereFHD/png/bg4.png" />
+    <panel name="Time" />
+    <widget font="Regular; 42" position="center,762" render="Label" size="850,50" source="Title" transparent="1" valign="top" zPosition="1" halign="center" backgroundColor="background" foregroundColor="TextInfo" />
+    <widget source="list" render="Listbox" position="center,15" size="800,740" selectionPixmap="SphereFHD/selpic/1240x75.png" scrollbarMode="showOnDemand" transparent="1">
+      <convert type="TemplatedMultiContent">{"template": [
+	MultiContentEntryText(pos = (60, 10), size = (700, 30), font=0, flags = RT_HALIGN_RIGHT, text = 0),
+	MultiContentEntryText(pos = (60, 40), size = (700, 30), font=1, flags = RT_VALIGN_TOP | RT_HALIGN_RIGHT, text = 3),
+        MultiContentEntryPixmapAlphaBlend(pos = (10, 0), size = (400, 60), png = 1),
+	],
+	"fonts": [gFont("Regular", 28),gFont("Regular", 22)],
+	"itemHeight": 65
+	}</convert>
+    </widget>
+   <panel name="function_buttons_4" />
+ </screen>
   <screen name="MoveVideos_int" position="center,center" size="1920,1080" title="Move Bootvideos back to Flash" flags="wfNoBorder">
     <ePixmap position="0,0" zPosition="-10" size="1920,1080" pixmap="SphereFHD/png/bg3.png" />
     <panel name="Time" />
