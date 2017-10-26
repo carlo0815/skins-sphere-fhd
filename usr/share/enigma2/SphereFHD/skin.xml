@@ -7511,6 +7511,74 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
     <widget render="Label" source="key_blue" position="1425,970" size="300,70" halign="left" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
     <panel name="function_buttons" />
   </screen>
+  <screen name="NFRCamManager" position="center,center" size="1920,1080" title="NFR SoftCam Manager" flags="wfNoBorder">
+    <ePixmap position="center,-2" zPosition="-10" size="1920,1080" pixmap="SphereFHD/png/bg3.png" />
+    <panel name="Time" />
+    <widget font="Regular; 42" position="892,762" render="Label" size="850,50" source="Title" transparent="1" valign="top" zPosition="1" halign="center" backgroundColor="background" foregroundColor="TextInfo" />
+    <widget source="list" render="Listbox" position="846,91" size="900,400" backgroundColor="background" itemHeight="50" selectionPixmap="SphereFHD/selpic/1240x75.png" scrollbarMode="showOnDemand" transparent="1">
+      <convert type="TemplatedMultiContent">{"template": [
+			MultiContentEntryPixmapAlphaTest(pos = (0, 0), size = (100, 50), png = 1), 
+			MultiContentEntryText(pos = (120, 10), size = (780, 40), font=0, \
+				flags = RT_HALIGN_LEFT, text = 0), 
+			MultiContentEntryText(pos = (20, 35), size = (70, 20), font=1, \
+				flags = RT_HALIGN_CENTER, text = 2), 
+				],
+	"fonts": [gFont("Regular", 28),gFont("Regular", 16)],
+	"itemHeight": 50
+	}</convert>
+    </widget>
+    <widget name="status" position="833,533" size="931,80" font="Regular;30" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+    <panel name="function_buttons_4" />
+    <panel name="color_buttons" />
+    <panel name="buttons_rgyb" />
+  </screen>
+  <screen name="NfrHD_About" position="center,center" size="1920,1080" title="SphereFHD-openNFR" flags="wfNoBorder">
+    <ePixmap position="center,-2" zPosition="-10" size="1920,1080" pixmap="SphereFHD/png/bg3.png" />
+    <panel name="Time" />
+    <widget font="Regular; 42" position="892,762" render="Label" size="850,50" source="Title" transparent="1" valign="top" zPosition="1" halign="center" backgroundColor="background" foregroundColor="TextInfo" />
+    <eLabel text="SphereFHD by openNFR" position="1106,199" size="350,70" font="Regular;28" backgroundColor="background" halign="center" />
+    <eLabel text="www.nachtfalke.biz" backgroundColor="background" position="1106,279" size="350,50" font="Regular; 25" halign="center" />
+  </screen>
+  <screen name="NfrHD_Config" position="center,center" size="1920,1080" title="NfrHD Setup" flags="wfNoBorder">
+    <ePixmap position="center,-2" zPosition="-10" size="1920,1080" pixmap="SphereFHD/png/bg3.png" />
+    <panel name="Time" />
+    <widget font="Regular; 42" position="892,762" render="Label" size="850,50" source="Title" transparent="1" valign="top" zPosition="1" halign="center" backgroundColor="background" foregroundColor="TextInfo" />
+    <widget enableWrapAround="1" position="873,19" name="config" itemHeight="35" font="Regular;28" scrollbarMode="showOnDemand" size="850,500" selectionPixmap="SphereFHD/selpic/1240x75.png" transparent="1" />
+    <widget name="Picture" position="1103,534" size="400,225" alphatest="on" />
+    <panel name="function_buttons_4" />
+    <panel name="color_buttons" />
+    <panel name="buttons_rgyb" />
+  </screen>
+  <screen name="NfrHDScreens" position="center,center" size="1920,1080" title="NfrHD Setup" flags="wfNoBorder">
+    <ePixmap position="center,-2" zPosition="-10" size="1920,1080" pixmap="SphereFHD/png/bg4.png" />
+    <panel name="Time" />
+    <widget font="Regular; 42" position="center,790" render="Label" size="400,50" source="Title" transparent="1" valign="top" zPosition="1" halign="center" backgroundColor="background" foregroundColor="TextInfo" />
+    <widget source="menu" render="Listbox" position="483,2" size="950,771" scrollbarMode="showOnDemand" enableWrapAround="1" selectionPixmap="SphereFHD/selpic/1240x75.png" transparent="1">
+      <convert type="TemplatedMultiContent" transparent="0">{"template": [
+		  MultiContentEntryPixmapAlphaTest(pos = (4, 2), size = (48, 48), png = 2),
+		  MultiContentEntryText(pos = (60, 6), size = (900, 40), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 0),
+		  ],
+		  "fonts": [gFont("Regular", 30),gFont("Regular", 16)],
+		  "itemHeight": 52
+	  }</convert>
+    </widget>
+    <panel name="function_buttons_4" />
+    <panel name="color_buttons" />
+    <panel name="buttons_rg" />
+  </screen>
+  <screen name="NFRPasswdScreen" position="center,center" size="1920,1080" title="Change root password" flags="wfNoBorder">
+    <ePixmap position="center,-2" zPosition="-10" size="1920,1080" pixmap="SphereFHD/png/bg3.png" />
+    <panel name="Time" />
+    <widget font="Regular; 42" position="892,762" render="Label" size="850,50" source="Title" transparent="1" valign="top" zPosition="1" halign="center" backgroundColor="background" foregroundColor="TextInfo" />
+    <widget name="passwd" position="874,35" size="850,678" font="Regular; 30" itemHeight="35" transparent="1" scrollbarMode="showOnDemand" selectionPixmap="SphereFHD/selpic/1240x75.png" />
+    <panel name="color_buttons" />
+    <panel name="buttons_rgyb2" />
+  </screen>
+  <screen name="NumberZapExt" position="center,225" size="700,431" title="Channel">
+    <widget name="chPicon" position="244,273" size="220,132" transparent="1" zPosition="1" alphatest="blend" />
+    <widget position="155,185" size="400,60" halign="center" font="Regular; 40" noWrap="1" transparent="0" name="chName" foregroundColor="Text1" />
+    <widget name="chNum" position="152,73" size="400,60" halign="center" font="Regular; 40" transparent="0" foregroundColor="Text1" valign="center" />
+  </screen>
   <screen name="HistoryZapSelector" position="center,center" size="1920,1080" title="History Zap" backgroundColor="transparent" flags="wfNoBorder">
     <ePixmap position="0,0" zPosition="-10" size="1920,1080" pixmap="SphereFHD/png/bg3.png" />
     <panel name="Time" />
