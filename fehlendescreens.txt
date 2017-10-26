@@ -1,9 +1,3 @@
-NFRCamManager
-NfrHD_About
-NfrHD_Config
-NfrHDScreens
-NFRPasswdScreen
-NumberZapExt
 SortableMenu
 SpinnerSelectionBox
 SubservicesQuickzap
