@@ -1,8 +1,2 @@
-SortableMenu
-SpinnerSelectionBox
-SubservicesQuickzap
-SwapOverviewScreen
-SystemMemoryInfo
-SystemNetworkInfo
 YahooWeather
 YahooWeatherList
