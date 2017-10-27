@@ -8802,5 +8802,74 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
   <widget render="Label" source="key_red" position="372,970" size="300,70" halign="left" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
   <widget render="Label" source="key_green" position="722,970" size="300,70" halign="left" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
   <panel name="function_buttons_4" />
+</screen>
+  <screen name="SortableMenu" position="center,center" size="1920,1080" title="Sortable Menu" backgroundColor="transparent" flags="wfNoBorder">
+    <ePixmap position="2,-2" zPosition="-10" size="1920,1080" pixmap="SphereFHD/png/bg3.png" />
+    <panel name="Time" />
+    <ePixmap position="68,805" size="220,220" zPosition="1" pixmap="SphereFHD/menu/setup.png" alphatest="blend" transparent="1" />
+    <widget source="Title" render="Label" position="900,20" size="800,50" font="Bold;40" halign="center" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+    <widget backgroundColor="Background" foregroundColor="lightblue" font="Regular;30" position="947,110" name="menu" size="710,500" transparent="1" />
+    <ePixmap pixmap="SphereFHD/buttons/ok.png" position="1665,1010" size="50,50" alphatest="blend" />
+    <ePixmap pixmap="SphereFHD/buttons/exit.png" position="1725,1010" size="50,50" alphatest="blend" />
+    <ePixmap alphatest="blend" pixmap="SphereFHD/buttons/help.png" position="1605,1010" size="50,50" />
+    <panel name="function_buttons_4" />
+  </screen>
+  <screen name="SpinnerSelectionBox" position="center,center" size="1920,1080" title="SpinnerSelection" flags="wfNoBorder">
+    <ePixmap position="0,0" zPosition="-10" size="1920,1080" pixmap="SphereFHD/png/bg3.png" />
+    <panel name="Time" />
+    <ePixmap position="68,805" size="220,220" zPosition="1" pixmap="SphereFHD/menu/setup.png" alphatest="blend" transparent="1" />
+    <widget name="list" position="830,15" size="930,500" zPosition="2" scrollbarMode="showNever" scrollbarWidth="0" scrollbarSliderBorderColor="grey" backgroundColor="transpGrey" transparent="1" />
+    <widget name="text" position="830,535" zPosition="2" size="930,35" font="Regular;30" foregroundColor="white" backgroundColor="transpGrey" halign="left" transparent="1" />
+    <panel name="color_buttons" />
+    <widget source="key_red" render="Label" position="382,970" size="370,70" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+    <widget source="key_green" render="Label" position="732,970" size="370,70" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+    <widget source="key_yellow" render="Label" position="1082,970" size="370,70" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+    <widget source="key_blue" render="Label" position="1432,970" size="370,70" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+    <widget name="bild" position="1145,610" zPosition="1" size="300,200" transparent="1" />
+    <panel name="function_buttons_4" />
+  </screen>
+  <screen backgroundColor="transparent" flags="wfNoBorder" name="SubservicesQuickzap" position="678,600" size="560,100" title="Subservices">
+    <widget alphatest="blend" pixmap="skin_default/icons/record.png" position="450,0" render="Pixmap" size="14,14" source="session.RecordState" zPosition="2">
+      <convert type="ConditionalShowHide">Blink</convert>
+    </widget>
+    <eLabel backgroundColor="Background" font="Regular;20" halign="center" position="0,0" size="560,28" text="Subservices" valign="center" />
+    <widget backgroundColor="Background" font="Regular;22" halign="center" name="CurrentSubserviceNumber" position="0,28" size="70,48" valign="center" />
+    <widget backgroundColor="Background" font="Regular;22" position="70,28" render="Label" size="490,48" source="session.CurrentService" valign="center">
+      <convert type="ServiceName">Name</convert>
+    </widget>
+  </screen>
+  <screen name="SwapOverviewScreen" position="center,center" size="1920,1080" title="Swap Manager" flags="wfNoBorder">
+  <ePixmap position="0,0" zPosition="-10" size="1920,1080" pixmap="SphereFHD/png/bg4.png" />
+  <panel name="Time" />
+  <ePixmap position="68,805" size="220,220" zPosition="1" pixmap="SphereFHD/menu/info.png" alphatest="blend" transparent="1" />
+  <eLabel text="Swap Manager" position="660,750" size="600,50" font="Bold;40" halign="center" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+  <widget enableWrapAround="1" position="515,50" name="config" itemHeight="35" font="Regular;28" scrollbarMode="showOnDemand" size="900,400" selectionPixmap="SphereFHD/selpic/1240x75.png" transparent="1" />
+  <widget name="swapstatus_label" position="517,582" size="400,40" zPosition="10" font="Regular;26" halign="left" valign="center" transparent="1" foregroundColor="white" />
+  <widget name="swapstatus_status" position="1015,580" size="400,40" zPosition="10" font="Regular;26" halign="right" valign="center" transparent="1" foregroundColor="white" />
+  <panel name="color_buttons" />
+  <widget source="key_red" render="Label" position="382,970" size="370,70" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+  <widget source="key_green" render="Label" position="732,970" size="370,70" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+  <widget source="key_yellow" render="Label" position="1082,970" size="370,70" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+  <widget source="key_blue" render="Label" position="1432,970" size="370,70" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+  <panel name="function_buttons_4" />
+</screen>
+  <screen name="SystemMemoryInfo" position="center,center" size="1920,1080" title="SystemInfo" flags="wfNoBorder">
+  <ePixmap position="0,0" zPosition="-10" size="1920,1080" pixmap="SphereFHD/png/bg4.png" />
+  <panel name="Time" />
+  <ePixmap position="68,805" size="220,220" zPosition="1" pixmap="SphereFHD/menu/info.png" alphatest="blend" transparent="1" />
+  <eLabel text="SystemInfo" position="660,750" size="600,50" font="Bold;40" halign="center" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+  <widget enableWrapAround="1" position="515,50" name="AboutScrollLabel" itemHeight="35" font="Regular;28" scrollbarMode="showOnDemand" size="900,400" selectionPixmap="SphereFHD/selpic/1240x75.png" transparent="1" />
+  <widget source="lab2" render="Label" position="515,540" size="900,40" zPosition="10" font="Regular;26" halign="left" valign="center" transparent="1" foregroundColor="white" />
+</screen>
+  <screen name="SystemNetworkInfo" position="center,center" size="1920,1080" title="SystemInfo" flags="wfNoBorder">
+  <ePixmap position="2,-2" zPosition="-10" size="1920,1080" pixmap="SphereFHD/png/bg4.png" />
+  <panel name="Time" />
+  <ePixmap position="68,805" size="220,220" zPosition="1" pixmap="SphereFHD/menu/info.png" alphatest="blend" transparent="1" />
+  <eLabel text="SystemInfo" position="660,750" size="600,50" font="Bold;40" halign="center" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+  <widget enableWrapAround="1" position="515,50" name="AboutScrollLabel" itemHeight="35" font="Regular;28" scrollbarMode="showOnDemand" size="900,400" selectionPixmap="SphereFHD/selpic/1240x75.png" transparent="1" />
+  <widget source="IFtext" render="Label" position="515,500" size="200,35" zPosition="10" font="Regular; 30" halign="left" transparent="1" />
+  <widget source="IF" render="Label" position="1041,481" size="375,35" zPosition="10" font="Regular; 30" halign="left" transparent="1" />
+  <widget source="Statustext" render="Label" position="515,600" size="200,35" zPosition="10" font="Regular; 28" halign="left" transparent="1" />
+  <widget name="statuspic" pixmaps="skin_default/buttons/button_green.png,skin_default/buttons/button_green_off.png" position="800,600" zPosition="10" size="17,18" transparent="1" alphatest="on" />
 </screen>	
 </skin>
