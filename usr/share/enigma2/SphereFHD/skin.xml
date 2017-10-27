@@ -209,7 +209,7 @@
     <parameter name="ChoicelistIcon" value="5,10,35,25" />
     <parameter name="ChoicelistName" value="45,0,1920,40" />
     <parameter name="ChoicelistFont" value="Regular;30" />
-    <parameter name="VirtualKeyboard" value="60" />
+    <parameter name="VirtualKeyboard" value="60,60" />
     <parameter name="HelpMenuListHlp" value="10,0,750,40" />
     <parameter name="HelpMenuListExtHlp0" value="0,0,600,36" />
     <parameter name="HelpMenuListExtHlp1" value="0,0,600,30" />
