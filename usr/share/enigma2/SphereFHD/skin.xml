@@ -2009,21 +2009,23 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
     <panel name="function_buttons" />
   </screen>
   <!-- PluginBrowser -->
-  <screen name="PluginBrowser" position="center,center" size="1920,1080" title="" flags="wfNoBorder">
-    <ePixmap position="0,0" zPosition="-10" size="1920,1080" pixmap="SphereFHD/png/bg3.png" />
-    <ePixmap position="68,805" size="220,220" zPosition="1" pixmap="SphereFHD/menu/plugin.png" alphatest="blend" transparent="1" />
-    <panel name="Time" />
-    <eLabel text="Plugin Browser" position="1100,780" size="400,50" font="Bold;40" halign="center" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
-    <ePixmap position="833,10" size="931,600" zPosition="5" pixmap="SphereFHD/png/listboxen/listbox_50.png" alphatest="blend" />
-    <widget name="list" position="833,10" size="931,600" font="Regular;30" secondfont="Regular;30" itemHeight="50" scrollbarMode="showNever" scrollbarWidth="0" scrollbarSliderBorderColor="grey" backgroundColor="transpGrey" enableWrapAround="1" transparent="1" />
-    <ePixmap pixmap="SphereFHD/buttons/red.png" position="325,980" size="50,50" alphatest="blend" />
-    <ePixmap pixmap="SphereFHD/buttons/green.png" position="750,980" size="50,50" alphatest="blend" />
-    <ePixmap pixmap="SphereFHD/buttons/yellow.png" position="1025,980" size="50,50" alphatest="blend" />
-    <ePixmap pixmap="SphereFHD/buttons/blue.png" position="1375,980" size="50,50" alphatest="blend" />
-    <widget name="red" position="382,970" size="370,70" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
-    <widget name="green" position="760,980" size="370,50" valign="center" noWrap="1" zPosition="1" font="Regular;31" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
-    <panel name="function_buttons" />
-  </screen>
+<screen name="PluginBrowser" position="center,center" size="1920,1080" title="" flags="wfNoBorder">
+  <ePixmap position="0,0" zPosition="-10" size="1920,1080" pixmap="SphereFHD/png/bg3.png" />
+  <ePixmap position="68,805" size="220,220" zPosition="1" pixmap="SphereFHD/menu/plugin.png" alphatest="blend" transparent="1" />
+  <panel name="Time" />
+  <eLabel text="Plugin Browser" position="1100,780" size="400,50" font="Bold;40" halign="center" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+  <ePixmap position="833,10" size="931,600" zPosition="5" pixmap="SphereFHD/png/listboxen/listbox_50.png" alphatest="blend" />
+  <widget name="list" position="833,10" size="931,600" font="Regular;30" secondfont="Regular;30" itemHeight="50" scrollbarMode="showNever" scrollbarWidth="0" scrollbarSliderBorderColor="grey" backgroundColor="transpGrey" enableWrapAround="1" transparent="1" />
+  <ePixmap name="red" pixmap="SphereFHD/buttons/red.png" position="335,980" size="50,50" alphatest="blend" />
+  <ePixmap name="green" pixmap="SphereFHD/buttons/green.png" position="700,980" size="50,50" alphatest="blend" />
+  <ePixmap pixmap="SphereFHD/buttons/yellow.png" position="1065,980" size="50,50" alphatest="blend" />
+  <ePixmap pixmap="SphereFHD/buttons/blue.png" position="1430,980" size="50,50" alphatest="blend" />
+  <widget source="key_red" render="Label" position="392,970" size="300,70" valign="center" noWrap="1" zPosition="1" font="Regular;30" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+  <widget source="key_green" render="Label" position="757,970" size="300,70" valign="center" noWrap="1" zPosition="1" font="Regular;30" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+  <widget source="key_yellow" render="Label" position="1125,970" size="300,70" valign="center" noWrap="1" zPosition="1" font="Regular;30" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+  <widget source="key_blue" render="Label" position="1487,970" size="300,70" valign="center" noWrap="1" zPosition="1" font="Regular;30" foregroundColor="white" backgroundColor="transpGrey" transparent="1" />
+  <panel name="function_buttons" />
+</screen>
   <!-- Plugin Manager -->
   <screen name="MyPluginManager" position="center,center" size="1920,1080" title="" flags="wfNoBorder">
     <ePixmap position="0,0" zPosition="-10" size="1920,1080" pixmap="SphereFHD/png/bg3.png" />
